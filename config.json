@@ -33,5 +33,32 @@
   "history_signature_limit": 1000,
   "copy_sim_starting_balance_usd": 500,
   "daily_profit_goal_usd": 300,
-  "hourly_enabled": true
+  "hourly_enabled": true,
+  "chains": [
+    "robinhood",
+    "bsc",
+    "solana"
+  ],
+  "hunter_allocation": {
+    "solana": 30,
+    "bsc": 15,
+    "robinhood": 5
+  },
+  "simulation": {
+    "take_profit_pct": 35,
+    "max_open_positions": 5,
+    "minimum_order_usd": 10,
+    "fee_bps_per_side": {
+      "solana": 125,
+      "bsc": 30,
+      "robinhood": 30
+    },
+    "network_fee_usd_per_side": {
+      "solana": 0.01,
+      "bsc": 0.05,
+      "robinhood": 0.005
+    },
+    "minimum_forecast_days": 30,
+    "minimum_forecast_closes": 20
+  }
 }

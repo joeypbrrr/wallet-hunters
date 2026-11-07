@@ -1,0 +1,484 @@
+{
+  "status": "active",
+  "date_et": "2026-11-07",
+  "goal_usd": 300,
+  "starting_balance_per_account_usd": 500,
+  "required_daily_return_pct": 60.0,
+  "accounts": [
+    {
+      "wallet_key": "robinhood:0xe429478fccbb68e9d1640c061ebfc6afdf01226c",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0xb3421e7f399316d45b49563072c07246081e7d08",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x500c71a50aee5a134058779075508f94c6f772c7",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x3d8f0c85b118a1238c54df859a8968039ae6be43",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x85e63294285f1c49012871170254601c3c3c2685",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0xb544d956800283114e2a51bbe949e9a5603929e5",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0xcd765fa8dc1e1b367bbf5fda83800dda04faf175",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x1e963c2c4433460b79535e9e34455209525f8317",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x07493e0a4073a10f5155cde2bc283479b69d79a6",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x0d877f71eb215c63ca359eec403ef039e758dfc3",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0xb5eaef5dd85474dbbea8c6bd8f66fcfa76a09e70",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0xe23137d1d94ac01773a8e2f4281780fdcdb70e59",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0xb8e2714d8e100d32470c3537bfd3f08456bcfe8e",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x129c7f15f9e3a5cb40fd403cad331680b65f6b5e",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0xa7f7c556b2ec74c0436626cdb9071a34f9d98add",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x5e8ec4a211fb66af31a72181fbe3905b2595d800",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0xe7c9312ab0681f1653215b2be65a4356758653d1",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x64229407a8b8bb6ae4814ece31230f4de9d3e390",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x5c0836451b26edf2744061cbf2271257e1bcfdb1",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "robinhood:0x7407e0f50a19b026b8a75b3b9cbc7c1400f618be",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    }
+  ],
+  "standout_wallets": [],
+  "note": "Per-account goal, not sum of hypothetical independent accounts. Closed paper fills only; ET-day entry-stop latch survives deterministic replay, open positions still managed.",
+  "agent_accounts": [
+    {
+      "agent_id": "hunter-01",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-02",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-03",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-04",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-05",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-06",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-07",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-08",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-09",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-10",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-11",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-12",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-13",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-14",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-15",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-16",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-17",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-18",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-19",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-20",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-21",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-22",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-23",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-24",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-25",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-26",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-27",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-28",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-29",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-30",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-31",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-32",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-33",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-34",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-35",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-36",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-37",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-38",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-39",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-40",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-41",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-42",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-43",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-44",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-45",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-46",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-47",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-48",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-49",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    },
+    {
+      "agent_id": "hunter-50",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "remaining_usd": 300,
+      "standout": false
+    }
+  ],
+  "scope": "Each account separately. Wallet accounts are retrospective diagnostics; hunter accounts begin only after a real slice selection and persist that selection across restarts."
+}

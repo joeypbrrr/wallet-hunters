@@ -1,0 +1,104 @@
+{
+  "robinhood": {
+    "chain": "robinhood",
+    "expected_chain_id": 4663,
+    "verified_chain_id": 4663,
+    "decoded_swaps": [],
+    "errors": [],
+    "block_window": 2000,
+    "latest_block": 108154407,
+    "pool": "0xd42a491087a15e5afd51feb3606066cc152d2b09",
+    "token0": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "token1": "0x0bd7d308f8e1639fab988df18a8011f41eacad73",
+    "decimals": {
+      "0x020bfc650a365f8bb26819deaabf3e21291018b4": 18,
+      "0x0bd7d308f8e1639fab988df18a8011f41eacad73": 18
+    },
+    "logs_found": 0
+  },
+  "bsc": {
+    "chain": "bsc",
+    "expected_chain_id": 56,
+    "verified_chain_id": 56,
+    "decoded_swaps": [
+      {
+        "version": "v2",
+        "amount0_in_raw": 0,
+        "amount1_in_raw": 14463115271379582,
+        "amount0_out_raw": 67496930245505710098603,
+        "amount1_out_raw": 0,
+        "pool": "0x0707c5ce9f285b39b03a866b81439ce07e7926cb",
+        "tx": "0x7704d6fb7bf660918de5022b33045fca1d5911a95a34e3737eae99b6ef9a6b00",
+        "block_number": 132140877,
+        "log_index": 139,
+        "wallet": "0x8f8f8fcdde12d1dc8e88d53c5b7710ec2d401454",
+        "attribution": "transaction origin, not router/event recipient; smart-account attribution may still differ",
+        "block_time": "2026-11-07T04:59:49+00:00",
+        "gas_fee_native": 4.1840266e-05,
+        "usd_valuation": "Use provider timestamped swap prices separately; raw logs are not USD-priced P&L",
+        "explorer": "https://bscscan.com/tx/0x7704d6fb7bf660918de5022b33045fca1d5911a95a34e3737eae99b6ef9a6b00"
+      },
+      {
+        "version": "v2",
+        "amount0_in_raw": 0,
+        "amount1_in_raw": 14463115271379582,
+        "amount0_out_raw": 67444989537380409762355,
+        "amount1_out_raw": 0,
+        "pool": "0x0707c5ce9f285b39b03a866b81439ce07e7926cb",
+        "tx": "0x0d2179efb664e0d64c6c3545a94a6ba13362f1b0ac62f3065291baff4f56ec55",
+        "block_number": 132140885,
+        "log_index": 129,
+        "wallet": "0x8f8f8fcdde12d1dc8e88d53c5b7710ec2d401454",
+        "attribution": "transaction origin, not router/event recipient; smart-account attribution may still differ",
+        "block_time": "2026-11-07T04:59:52+00:00",
+        "gas_fee_native": 4.1998034e-05,
+        "usd_valuation": "Use provider timestamped swap prices separately; raw logs are not USD-priced P&L",
+        "explorer": "https://bscscan.com/tx/0x0d2179efb664e0d64c6c3545a94a6ba13362f1b0ac62f3065291baff4f56ec55"
+      },
+      {
+        "version": "v2",
+        "amount0_in_raw": 569162489222821568085063,
+        "amount1_in_raw": 0,
+        "amount0_out_raw": 0,
+        "amount1_out_raw": 121098410653855425,
+        "pool": "0x0707c5ce9f285b39b03a866b81439ce07e7926cb",
+        "tx": "0xf668c6b89a2a0be9d43c0a280cfb05df36eb888337c7173e3d9d4aca014774c1",
+        "block_number": 132140996,
+        "log_index": 254,
+        "wallet": "0x166fade23c1e7d13d8d0e18cfee5417184c8eb41",
+        "attribution": "transaction origin, not router/event recipient; smart-account attribution may still differ",
+        "block_time": "2026-11-07T05:00:42+00:00",
+        "gas_fee_native": 3.1657769e-05,
+        "usd_valuation": "Use provider timestamped swap prices separately; raw logs are not USD-priced P&L",
+        "explorer": "https://bscscan.com/tx/0xf668c6b89a2a0be9d43c0a280cfb05df36eb888337c7173e3d9d4aca014774c1"
+      }
+    ],
+    "errors": [],
+    "block_window": 2000,
+    "latest_block": 132141129,
+    "pool": "0x0707c5ce9f285b39b03a866b81439ce07e7926cb",
+    "token0": "0x079594ae3f559d5d19b9ab32851aa4c8212d7777",
+    "token1": "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a",
+    "decimals": {
+      "0x079594ae3f559d5d19b9ab32851aa4c8212d7777": 18,
+      "0x431a3bee82e2ca41e49895cbece5bb0f76a89b7a": 18
+    },
+    "logs_found": 20
+  },
+  "solana": {
+    "chain": "solana",
+    "errors": [
+      "429 Client Error: Too Many Requests for url: https://api.mainnet-beta.solana.com/"
+    ],
+    "attribution_checks": [
+      {
+        "tx": "435GQAGZdfZvNygQpsKuguwvZFCgoVJtT2yUkWEAvrBB21DUkQbmqro2YYvUqGknE4EdEKepG946bRhBqEUAkjCs",
+        "signers": [
+          "gasTzr94Pmp4Gf8vknQnqxeYxdgwFjbgdJa4msYRpnB",
+          "6sMZASrgT1KGzyHw4Nq7yifkEdW5Er5gYqKXXoTCpnZc"
+        ]
+      }
+    ],
+    "slot": 466387464
+  }
+}

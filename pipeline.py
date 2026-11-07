@@ -3,7 +3,8 @@
 import json, math, time, statistics, re, collections, datetime as dt
 from pathlib import Path
 from zoneinfo import ZoneInfo
-import requests
+import requests, copy
+from research import CHAINS,FetchQueue,links,verify_evm,hunt,simulate,empty_account,build_learning
 ROOT=Path(__file__).resolve().parent
 DATA=ROOT/'data'; DATA.mkdir(exist_ok=True)
 ET=ZoneInfo('America/New_York')
@@ -21,7 +22,7 @@ def rpc(method,params=[]):
  r=requests.post('https://api.mainnet-beta.solana.com',json={'jsonrpc':'2.0','id':1,'method':method,'params':params},timeout=22);r.raise_for_status();j=r.json()
  if 'error' in j:raise RuntimeError(str(j['error']))
  return j.get('result')
-def wallet_ok(w):return bool(re.fullmatch('[1-9A-HJ-NP-Za-km-z]{32,44}',w or ''))
+def wallet_ok(w):return bool(re.fullmatch(r'(?:[1-9A-HJ-NP-Za-km-z]{32,44}|0x[0-9a-fA-F]{40})',w or ''))
 def num(v):
  try:return float(v or 0)
  except (TypeError,ValueError):return 0
@@ -29,7 +30,7 @@ def num(v):
 def simulation_account(cfg):
  return {'enabled':cfg['features'].get('copy_account_simulation',False),'status':'in_progress','starting_balance_usd':cfg['copy_sim_starting_balance_usd'],'balance_usd':cfg['copy_sim_starting_balance_usd'],'trades':0,'expected_profit_per_day_usd':None,'capital_needed_for_300_per_day_usd':None,'reason':'$500 simulation allocation; execution/backtest engine in progress. No simulated fills yet. No complete historical execution backtest or reliable daily return; no profit forecast is justified. Six research agents do not have independent trading strategies.'}
 
-def account(trades,liquidity,cfg):
+def account(trades,liquidity,cfg,chain='solana'):
  """Conservative observed FIFO: unmatched sells are NOT profits."""
  wallets=collections.defaultdict(list)
  for t in trades:
@@ -39,7 +40,7 @@ def account(trades,liquidity,cfg):
   ts.sort(key=lambda t:(t['time'],t['id']));lots=collections.defaultdict(collections.deque);closed=[];unknown=0;month_vol=collections.defaultdict(float);turnover=0;quick=0
   for t in ts:
    token=t['token'];q=t['quantity'];usd=t['usd'];month=dt.datetime.fromisoformat(t['time'].replace('Z','+00:00')).astimezone(ET).strftime('%Y-%m');turnover+=usd;month_vol[month]+=usd
-   if q<=0:continue
+   if q<=0 or usd<=0:continue
    if t['kind']=='buy':lots[token].append([q,usd/q,t['time']])
    elif t['kind']=='sell':
     remain=q;profit=0;matched=0;holds=[]
@@ -80,7 +81,7 @@ def account(trades,liquidity,cfg):
   for c in closed:
    if not cfg['min_avg_hold_seconds']<=c['hold_seconds']<=cfg['max_avg_hold_seconds']:continue
    buy_at=dt.datetime.fromisoformat(c['buy_time']);end_at=dt.datetime.fromisoformat(c['time'].replace('Z','+00:00'))
-   window=[x for x in trades if x['token']==c['token'] and x['quantity']>0 and buy_at<=dt.datetime.fromisoformat(x['time'].replace('Z','+00:00'))<=end_at]
+   window=[x for x in trades if x['token']==c['token'] and x['quantity']>0 and x['usd']>0 and buy_at<=dt.datetime.fromisoformat(x['time'].replace('Z','+00:00'))<=end_at]
    window.sort(key=lambda x:x['time'])
    if not window:continue
    original=window[0]['usd']/window[0]['quantity']
@@ -95,7 +96,9 @@ def account(trades,liquidity,cfg):
    impact=min(.5,cfg['copy_order_usd']/lq);slip=cfg['copy_slippage_pct']/100+impact
    paid=entry['usd']/entry['quantity']*(1+slip)
    best=max(x['usd']/x['quantity'] for x in later)*(1-slip)
-   net=(best/paid-1)*100
+   fee=cfg.get('simulation',{}).get('fee_bps_per_side',{}).get(chain,0)/10000
+   network=cfg.get('simulation',{}).get('network_fee_usd_per_side',{}).get(chain,0)
+   net=(best*(1-fee)/(paid*(1+fee))-1)*100-2*network/max(1,cfg['copy_order_usd'])*100
    capture35.append(net>=cfg['copy_capture_targets_pct'][0]);capture50.append(net>=cfg['copy_capture_targets_pct'][1])
   big_rate=sum(big)/len(big)*100 if big else None
   cap35=sum(capture35)/len(capture35)*100 if capture35 else None
@@ -116,11 +119,12 @@ def account(trades,liquidity,cfg):
    if qualified and wr>=65 and median>=60 and lq>=cfg['minimum_liquidity_usd']:row['tier']='sharp'
    if qualified and pnl>=10000:row['tier']='whale (observed profit)'
    if qualified and early_score is not None and early_score>=50 and median>=60:row['tier']='early-entry (not proof of insider)'
+  row.update({'chain':chain,'key':chain+':'+w,**links(chain,w)});row['solscan']=row['explorer']
   rows.append(row)
  rows.sort(key=lambda r:(r['qualified'],r['score'] if r['score'] is not None else -1,r['sampled_swaps']),reverse=True)
  return rows,excluded
 
-def clusters(rows,trades,transfers):
+def clusters(rows,trades,transfers,chain='solana'):
  """Evidence-based heuristic grouping; a link is not proof of common ownership."""
  ws={r['wallet'] for r in rows};parents={w:w for w in ws};edges=[]
  def root(w):
@@ -156,75 +160,107 @@ def clusters(rows,trades,transfers):
  for members in groups.values():
   if len(members)<2:continue
   import hashlib
-  cid='C-'+hashlib.sha256('|'.join(sorted(r['wallet'] for r in members)).encode()).hexdigest()[:8]
+  cid=chain+'-C-'+hashlib.sha256('|'.join(sorted(r['wallet'] for r in members)).encode()).hexdigest()[:8]
   for r in members:r['cluster_id']=cid
   n=sum(r['matched_sell_samples'] for r in members);wins=sum(r['wins'] for r in members)
-  result.append({'cluster_id':cid,'members':[{'wallet':r['wallet'],'gmgn':r['gmgn'],'solscan':r['solscan']} for r in members],'matched_sell_samples':n,'win_rate_pct':round(wins/n*100,2) if n else None,'observed_realized_pnl_usd':round(sum(r['observed_realized_pnl_usd'] or 0 for r in members),4) if n else None,'score':round(sum((r['score'] or 0)*r['matched_sell_samples'] for r in members)/n,2) if n else None,'warning':'Heuristic link, not confirmed ownership. Summed observed member P&L may double count inter-wallet economic exposure.','evidence':[e for e in edges if e['a'] in {r['wallet'] for r in members} and e['b'] in {r['wallet'] for r in members}]})
+  result.append({'cluster_id':cid,'chain':chain,'members':[{'wallet':r['wallet'],'key':r['key'],'gmgn':r['gmgn'],'solscan':r['solscan'],**links(chain,r['wallet'])} for r in members],'matched_sell_samples':n,'win_rate_pct':round(wins/n*100,2) if n else None,'observed_realized_pnl_usd':round(sum(r['observed_realized_pnl_usd'] or 0 for r in members),4) if n else None,'score':round(sum((r['score'] or 0)*r['matched_sell_samples'] for r in members)/n,2) if n else None,'warning':'Heuristic link, not confirmed ownership. Summed observed member P&L may double count inter-wallet economic exposure.','evidence':[e for e in edges if e['a'] in {r['wallet'] for r in members} and e['b'] in {r['wallet'] for r in members}]})
  return sorted(result,key=lambda r:r['score'] or -1,reverse=True)
 
 def run():
- cfg=load(ROOT/'config.json',{});chat=[];errors=[];sources=[]
+ cfg=load(ROOT/'config.json',{});profiles=load(ROOT/'agents.json',[]);q=FetchQueue();chat=[];errors=[];sources=[];chain_stats={};contexts={};observed=[];verification={};all_base=[];bot_excluded=[]
  def say(a,m):chat.append({'agent':a,'time_et':stamp(),'text':m});print(a+': '+m,flush=True)
- say('Scout','Starting one keyless, read-only research cycle; no trades or external alerts.')
- dex=[];pools=[];liq={};symbols={}
- try:
-  dex=get('https://api.dexscreener.com/latest/dex/search?q=SOL').get('pairs',[]);dex=[p for p in dex if p.get('chainId')=='solana'];sources.append({'name':'DexScreener','status':'ok','pairs':len(dex)})
- except Exception as e:errors.append('DexScreener: '+str(e))
- try:
-  pools=get('https://api.geckoterminal.com/api/v2/networks/solana/trending_pools?include=base_token').get('data',[])[:cfg['pool_limit']];sources.append({'name':'GeckoTerminal trending pools','status':'ok','pools':len(pools)})
- except Exception as e:errors.append('GeckoTerminal: '+str(e))
- observed=[];tokens=set();pool_ok=0
- for p in pools:
-  a=p['attributes'];token=p.get('relationships',{}).get('base_token',{}).get('data',{}).get('id','').removeprefix('solana_')
-  if not token:continue
-  tokens.add(token);liq[token]=num(a.get('reserve_in_usd'));symbols[token]=a.get('name','')
+ say('Publisher','Starting 50 real deterministic hunting jobs across Solana, BNB and Robinhood; no Ethereum mainnet and no transactions sent.')
+ previous=load(DATA/'observations.json',[])
+ for t in previous:t.setdefault('chain','solana')
+ known={t['id'] for t in previous};old_context=load(DATA/'chain-context.json',{})
+ for chain in cfg['chains']:
+  c=CHAINS[chain];pools=[];dex=[];current=[];liq={};transfers=[];checked=0
   try:
-   time.sleep(2.1)
-   ts=get(f"https://api.geckoterminal.com/api/v2/networks/solana/pools/{a['address']}/trades").get('data',[]);pool_ok+=1
-   for item in ts:
-    t=item['attributes'];buy=t['kind']=='buy';qty=num(t.get('to_token_amount' if buy else 'from_token_amount'))
-    observed.append({'id':item['id'],'wallet':t.get('tx_from_address'),'token':token,'kind':t['kind'],'quantity':qty,'usd':num(t.get('volume_in_usd')),'time':t['block_timestamp'],'tx':t['tx_hash'],'pool':a['address'],'anomalous':t.get('is_anomalous',False)})
-  except Exception as e:errors.append(a['address']+': '+str(e))
- say('Scout',f'Found {len(dex)} DexScreener pairs and {len(tokens)} GeckoTerminal tokens; fetched {pool_ok} pool trade windows.')
- say('Entry Cartographer',f'Collected {len(observed)} recent provider-reported swaps. Earliest observed is NOT earliest launch buyer.')
- transfers=[];checked=0;attribution=[]
- try:
-  slot=rpc('getSlot');sources.append({'name':'Solana public RPC','status':'ok','slot':slot})
-  for tx in list(dict.fromkeys(t['tx'] for t in observed))[:cfg['rpc_transaction_limit']]:
-   time.sleep(1.2)
+   query={'solana':'SOL','bsc':'0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c','robinhood':'robinhood'}[chain]
+   dex=[x for x in q.get('https://api.dexscreener.com/latest/dex/search?q='+query).get('pairs',[]) if x.get('chainId')==chain]
+   for pair in dex:
+    if pair.get('liquidity',{}).get('usd'):liq[pair['baseToken']['address']]=num(pair['liquidity']['usd'])
+  except Exception as e:errors.append(chain+' Dex discovery: '+str(e))
+  try:pools=q.get(f'https://api.geckoterminal.com/api/v2/networks/{chain}/trending_pools?include=base_token,quote_token').get('data',[])[:c['pools']]
+  except Exception as e:errors.append(chain+' Gecko discovery: '+str(e))
+  for pool in pools:
+   a=pool['attributes'];token=pool['relationships']['base_token']['data']['id'].removeprefix(chain+'_');liq[token]=num(a.get('reserve_in_usd'))
    try:
-    j=rpc('getTransaction',[tx,{'encoding':'jsonParsed','maxSupportedTransactionVersion':0}])
-    if not j:continue
-    checked+=1;signers=[k['pubkey'] for k in j['transaction']['message']['accountKeys'] if isinstance(k,dict) and k.get('signer')];attribution.append({'tx':tx,'signers':signers})
-    instructions=list(j['transaction']['message'].get('instructions',[]))
-    for ins in j.get('meta',{}).get('innerInstructions',[]):instructions+=ins.get('instructions',[])
-    for ins in instructions:
-     parsed=ins.get('parsed',{});info=parsed.get('info',{}) if isinstance(parsed,dict) else {}
-     if ins.get('program')=='system' and parsed.get('type')=='transfer' and info.get('source') and info.get('destination'):transfers.append({'from':info['source'],'to':info['destination'],'lamports':info.get('lamports'),'tx':tx})
-   except Exception as e:errors.append('RPC transaction: '+str(e));break
- except Exception as e:errors.append('RPC: '+str(e))
- say('Entry Cartographer',f'RPC inspected {checked} transactions; captured {len(transfers)} SOL-transfer edges. Unchecked attribution remains provider reported.')
- previous=load(DATA/'observations.json',[]);known={t['id'] for t in previous};new=[t for t in observed if t['id'] not in known]
- # Gecko ID includes pool/index: event IDs are preferred over tx-only dedup so multi-swap transactions remain intact.
- all_trades=list({t['id']:t for t in previous+observed}.values());save(DATA/'observations.json',all_trades);save(DATA/'market-context.json',{'liquidity':liq,'sources':sources,'transfers':transfers})
- rows,excluded=account(all_trades,liq,cfg)
- say('PnL Accountant',f'Observed {len({t["wallet"] for t in all_trades if wallet_ok(t.get("wallet"))})} wallets; FIFO matched {sum(r["matched_sell_samples"] for r in rows)} sell samples. Unknown starting inventory excluded, fees not known.')
- grouped=clusters(rows,all_trades,transfers) if cfg['features']['cluster_detection'] else []
- say('Integrity Analyst',f'Excluded {len(excluded)} heuristic bot/wash candidates; clusters '+(f'enabled: {len(grouped)} groups.' if cfg['features']['cluster_detection'] else 'OFF. No insider claim is made.'))
- qualified=sum(r['qualified'] for r in rows)
- say('Copyability Ranker',f'{qualified} wallets meet minimum evidence ({cfg["minimum_closed_samples"]} matched sells, {cfg["minimum_observed_months"]} observed positive months); all others are a provisional observation queue. '+('Copy score ON.' if cfg['features']['copy_trade_ranking'] else 'Basic ranking; copy score OFF.'))
- top={r['wallet'] for r in rows[:10]};alerts=load(DATA/'alerts.json',[])
+    items=q.get(f"https://api.geckoterminal.com/api/v2/networks/{chain}/pools/{a['address']}/trades").get('data',[])
+    for item in items:
+     t=item['attributes'];buy=t['kind']=='buy';wallet=t.get('tx_from_address');wallet=wallet.lower() if chain!='solana' and wallet else wallet
+     current.append({'id':item['id'],'chain':chain,'wallet':wallet,'token':token,'kind':t['kind'],'quantity':num(t.get('to_token_amount' if buy else 'from_token_amount')),'usd':num(t.get('volume_in_usd')),'time':t['block_timestamp'],'tx':t['tx_hash'],'pool':a['address'],'anomalous':t.get('is_anomalous',False)})
+   except Exception as e:errors.append(chain+' pool '+a['address']+': '+str(e))
+  if chain=='solana':
+   v={'chain':chain,'errors':[],'attribution_checks':[]}
+   try:
+    v['slot']=q.rpc(chain,'getSlot')
+    for tx in list(dict.fromkeys(t['tx'] for t in current))[:cfg['rpc_transaction_limit']]:
+     try:
+      j=q.rpc(chain,'getTransaction',[tx,{'encoding':'jsonParsed','maxSupportedTransactionVersion':0}])
+      if not j:continue
+      checked+=1;v['attribution_checks'].append({'tx':tx,'signers':[k['pubkey'] for k in j['transaction']['message']['accountKeys'] if isinstance(k,dict) and k.get('signer')]})
+      ins=list(j['transaction']['message'].get('instructions',[]))
+      for group in j.get('meta',{}).get('innerInstructions',[]):ins+=group.get('instructions',[])
+      for i in ins:
+       parsed=i.get('parsed',{});info=parsed.get('info',{}) if isinstance(parsed,dict) else {}
+       if i.get('program')=='system' and parsed.get('type')=='transfer' and info.get('source') and info.get('destination'):transfers.append({'from':info['source'],'to':info['destination'],'lamports':info.get('lamports'),'tx':tx})
+     except Exception as e:v['errors'].append(str(e));break
+   except Exception as e:v['errors'].append(str(e))
+  else:
+   rpc_pools=pools or [{'attributes':{'address':p['pairAddress']}} for p in dex[:1]]
+   v=verify_evm(q,chain,rpc_pools,max_logs=3);checked=len(v['decoded_swaps']);transfers=v.get('native_transfers',[])
+   if not current and v.get('decoded_swaps'):
+    base=(pools[0]['relationships']['base_token']['data']['id'].removeprefix(chain+'_') if pools else dex[0]['baseToken']['address']).lower()
+    for raw in v['decoded_swaps']:
+     zero=base==v['token0'].lower();index=0 if zero else 1
+     delta=(raw.get('amount'+str(index)+'_in_raw',0)-raw.get('amount'+str(index)+'_out_raw',0)) if raw['version']=='v2' else raw['amount'+str(index)+'_delta_raw']
+     current.append({'id':chain+':rpc:'+raw['tx']+':'+str(raw['log_index']),'chain':chain,'wallet':raw['wallet'],'token':base,'kind':'sell' if delta>0 else 'buy','quantity':abs(delta)/(10**v['decimals'][v['token0'] if zero else v['token1']]),'usd':0,'time':raw['block_time'],'tx':raw['tx'],'pool':raw['pool'],'anomalous':False,'valuation':'historical USD unavailable; excluded from P&L and copy fills','attribution_verified':True})
+   # Reconcile provider-reported trade origin against bounded independently parsed Swap logs.
+   origins={x['tx']:x['wallet'] for x in v['decoded_swaps']}
+   for t in current:
+    if t['tx'] in origins:t['wallet']=origins[t['tx']];t['attribution_verified']=True
+  verification[chain]=v;observed+=current;contexts[chain]={'liquidity':liq,'pools':[{'address':p['attributes']['address'],'token':p['relationships']['base_token']['data']['id'].removeprefix(chain+'_'),'name':p['attributes']['name'],'volume_24h_usd':p['attributes'].get('volume_usd',{}).get('h24')} for p in pools],'transfers':transfers,'updated_at_et':stamp()}
+  chain_stats[chain]={'tokens_scanned':len(liq),'pools_selected':len(pools),'priced_pool_windows':len({t['pool'] for t in current if t['usd']>0}),'swaps_this_cycle':len(current),'wallets_this_cycle':len({t['wallet'] for t in current if wallet_ok(t['wallet'])}),'dex_pairs':len(dex),'rpc_swaps_checked':checked,'status':('active sampled price feed' if any(t['usd']>0 for t in current) else 'RPC active; historical USD prices pending' if current else 'pending data source'),'rpc_errors':v.get('errors',[]),'chain_id':c['id'],'geckoterminal_network':chain,'dexscreener_chain':chain,'explorer':c['explorer'],'gmgn_supported':bool(c['gmgn'])}
+  sources.append({'chain':chain,'provider':'DexScreener + GeckoTerminal + public RPC','status':chain_stats[chain]['status'],'data':'Recent sampled swaps; not full chain history'})
+  say(c['name'],f"{len(liq)} tokens, {len(current)} recent swaps; {checked} bounded RPC checks; {len(v.get('errors',[]))} RPC errors.")
+ all_trades=list({t['id']:t for t in previous+observed}.values());new=[t for t in observed if t['id'] not in known];save(DATA/'observations.json',all_trades);save(DATA/'chain-context.json',contexts);save(DATA/'chain-verification.json',verification)
+ base_cfg=copy.deepcopy(cfg);base_cfg['features']['copy_trade_ranking']=False
+ for chain in cfg['chains']:
+  chain_trades=[t for t in all_trades if t.get('chain','solana')==chain]
+  base,excluded=account(chain_trades,contexts[chain]['liquidity'],base_cfg,chain);all_base+=base;bot_excluded +=[{**x,'chain':chain,'key':chain+':'+x['wallet']} for x in excluded]
+  chain_stats[chain]['wallets_accumulated']=len({t['wallet'] for t in chain_trades if wallet_ok(t['wallet'])})
+  if not chain_stats[chain]['swaps_this_cycle'] and chain_trades:chain_stats[chain]['status']='cached swaps; current provider rate-limited/unavailable'
+  chain_stats[chain]['bot_wash_excluded']=len(excluded)
+ # All real hunting slices execute over the shared fetched evidence and feed the master queue.
+ for r in all_base:
+  if cfg['features']['copy_trade_ranking']:
+   b=r['score_breakdown'];r['score_mode']='copy_trade';r['score']=round(sum((b.get(k) or 0)*v for k,v in r['copy_score_weights'].items())*b['sample_confidence'],2) if r['hold_window_pass'] and b['copy_capture_samples'] else None
+ all_base.sort(key=lambda r:(r['qualified'],r['score'] if r['score'] is not None else -1),reverse=True)
+ now=stamp();hunters,contributed=hunt(profiles,all_base,all_trades,{},cfg,now)
+ eligible=[r for r in all_base if (r['hold_window_pass'] and r['mean_liquidity_usd']>=cfg['minimum_liquidity_usd'] and r['key'] in contributed)] if cfg['features']['copy_trade_ranking'] else all_base
+ simulations={r['key']:simulate(r,all_trades,cfg,now) for r in eligible}
+ for r in eligible:r['copy_simulation']=simulations[r['key']];r['standout']=r['copy_simulation']['standout'];r['hunter_ids']=[h['id'] for h in hunters if r['key'] in h['candidate_keys']]
+ hunters,contributed=hunt(profiles,all_base,all_trades,simulations,cfg,now)
+ grouped=[]
+ for chain in cfg['chains']:
+  cr=[r for r in eligible if r['chain']==chain];cts=[t for t in all_trades if t.get('chain','solana')==chain]
+  if cfg['features']['cluster_detection']:grouped+=clusters(cr,cts,contexts[chain]['transfers'],chain)
+  chain_stats[chain].update({'hold_window_pass':sum(r['hold_window_pass'] for r in all_base if r['chain']==chain),'liquidity_pass':sum(r['mean_liquidity_usd']>=cfg['minimum_liquidity_usd'] for r in all_base if r['chain']==chain),'both_pass':len(cr),'min_sell_sample_pass':sum(r['matched_sell_samples']>=cfg['minimum_closed_samples'] for r in cr),'min_months_pass':sum(r['observed_months']>=cfg['minimum_observed_months'] for r in cr),'qualified':sum(r['qualified'] for r in cr),'clusters':sum(c['chain']==chain for c in grouped),'hunters_executed':sum(h['chain']==chain for h in hunters)})
+ learning=build_learning(simulations,load(DATA/'lessons.json',{}),cfg,now);save(DATA/'lessons.json',learning)
+ for h in hunters:say(h['name'],f"{h['chain']} slice completed: {h['wallets_evaluated']} wallets evaluated, {h['candidate_count']} match; best="+(h['best_wallet']['wallet'] if h['best_wallet'] else 'insufficient data'))
+ for review in learning['reviews'][-10:]:chat.append({'agent':'Loss Review Council','time_et':review['time_et'],'text':review['text'],'evidence':review['evidence']})
+ alerts=load(DATA/'alerts.json',[]);alert_ids={a['id'] for a in alerts};top={r['key'] for r in eligible[:10]}
  if cfg['features']['new_buy_alert_feed']:
   for t in (new if previous else []):
-   if t['kind']=='buy' and t['wallet'] in top:alerts.append({'id':t['id'],'wallet':t['wallet'],'token':t['token'],'observed_at_et':stamp(),'block_time':t['time'],'usd':t['usd'],'solscan':f"https://solscan.io/tx/{t['tx']}",'text':'Newly observed buy in sampled feed; not a real-time or complete-wallet alert.'})
-  save(DATA/'alerts.json',alerts[-200:])
- say('Observatory Publisher','Publishing research snapshots and ET timestamps. Hourly publishing configured ON; chain feed is a timestamped static snapshot. Simulator/learning/goal-board features are visibly in progress; no invented fills or forecasts.')
- out={'updated_at':iso(),'updated_at_et':stamp(),'copy_simulation':simulation_account(cfg),'schedule':('ON: local hourly research publisher' if cfg.get('hourly_enabled') else 'OFF'),'features':cfg['features'],'thresholds':{k:v for k,v in cfg.items() if k!='features'},'agents':[{'name':n,'role':r,'copy_simulation':simulation_account(cfg)} for n,r in AGENTS],'stats':{'dex_pairs_scanned':len(dex),'tokens_scanned':len(tokens),'pools_with_trades':pool_ok,'swaps_this_cycle':len(observed),'new_swaps':len(new),'wallets_scanned':len({t['wallet'] for t in all_trades if wallet_ok(t.get('wallet'))}),'wallets_published':len(rows),'qualified_wallets':qualified,'hold_window_survivors':sum(r['hold_window_pass'] for r in rows),'bot_wash_exclusions':sum(any('high-frequency' in a or 'sub-2-second' in a or 'anomalous' in a for a in x['reasons']) for x in excluded),'hold_window_exclusions':sum(any('copy window' in a for a in x['reasons']) for x in excluded),'liquidity_exclusions':sum(any('copy liquidity' in a for a in x['reasons']) for x in excluded),'minimum_sell_sample_pass':sum(r['matched_sell_samples']>=cfg['minimum_closed_samples'] for r in rows),'minimum_months_pass':sum(r['observed_months']>=cfg['minimum_observed_months'] for r in rows),'qualified_copy_wallets':qualified,'excluded_wallets':len(excluded),'rpc_transactions_checked':checked},'sources':sources,'errors':errors,'limits':['Keyless feeds sample recent swaps in selected trending pools; not full-chain or full-wallet histories.','DexScreener scouts markets; GeckoTerminal supplies recent swap observations. Public RPC checks only a small transaction sample. GMGN and Solscan are links only.','Matched-sell win rates and FIFO P&L are estimates on observed lots, NOT account returns. Fees, token taxes, transfers and prior holdings omitted.','Monthly observations are partial; missing months are UNKNOWN, not zero. A few minutes of data cannot demonstrate consistent monthly profits.','No historical entry market cap or true peak is available. Copy scoring uses weighted FIFO matched holding windows and sparse observed prices, not verified insider timing. A 3x move means +200%, not +300%.','Bot and cluster heuristics are incomplete and can misclassify. No wallet is proven an insider; no guarantee of profitable copying.','Copy capture is retrospective best sampled exit, not an execution backtest. Delay, each-way slippage and current liquidity impact are configurable; no guarantee a follower captures 35–50%.','APIs are rate-limited and may omit trades. Hourly polling misses activity; first enabled alert cycle is an observation baseline.'],'wallets':rows,'clusters':grouped,'excluded':excluded,'attribution_checks':attribution,'agent_chat':chat,'alerts':alerts[-100:] if cfg['features']['new_buy_alert_feed'] else []}
- out['feature_status']={k:('in_progress' if k in ['copy_account_simulation','agent_learning','lessons_board','daily_goal_tracker','standout_badges'] else 'enabled_sampled_evidence') for k,v in cfg['features'].items() if v}
- out['learning']={'status':'in_progress','lessons':[],'note':'No simulated closed fills yet. Learning is suggestion-only; never modifies thresholds automatically.'}
- out['daily_goal']={'status':'in_progress','date_et':dt.datetime.now(ET).strftime('%Y-%m-%d'),'starting_balance_per_account_usd':cfg['copy_sim_starting_balance_usd'],'realized_copy_pnl_usd':0,'goal_usd':cfg['daily_profit_goal_usd'],'remaining_usd':cfg['daily_profit_goal_usd'],'goal_hit':False,'standout_wallets':[],'note':'Zero simulated fills; this is an initialized tracker, not source-wallet P&L. Standout requires validated net copy profit ≥$300/day, never inferred from best-price capture.'}
- out['history_probe']=load(DATA/'history-probe.json',[])
- out['observed_window']={'first_trade':min((t['time'] for t in all_trades),default=None),'last_trade':max((t['time'] for t in all_trades),default=None)}
+   if t['kind']=='buy' and t['chain']+':'+str(t['wallet']) in top and t['id'] not in alert_ids:alerts.append({'id':t['id'],'chain':t['chain'],'wallet':t['wallet'],'token':t['token'],'observed_at_et':now,'block_time':t['time'],'usd':t['usd'],'solscan':CHAINS[t['chain']]['tx_explorer']+t['tx'],'text':'Newly observed sampled buy; site-only, not real-time.'});alert_ids.add(t['id'])
+ save(DATA/'alerts.json',alerts[-200:]);save(DATA/'copy-simulations.json',{'updated_at_et':now,'accounts':simulations});save(DATA/'hunting-results.json',hunters)
+ goal={'status':'active','date_et':dt.datetime.now(ET).strftime('%Y-%m-%d'),'goal_usd':cfg['daily_profit_goal_usd'],'starting_balance_per_account_usd':cfg['copy_sim_starting_balance_usd'],'required_daily_return_pct':cfg['daily_profit_goal_usd']/cfg['copy_sim_starting_balance_usd']*100,'accounts':[{ 'wallet_key':k,'realized_today_usd':v['today_realized_pnl_usd'],'goal_hit':v['goal_hit'],'standout':v['standout']} for k,v in simulations.items()],'standout_wallets':[k for k,v in simulations.items() if v['standout']],'note':'Per-account goal, not sum of hypothetical independent accounts. Closed paper fills only; ET-day entry-stop latch survives deterministic replay, open positions still managed.'};save(DATA/'daily-goals.json',goal)
+ excluded=bot_excluded+[{'wallet':r['wallet'],'chain':r['chain'],'key':r['key'],'reasons':(['copy hold window outside 1h–1week or unknown'] if not r['hold_window_pass'] else [])+(['liquidity below floor or not in current pool sample'] if r['mean_liquidity_usd']<cfg['minimum_liquidity_usd'] else [])} for r in all_base if r not in eligible]
+ stats={'dex_pairs_scanned':sum(x['dex_pairs'] for x in chain_stats.values()),'tokens_scanned':sum(x['tokens_scanned'] for x in chain_stats.values()),'swaps_this_cycle':len(observed),'new_swaps':len(new),'wallets_scanned':sum(x['wallets_accumulated'] for x in chain_stats.values()),'wallets_published':len(eligible),'qualified_wallets':sum(r['qualified'] for r in eligible),'qualified_copy_wallets':sum(r['qualified'] for r in eligible),'hold_window_survivors':len(eligible),'hold_window_pass_alone':sum(r['hold_window_pass'] for r in all_base),'liquidity_pass_alone':sum(r['mean_liquidity_usd']>=cfg['minimum_liquidity_usd'] for r in all_base),'bot_wash_exclusions':len(bot_excluded),'minimum_sell_sample_pass':sum(r['matched_sell_samples']>=cfg['minimum_closed_samples'] for r in eligible),'minimum_months_pass':sum(r['observed_months']>=cfg['minimum_observed_months'] for r in eligible),'excluded_wallets':len(excluded),'hunters_executed':len(hunters),'hunters_with_candidates':sum(h['candidate_count']>0 for h in hunters),'simulated_closed_fills':sum(v['closed_trades'] for v in simulations.values()),'simulated_open_positions':sum(v['open_positions'] for v in simulations.values()),'clusters_found':len(grouped)}
+ out={'updated_at':iso(),'updated_at_et':now,'schedule':'ON: one local hourly research publisher' if cfg.get('hourly_enabled') else 'OFF','features':cfg['features'],'feature_status':{k:('enabled_sampled_evidence' if v else 'off') for k,v in cfg['features'].items()},'thresholds':{k:v for k,v in cfg.items() if k!='features'},'agents':hunters,'stats':stats,'chain_stats':chain_stats,'chains':[{**c,'key':k,'status':chain_stats[k]['status']} for k,c in CHAINS.items()],'sources':sources,'errors':errors,'fetch_queue':q.summary(),'limits':['All 50 named hunters execute distinct chain/liquidity/hold slices over one serial cached fetch queue. They are deterministic research workers, not 50 LLM models.','Recent trending-pool swaps are sampled and incomplete; no full wallet, full-chain or multi-month history is established. RPC origin checks are bounded.','Source-wallet FIFO P&L is observed matched quantities before fees, transfers and missing inventory. It is not total-account P&L.','Copy replay uses chronological observed prices: 60s entry delay, first net +35% sampled exit or source sell/one-week timeout, finite $500 balance, modeled each-side fees and slippage. Sparse ticks and retrospective wallet selection introduce bias.','Copy-capture rates use best sampled opportunities and are not the paper replay return. Expected daily profit and capital required remain insufficient data. $300/day from $500 requires 60% per day; no evidence supports it here.','Historical entry market cap, true peak, executable depth and complete price paths are unknown. 3x means +200%. No claim of insider status or guaranteed copying profit.','Clusters are within each chain only. No unproven cross-chain ownership linkage is made. RPC funding samples and timing heuristics are incomplete.','Robinhood mainnet verified from official docs and RPC chainId 4663; provider network id robinhood. GMGN Robinhood support is unverified, so only the official explorer is linked. No Ethereum-mainnet data is requested.','Learning is evidence-backed simulated-loss review and suggestion-only. It never auto-changes thresholds. All charts show actual observed/replayed data, not synthetic historical returns.','Public API rate limits and hourly polling miss activity. Modeled fees differ from actual tax/gas/depth. Free sampled data cannot establish expected returns or the capital needed for $300/day.'],'wallets':eligible,'clusters':grouped,'excluded':excluded,'agent_chat':chat,'alerts':alerts[-100:] if cfg['features']['new_buy_alert_feed'] else [],'learning':learning,'daily_goal':goal,'copy_simulation':{'enabled':cfg['features']['copy_account_simulation'],'status':'active_sampled_replay','starting_balance_usd':cfg['copy_sim_starting_balance_usd'],'expected_profit_per_day_usd':None,'capital_needed_for_300_per_day_usd':None,'reason':'Insufficient complete historical coverage; simulations are not a profit forecast.'},'observed_window':{'first_trade':min((t['time'] for t in all_trades),default=None),'last_trade':max((t['time'] for t in all_trades),default=None)}}
  save(DATA/'wallets.json',out);save(DATA/'agent-chat.json',chat)
+ from agent_accounts import attach
+ out=attach(out,ROOT)
  print(json.dumps(out['stats']),flush=True)
 if __name__=='__main__':run()

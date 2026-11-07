@@ -38,5 +38,137 @@
     "usd": 19.003930577654334,
     "solscan": "https://solscan.io/tx/2Sct67RJhZYHEaFjTeZMRgd7QMnrCsdyHp7qSdkkX2TTy7eoxprn6j1vzvdq81SHZTJo5NXSzqP7tYCBzCGeJoNp",
     "text": "Newly observed buy in sampled feed; not a real-time or complete-wallet alert."
+  },
+  {
+    "id": "robinhood_108133999_0x415504b998bfab45ba3e62267208674bbb531e267e3749afb8af4150c6006062_5_1794025479",
+    "chain": "robinhood",
+    "wallet": "0x500c71a50aee5a134058779075508f94c6f772c7",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T04:24:00Z",
+    "usd": 333.782507683797,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0x415504b998bfab45ba3e62267208674bbb531e267e3749afb8af4150c6006062",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108075909_0xac87a92ae0a7041f65b502fe565d9ac052b462ef830f0cc5d0e00a8d7c70282c_5_1794019251",
+    "chain": "robinhood",
+    "wallet": "0xe429478fccbb68e9d1640c061ebfc6afdf01226c",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:40:34Z",
+    "usd": 341.682803638495,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0xac87a92ae0a7041f65b502fe565d9ac052b462ef830f0cc5d0e00a8d7c70282c",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108071086_0xe7acbca35ccb243930b0e879cf480ee2ccfaecc507db360f250f78332d331a90_25_1794018740",
+    "chain": "robinhood",
+    "wallet": "0x3d8f0c85b118a1238c54df859a8968039ae6be43",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:32:08Z",
+    "usd": 258.023043763748,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0xe7acbca35ccb243930b0e879cf480ee2ccfaecc507db360f250f78332d331a90",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108071084_0x3b560080abe796cb2269e1a20777fce9388a1b2bc0486ef5fcaafbc44657e512_86_1794018740",
+    "chain": "robinhood",
+    "wallet": "0x1e963c2c4433460b79535e9e34455209525f8317",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:32:07Z",
+    "usd": 360.178916781539,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0x3b560080abe796cb2269e1a20777fce9388a1b2bc0486ef5fcaafbc44657e512",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108070192_0x3b98a9e534549d354712568166d74ab7463c0d0fb592261aaef9e780b3bca686_11_1794018637",
+    "chain": "robinhood",
+    "wallet": "0xb544d956800283114e2a51bbe949e9a5603929e5",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:30:35Z",
+    "usd": 71.0580939463227,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0x3b98a9e534549d354712568166d74ab7463c0d0fb592261aaef9e780b3bca686",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108070191_0xa66cfb8958a450de6315bcf3a985637c4ec692b05ab1f6ad13def0fa32c2b484_5_1794018637",
+    "chain": "robinhood",
+    "wallet": "0xcd765fa8dc1e1b367bbf5fda83800dda04faf175",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:30:35Z",
+    "usd": 69.5280416608111,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0xa66cfb8958a450de6315bcf3a985637c4ec692b05ab1f6ad13def0fa32c2b484",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108069116_0xff847a6afa9e7b1a1470280132038265cbb834cc3f3eb073caf68694cbc16fd5_18_1794018542",
+    "chain": "robinhood",
+    "wallet": "0x07493e0a4073a10f5155cde2bc283479b69d79a6",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:28:42Z",
+    "usd": 187.555017273229,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0xff847a6afa9e7b1a1470280132038265cbb834cc3f3eb073caf68694cbc16fd5",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108069116_0x9a937ed630648584fa610fb03db9452d1b1965d7ecb5408649220c2c9de3ea5d_27_1794018542",
+    "chain": "robinhood",
+    "wallet": "0xe429478fccbb68e9d1640c061ebfc6afdf01226c",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:28:42Z",
+    "usd": 606.108519821937,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0x9a937ed630648584fa610fb03db9452d1b1965d7ecb5408649220c2c9de3ea5d",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108069116_0x6940596756d84cd03f00306b12a890b20a37499d0f91d7bc2baa9cdc0c2eb60b_3_1794018542",
+    "chain": "robinhood",
+    "wallet": "0x85e63294285f1c49012871170254601c3c3c2685",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:28:42Z",
+    "usd": 91.1904786090409,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0x6940596756d84cd03f00306b12a890b20a37499d0f91d7bc2baa9cdc0c2eb60b",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108069116_0x28029adeff8bc3791c9c62830193ca915d123600b7892dfc7b8c9f64c0fc90b3_9_1794018542",
+    "chain": "robinhood",
+    "wallet": "0xb3421e7f399316d45b49563072c07246081e7d08",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:28:42Z",
+    "usd": 793.97362542806,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0x28029adeff8bc3791c9c62830193ca915d123600b7892dfc7b8c9f64c0fc90b3",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108069113_0x5fff28397d986ba2cc84905d78914bdb6b9478c770ae0151a84e82a903e12966_15_1794018541",
+    "chain": "robinhood",
+    "wallet": "0x0d877f71eb215c63ca359eec403ef039e758dfc3",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:28:42Z",
+    "usd": 264.92489128108,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0x5fff28397d986ba2cc84905d78914bdb6b9478c770ae0151a84e82a903e12966",
+    "text": "Newly observed sampled buy; site-only, not real-time."
+  },
+  {
+    "id": "robinhood_108066546_0x776e6d2239e383abad89dc0fbeff4aaa3d1fa1e53b75a0149b456c6715d3ac24_44_1794018438",
+    "chain": "robinhood",
+    "wallet": "0x500c71a50aee5a134058779075508f94c6f772c7",
+    "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+    "observed_at_et": "2026-11-06 11:59:13 PM ET",
+    "block_time": "2026-11-07T02:24:12Z",
+    "usd": 72.0343478598333,
+    "solscan": "https://robinhoodchain.blockscout.com/tx/0x776e6d2239e383abad89dc0fbeff4aaa3d1fa1e53b75a0149b456c6715d3ac24",
+    "text": "Newly observed sampled buy; site-only, not real-time."
   }
 ]

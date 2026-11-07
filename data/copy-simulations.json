@@ -1,0 +1,6189 @@
+{
+  "updated_at_et": "2026-11-07 12:02:26 AM ET",
+  "accounts": {
+    "robinhood:0xe429478fccbb68e9d1640c061ebfc6afdf01226c": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 488.0161,
+      "equity_usd": 488.0161,
+      "trades": 2,
+      "closed_trades": 2,
+      "open_positions": 0,
+      "realized_pnl_usd": -11.983915,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -11.983915,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -11.983915,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 490.3156
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 490.2618
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 490.1959
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 491.4835
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 490.308
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 490.1566
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 490.1569
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 490.1723
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 490.2145
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 490.198
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 491.4568
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 490.171
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 490.1112
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 491.2369
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 491.3
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 490.1415
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 490.0781
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 489.989
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 489.6908
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 489.6866
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 490.9183
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 489.7863
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 490.9039
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 490.8336
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 489.4086
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 488.795
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 488.7019
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 488.6227
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 489.7599
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 488.7173
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 488.7459
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 488.6839
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 488.1873
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 488.0161
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 488.0161
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "c5aafc772d5e8d8a7fd7",
+          "wallet_key": "robinhood:0xe429478fccbb68e9d1640c061ebfc6afdf01226c",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069116_0x9a937ed630648584fa610fb03db9452d1b1965d7ecb5408649220c2c9de3ea5d_27_1794018542",
+          "exit_observation": "robinhood_108127011_0x0b3bd455039910c4499739b57b3b33adfb03fe9726f0eaf77ace14a1e5fb1cfe_21_1794024785",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T04:11:07Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 11:11:07 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.689206,
+          "pnl_usd": -6.310794,
+          "return_pct": -6.3108,
+          "reason": "source_sell",
+          "fees_usd": 0.591928,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x0b3bd455039910c4499739b57b3b33adfb03fe9726f0eaf77ace14a1e5fb1cfe",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x0b3bd455039910c4499739b57b3b33adfb03fe9726f0eaf77ace14a1e5fb1cfe"
+        },
+        {
+          "id": "8f6730516346ebba418f",
+          "wallet_key": "robinhood:0xe429478fccbb68e9d1640c061ebfc6afdf01226c",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108075909_0xac87a92ae0a7041f65b502fe565d9ac052b462ef830f0cc5d0e00a8d7c70282c_5_1794019251",
+          "exit_observation": "robinhood_108127011_0x0b3bd455039910c4499739b57b3b33adfb03fe9726f0eaf77ace14a1e5fb1cfe_21_1794024785",
+          "entry_time": "2026-11-07T02:43:14+00:00",
+          "exit_time": "2026-11-07T04:11:07Z",
+          "entry_time_et": "2026-11-06 09:43:14 PM ET",
+          "exit_time_et": "2026-11-06 11:11:07 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 94.326879,
+          "pnl_usd": -5.673121,
+          "return_pct": -5.6731,
+          "reason": "source_sell",
+          "fees_usd": 0.593847,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x0b3bd455039910c4499739b57b3b33adfb03fe9726f0eaf77ace14a1e5fb1cfe",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x0b3bd455039910c4499739b57b3b33adfb03fe9726f0eaf77ace14a1e5fb1cfe"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0xb3421e7f399316d45b49563072c07246081e7d08": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.7112,
+      "equity_usd": 493.7112,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.288769,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.288769,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.288769,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.8351
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.8083
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.7754
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.4171
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.8313
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.7558
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.756
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.7637
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.7847
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.7765
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.4037
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.763
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.7332
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.2941
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.3256
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.7483
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.7167
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.6723
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.5237
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.5216
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.1354
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.5713
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.1282
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.0932
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.3831
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.0773
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.031
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.9915
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.5582
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.0386
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.0529
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.022
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.7745
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.7112
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.7112
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "8107a67995a43e8f2003",
+          "wallet_key": "robinhood:0xb3421e7f399316d45b49563072c07246081e7d08",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069116_0x28029adeff8bc3791c9c62830193ca915d123600b7892dfc7b8c9f64c0fc90b3_9_1794018542",
+          "exit_observation": "robinhood_108127007_0x4e7a38924eade7124d1840704ad3f8a7fc50d74992e6403e9bf1466b7c2749b3_16_1794024785",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T04:11:07Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 11:11:07 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.711231,
+          "pnl_usd": -6.288769,
+          "return_pct": -6.2888,
+          "reason": "source_sell",
+          "fees_usd": 0.591995,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x4e7a38924eade7124d1840704ad3f8a7fc50d74992e6403e9bf1466b7c2749b3",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x4e7a38924eade7124d1840704ad3f8a7fc50d74992e6403e9bf1466b7c2749b3"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x500c71a50aee5a134058779075508f94c6f772c7": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 495.2934,
+      "equity_usd": 495.2934,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -4.706578,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -4.706578,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -4.706578,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 495.4559
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 496.0246
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 496.5563
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 496.5973
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 496.7326
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 496.1162
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 496.0852
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 496.4071
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 495.9443
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 495.9172
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 495.8839
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 496.5331
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 495.9404
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 495.8641
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 495.8642
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 495.872
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 495.8933
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 495.885
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 496.5196
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 495.8714
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 495.8412
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 496.4087
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 496.4405
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 495.8565
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 495.8245
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 495.7796
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 495.6293
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 495.6272
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 496.2481
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 495.6774
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 496.2409
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 496.2054
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 495.487
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 495.1777
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 495.2934
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 495.2934
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "b5f8bf5fb2040c1a16f7",
+          "wallet_key": "robinhood:0x500c71a50aee5a134058779075508f94c6f772c7",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108066546_0x776e6d2239e383abad89dc0fbeff4aaa3d1fa1e53b75a0149b456c6715d3ac24_44_1794018438",
+          "exit_observation": "robinhood_108108683_0x431aa21b7c4b0cff28f459a0d401145eb1864d285b530f36a724b7520a849521_54_1794022727",
+          "entry_time": "2026-11-07T02:25:38+00:00",
+          "exit_time": "2026-11-07T03:38:19Z",
+          "entry_time_et": "2026-11-06 09:25:38 PM ET",
+          "exit_time_et": "2026-11-06 10:38:19 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 95.293422,
+          "pnl_usd": -4.706578,
+          "return_pct": -4.7066,
+          "reason": "source_sell",
+          "fees_usd": 0.596756,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x431aa21b7c4b0cff28f459a0d401145eb1864d285b530f36a724b7520a849521",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x431aa21b7c4b0cff28f459a0d401145eb1864d285b530f36a724b7520a849521"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {
+        "entry_price_missing": 1
+      },
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x3d8f0c85b118a1238c54df859a8968039ae6be43": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 494.0942,
+      "equity_usd": 494.0942,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -5.90583,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -5.90583,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -5.90583,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 495.4498
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.7695
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 495.3097
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 495.2828
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 495.2498
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.8946
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 495.3059
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 495.2301
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 495.2302
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 495.238
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 495.2591
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 495.2508
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.8812
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 495.2373
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 495.2074
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.7711
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.8027
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 495.2225
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 495.1908
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 495.1461
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.9968
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.9947
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.6116
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 495.0447
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.6044
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.5691
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.8555
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.5482
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.5016
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 494.4619
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 495.0314
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.5093
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.5236
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.4926
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 494.2439
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 494.0942
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 494.0942
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "4c073a9fc3a55e910f14",
+          "wallet_key": "robinhood:0x3d8f0c85b118a1238c54df859a8968039ae6be43",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108071086_0xe7acbca35ccb243930b0e879cf480ee2ccfaecc507db360f250f78332d331a90_25_1794018740",
+          "exit_observation": "robinhood_108127029_0x64c91519a5be883a3dbdf8f46f0429db874841082723d503a40f49532e4a5278_27_1794024787",
+          "entry_time": "2026-11-07T02:37:37+00:00",
+          "exit_time": "2026-11-07T04:11:09Z",
+          "entry_time_et": "2026-11-06 09:37:37 PM ET",
+          "exit_time_et": "2026-11-06 11:11:09 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 94.09417,
+          "pnl_usd": -5.90583,
+          "return_pct": -5.9058,
+          "reason": "source_sell",
+          "fees_usd": 0.593147,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x64c91519a5be883a3dbdf8f46f0429db874841082723d503a40f49532e4a5278",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x64c91519a5be883a3dbdf8f46f0429db874841082723d503a40f49532e4a5278"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x85e63294285f1c49012871170254601c3c3c2685": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.5183,
+      "equity_usd": 493.5183,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.48173,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.48173,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.48173,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.8351
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.8083
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.7754
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.4171
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.8313
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.7558
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.756
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.7637
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.7847
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.7765
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.4037
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.763
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.7332
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.2941
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.3256
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.7483
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.7167
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.6723
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.5237
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.5216
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.1354
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.5713
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.1282
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.0932
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.3831
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.0773
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.031
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.9915
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.5582
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.0386
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.0529
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.022
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.7745
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.5183
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.5183
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "bcd960392bb46574d832",
+          "wallet_key": "robinhood:0x85e63294285f1c49012871170254601c3c3c2685",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069116_0x6940596756d84cd03f00306b12a890b20a37499d0f91d7bc2baa9cdc0c2eb60b_3_1794018542",
+          "exit_observation": "robinhood_108127040_0x2aeba5fb664e547c2de6a236be6014c5d3e08d29ad3187659d58c7dc0ed734c5_2_1794024785",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T04:11:10Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 11:11:10 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.51827,
+          "pnl_usd": -6.48173,
+          "return_pct": -6.4817,
+          "reason": "source_sell",
+          "fees_usd": 0.591414,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x2aeba5fb664e547c2de6a236be6014c5d3e08d29ad3187659d58c7dc0ed734c5",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x2aeba5fb664e547c2de6a236be6014c5d3e08d29ad3187659d58c7dc0ed734c5"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0xb544d956800283114e2a51bbe949e9a5603929e5": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.4006,
+      "equity_usd": 493.4006,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.599376,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.599376,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.599376,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 494.8722
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.8416
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.1593
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.7025
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.6757
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.6429
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.2836
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.6986
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.6233
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.6234
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.6312
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.6521
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.6439
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.2703
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.6305
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.6007
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.1609
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.1923
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.6158
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.5843
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.5399
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.3916
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.3894
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.0024
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.4391
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 494.9952
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 494.9602
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.2511
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 493.9458
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 493.8995
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.8601
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.4259
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 493.9071
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 493.9213
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 493.8905
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.6434
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.4006
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.4006
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "771e2437b69ee4702d3e",
+          "wallet_key": "robinhood:0xb544d956800283114e2a51bbe949e9a5603929e5",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108070192_0x3b98a9e534549d354712568166d74ab7463c0d0fb592261aaef9e780b3bca686_11_1794018637",
+          "exit_observation": "robinhood_108127039_0x7646944464df9b43a41ec260b71c7fb01b445c9adbf408160f4e3ccba3dad085_14_1794024785",
+          "entry_time": "2026-11-07T02:32:07+00:00",
+          "exit_time": "2026-11-07T04:11:10Z",
+          "entry_time_et": "2026-11-06 09:32:07 PM ET",
+          "exit_time_et": "2026-11-06 11:11:10 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.400624,
+          "pnl_usd": -6.599376,
+          "return_pct": -6.5994,
+          "reason": "source_sell",
+          "fees_usd": 0.59106,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x7646944464df9b43a41ec260b71c7fb01b445c9adbf408160f4e3ccba3dad085",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x7646944464df9b43a41ec260b71c7fb01b445c9adbf408160f4e3ccba3dad085"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0xcd765fa8dc1e1b367bbf5fda83800dda04faf175": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.4597,
+      "equity_usd": 493.4597,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.540297,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.540297,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.540297,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 494.8722
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.8416
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.1593
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.7025
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.6757
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.6429
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.2836
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.6986
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.6233
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.6234
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.6312
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.6521
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.6439
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.2703
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.6305
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.6007
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.1609
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.1923
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.6158
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.5843
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.5399
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.3916
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.3894
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.0024
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.4391
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 494.9952
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 494.9602
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.2511
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 493.9458
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 493.8995
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.8601
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.4259
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 493.9071
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 493.9213
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 493.8905
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.6434
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.4597
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.4597
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "56b2d67d8dc52a85c923",
+          "wallet_key": "robinhood:0xcd765fa8dc1e1b367bbf5fda83800dda04faf175",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108070191_0xa66cfb8958a450de6315bcf3a985637c4ec692b05ab1f6ad13def0fa32c2b484_5_1794018637",
+          "exit_observation": "robinhood_108127032_0x09e03f8ede1cf2a0c854ec38792c49718da8c5ffea860b8caaa0cbacb2d9415a_5_1794024785",
+          "entry_time": "2026-11-07T02:32:07+00:00",
+          "exit_time": "2026-11-07T04:11:09Z",
+          "entry_time_et": "2026-11-06 09:32:07 PM ET",
+          "exit_time_et": "2026-11-06 11:11:09 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.459703,
+          "pnl_usd": -6.540297,
+          "return_pct": -6.5403,
+          "reason": "source_sell",
+          "fees_usd": 0.591238,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x09e03f8ede1cf2a0c854ec38792c49718da8c5ffea860b8caaa0cbacb2d9415a",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x09e03f8ede1cf2a0c854ec38792c49718da8c5ffea860b8caaa0cbacb2d9415a"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x1e963c2c4433460b79535e9e34455209525f8317": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 494.0955,
+      "equity_usd": 494.0955,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -5.904476,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -5.904476,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -5.904476,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 495.4498
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.7695
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 495.3097
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 495.2828
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 495.2498
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.8946
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 495.3059
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 495.2301
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 495.2302
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 495.238
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 495.2591
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 495.2508
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.8812
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 495.2373
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 495.2074
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.7711
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.8027
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 495.2225
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 495.1908
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 495.1461
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.9968
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.9947
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.6116
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 495.0447
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.6044
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.5691
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.8555
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.5482
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.5016
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 494.4619
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 495.0314
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.5093
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.5236
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.4926
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 494.2439
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 494.0955
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 494.0955
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "f30e1663b23c3f262827",
+          "wallet_key": "robinhood:0x1e963c2c4433460b79535e9e34455209525f8317",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108071084_0x3b560080abe796cb2269e1a20777fce9388a1b2bc0486ef5fcaafbc44657e512_86_1794018740",
+          "exit_observation": "robinhood_108127029_0xb7cd57ddae29538132789479d6e5508d8bb57b667df87f028e56c36cf018107d_21_1794024786",
+          "entry_time": "2026-11-07T02:37:37+00:00",
+          "exit_time": "2026-11-07T04:11:09Z",
+          "entry_time_et": "2026-11-06 09:37:37 PM ET",
+          "exit_time_et": "2026-11-06 11:11:09 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 94.095524,
+          "pnl_usd": -5.904476,
+          "return_pct": -5.9045,
+          "reason": "source_sell",
+          "fees_usd": 0.593151,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0xb7cd57ddae29538132789479d6e5508d8bb57b667df87f028e56c36cf018107d",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0xb7cd57ddae29538132789479d6e5508d8bb57b667df87f028e56c36cf018107d"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x07493e0a4073a10f5155cde2bc283479b69d79a6": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.7062,
+      "equity_usd": 493.7062,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.293827,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.293827,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.293827,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.8351
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.8083
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.7754
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.4171
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.8313
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.7558
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.756
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.7637
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.7847
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.7765
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.4037
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.763
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.7332
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.2941
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.3256
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.7483
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.7167
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.6723
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.5237
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.5216
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.1354
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.5713
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.1282
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.0932
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.3831
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.0773
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.031
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.9915
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.5582
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.0386
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.0529
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.022
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.7745
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.7062
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.7062
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "6f1f50a1a5064efefb12",
+          "wallet_key": "robinhood:0x07493e0a4073a10f5155cde2bc283479b69d79a6",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069116_0xff847a6afa9e7b1a1470280132038265cbb834cc3f3eb073caf68694cbc16fd5_18_1794018542",
+          "exit_observation": "robinhood_108127008_0xdd2e6ac9d6fb8932f5c69626e798069e213fad5fa6fa766f56d4d0c78a162083_2_1794024785",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T04:11:07Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 11:11:07 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.706173,
+          "pnl_usd": -6.293827,
+          "return_pct": -6.2938,
+          "reason": "source_sell",
+          "fees_usd": 0.591979,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0xdd2e6ac9d6fb8932f5c69626e798069e213fad5fa6fa766f56d4d0c78a162083",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0xdd2e6ac9d6fb8932f5c69626e798069e213fad5fa6fa766f56d4d0c78a162083"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x0d877f71eb215c63ca359eec403ef039e758dfc3": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.5092,
+      "equity_usd": 493.5092,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.490792,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.490792,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.490792,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.8351
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.8083
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.7754
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.4171
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.8313
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.7558
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.756
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.7637
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.7847
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.7765
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.4037
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.763
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.7332
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.2941
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.3256
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.7483
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.7167
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.6723
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.5237
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.5216
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.1354
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.5713
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.1282
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.0932
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.3831
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.0773
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.031
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.9915
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.5582
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.0386
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.0529
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.022
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.7745
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.5092
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.5092
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "1f6ab7ad19686b4f8e1f",
+          "wallet_key": "robinhood:0x0d877f71eb215c63ca359eec403ef039e758dfc3",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069113_0x5fff28397d986ba2cc84905d78914bdb6b9478c770ae0151a84e82a903e12966_15_1794018541",
+          "exit_observation": "robinhood_108127041_0x144e5802603ad60def18f82b12e912afb8a65e6c5c3deb09eafc0e631d7cf494_5_1794024785",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T04:11:10Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 11:11:10 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.509208,
+          "pnl_usd": -6.490792,
+          "return_pct": -6.4908,
+          "reason": "source_sell",
+          "fees_usd": 0.591387,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x144e5802603ad60def18f82b12e912afb8a65e6c5c3deb09eafc0e631d7cf494",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x144e5802603ad60def18f82b12e912afb8a65e6c5c3deb09eafc0e631d7cf494"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0xb5eaef5dd85474dbbea8c6bd8f66fcfa76a09e70": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 494.3398,
+      "equity_usd": 494.3398,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -5.660205,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -5.660205,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -5.660205,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.8351
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.8083
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.7754
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.4171
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.8313
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.7558
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.756
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.7637
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.7847
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.7765
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.4037
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.763
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.7332
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.2941
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.3256
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.7483
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.7167
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.6723
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.5237
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.5216
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.1354
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.5713
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.1282
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.0932
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.3831
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.0773
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 494.3398
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 494.3398
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "faf3c2b03fb133d9778c",
+          "wallet_key": "robinhood:0xb5eaef5dd85474dbbea8c6bd8f66fcfa76a09e70",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069117_0xcf93d2e0432c1905fed88580f9f172881d3dba854f41a134330d3b1fc9c7fa0d_19_1794018542",
+          "exit_observation": "robinhood_108108683_0x48c50fc1f1fc7813c3b9fd7cbab2298a1fc96084d2b32073d03fdc067f1433fd_18_1794022725",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T03:38:19Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 10:38:19 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 94.339795,
+          "pnl_usd": -5.660205,
+          "return_pct": -5.6602,
+          "reason": "source_sell",
+          "fees_usd": 0.593886,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x48c50fc1f1fc7813c3b9fd7cbab2298a1fc96084d2b32073d03fdc067f1433fd",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x48c50fc1f1fc7813c3b9fd7cbab2298a1fc96084d2b32073d03fdc067f1433fd"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0xe23137d1d94ac01773a8e2f4281780fdcdb70e59": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.6953,
+      "equity_usd": 493.6953,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.304688,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.304688,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.304688,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.8351
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.8083
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.7754
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.4171
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.8313
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.7558
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.756
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.7637
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.7847
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.7765
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.4037
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.763
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.7332
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.2941
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.3256
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.7483
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.7167
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.6723
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.5237
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.5216
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.1354
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.5713
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.1282
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.0932
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.3831
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.0773
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.031
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.9915
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.5582
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.0386
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.0529
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.022
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.7745
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.6953
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.6953
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "4fa53b03f41a23649ea6",
+          "wallet_key": "robinhood:0xe23137d1d94ac01773a8e2f4281780fdcdb70e59",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069114_0x358a737cbda251ec8cbad7ac3527e43083d138ceb11c3433d29371f13f1bffe8_3_1794018541",
+          "exit_observation": "robinhood_108127011_0x5a8f1cd5d69a53b91ad09fe381f0e6cca53b19afe5798a16ba7befb04160fe70_12_1794024785",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T04:11:07Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 11:11:07 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.695312,
+          "pnl_usd": -6.304688,
+          "return_pct": -6.3047,
+          "reason": "source_sell",
+          "fees_usd": 0.591947,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x5a8f1cd5d69a53b91ad09fe381f0e6cca53b19afe5798a16ba7befb04160fe70",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x5a8f1cd5d69a53b91ad09fe381f0e6cca53b19afe5798a16ba7befb04160fe70"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0xb8e2714d8e100d32470c3537bfd3f08456bcfe8e": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.8508,
+      "equity_usd": 493.8508,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.149202,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.149202,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.149202,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 494.8722
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.8416
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.1593
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.7025
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.6757
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.6429
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.2836
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.6986
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.6233
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.6234
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.6312
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.6521
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.6439
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.2703
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.6305
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.6007
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.1609
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.1923
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.6158
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.5843
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.5399
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.3916
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.3894
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.0024
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.4391
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 494.9952
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 494.9602
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.2511
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 493.9458
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 493.8995
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.8601
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.4259
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 493.9071
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 493.9213
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 493.8905
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.8508
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.8508
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "0af95cd8d64f70f06a0c",
+          "wallet_key": "robinhood:0xb8e2714d8e100d32470c3537bfd3f08456bcfe8e",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108070197_0xdbbc666295ef4716a541cb7e354bb0beef38956bf801f2be4917eca5a5c7f16f_5_1794018638",
+          "exit_observation": "robinhood_108126701_0x52f2fbc3715beaa8ae34fb1bc4c253c3d19b001e61ce394e7ee176770fa50d1d_11_1794024708",
+          "entry_time": "2026-11-07T02:32:07+00:00",
+          "exit_time": "2026-11-07T04:10:33Z",
+          "entry_time_et": "2026-11-06 09:32:07 PM ET",
+          "exit_time_et": "2026-11-06 11:10:33 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.850798,
+          "pnl_usd": -6.149202,
+          "return_pct": -6.1492,
+          "reason": "source_sell",
+          "fees_usd": 0.592415,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x52f2fbc3715beaa8ae34fb1bc4c253c3d19b001e61ce394e7ee176770fa50d1d",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x52f2fbc3715beaa8ae34fb1bc4c253c3d19b001e61ce394e7ee176770fa50d1d"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x129c7f15f9e3a5cb40fd403cad331680b65f6b5e": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 489.9756,
+      "equity_usd": 489.9756,
+      "trades": 2,
+      "closed_trades": 2,
+      "open_positions": 0,
+      "realized_pnl_usd": -10.024445,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -10.024445,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -10.024445,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 495.4559
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 496.0246
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 496.5563
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 496.5973
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 496.7326
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 496.1162
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 496.0852
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 496.4071
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 491.4248
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 491.3707
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 491.3044
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 492.5995
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 491.4171
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 491.2649
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 491.2651
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 491.2807
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 491.3231
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 491.3065
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 492.5727
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 491.2794
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 491.2192
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 492.3514
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 492.415
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 491.2497
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 491.1859
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 491.0963
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 490.7964
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 490.7921
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 492.031
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 490.8924
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 492.0166
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 491.9458
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 490.5125
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 489.8953
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 489.9756
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 489.9756
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "c9e191c6ddb2e756f28b",
+          "wallet_key": "robinhood:0x129c7f15f9e3a5cb40fd403cad331680b65f6b5e",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108066631_0x173e164965faa2d2889793f6418aa42fc77871df38d51af0da9bd5414a547035_27_1794018438",
+          "exit_observation": "robinhood_108108683_0x3d714e690fc07d86a51ac571108183c0129919663c147fbbe90f82a4d7712478_83_1794022728",
+          "entry_time": "2026-11-07T02:25:38+00:00",
+          "exit_time": "2026-11-07T03:38:19Z",
+          "entry_time_et": "2026-11-06 09:25:38 PM ET",
+          "exit_time_et": "2026-11-06 10:38:19 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 95.217885,
+          "pnl_usd": -4.782115,
+          "return_pct": -4.7821,
+          "reason": "source_sell",
+          "fees_usd": 0.596528,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x3d714e690fc07d86a51ac571108183c0129919663c147fbbe90f82a4d7712478",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x3d714e690fc07d86a51ac571108183c0129919663c147fbbe90f82a4d7712478"
+        },
+        {
+          "id": "96e797e972f4d112a633",
+          "wallet_key": "robinhood:0x129c7f15f9e3a5cb40fd403cad331680b65f6b5e",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108075909_0x48da5dba5afdf3b87f717056ce4e7d503f836db578b9ea551cdd2e7c12e97510_11_1794019251",
+          "exit_observation": "robinhood_108108683_0x3d714e690fc07d86a51ac571108183c0129919663c147fbbe90f82a4d7712478_83_1794022728",
+          "entry_time": "2026-11-07T02:43:14+00:00",
+          "exit_time": "2026-11-07T03:38:19Z",
+          "entry_time_et": "2026-11-06 09:43:14 PM ET",
+          "exit_time_et": "2026-11-06 10:38:19 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 94.75767,
+          "pnl_usd": -5.24233,
+          "return_pct": -5.2423,
+          "reason": "source_sell",
+          "fees_usd": 0.595143,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x3d714e690fc07d86a51ac571108183c0129919663c147fbbe90f82a4d7712478",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x3d714e690fc07d86a51ac571108183c0129919663c147fbbe90f82a4d7712478"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0xa7f7c556b2ec74c0436626cdb9071a34f9d98add": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.4844,
+      "equity_usd": 493.4844,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.515615,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.515615,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.515615,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.8351
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.8083
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.7754
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.4171
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.8313
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.7558
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.756
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.7637
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.7847
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.7765
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.4037
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.763
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.7332
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.2941
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.3256
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.7483
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.7167
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.6723
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.5237
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.5216
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.1354
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.5713
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.1282
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.0932
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.3831
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.0773
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.031
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.9915
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.5582
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.0386
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.0529
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.022
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.7745
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.4844
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.4844
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "62f8dea40a3d64c5189f",
+          "wallet_key": "robinhood:0xa7f7c556b2ec74c0436626cdb9071a34f9d98add",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069117_0xe4f5961197d24daab5bde7e9371c17780f74ee71a33638eb7e5758e9f5d25c32_2_1794018541",
+          "exit_observation": "robinhood_108127044_0x86e54c70b5ed81f8665015e4a8c0c4baa1ce3498843b7b51045b13095326df53_2_1794024785",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T04:11:10Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 11:11:10 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.484385,
+          "pnl_usd": -6.515615,
+          "return_pct": -6.5156,
+          "reason": "source_sell",
+          "fees_usd": 0.591312,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x86e54c70b5ed81f8665015e4a8c0c4baa1ce3498843b7b51045b13095326df53",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x86e54c70b5ed81f8665015e4a8c0c4baa1ce3498843b7b51045b13095326df53"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x5e8ec4a211fb66af31a72181fbe3905b2595d800": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.6176,
+      "equity_usd": 493.6176,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.38237,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.38237,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.38237,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.8351
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.8083
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.7754
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.4171
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.8313
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.7558
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.756
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.7637
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.7847
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.7765
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.4037
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.763
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.7332
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.2941
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.3256
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.7483
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.7167
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.6723
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.5237
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.5216
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.1354
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.5713
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.1282
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.0932
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.3831
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.0773
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.031
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.9915
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.5582
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.0386
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.0529
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.022
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.7745
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.6176
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.6176
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "bd0ae2743a98bcfc2c67",
+          "wallet_key": "robinhood:0x5e8ec4a211fb66af31a72181fbe3905b2595d800",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069118_0x32c2cb4e0a50393f30296a146b14b28ad5cc4293a610a7ec522d19451e1b8d95_3_1794018541",
+          "exit_observation": "robinhood_108127030_0x8b9add6e3f3d19cf270f7774f426c1c03cb69bb1c8ad65cdc26bf86703537505_14_1794024785",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T04:11:09Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 11:11:09 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.61763,
+          "pnl_usd": -6.38237,
+          "return_pct": -6.3824,
+          "reason": "source_sell",
+          "fees_usd": 0.591713,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x8b9add6e3f3d19cf270f7774f426c1c03cb69bb1c8ad65cdc26bf86703537505",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x8b9add6e3f3d19cf270f7774f426c1c03cb69bb1c8ad65cdc26bf86703537505"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0xe7c9312ab0681f1653215b2be65a4356758653d1": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 494.1526,
+      "equity_usd": 494.1526,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -5.847374,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -5.847374,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -5.847374,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 495.4498
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.7695
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 495.3097
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 495.2828
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 495.2498
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.8946
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 495.3059
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 495.2301
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 495.2302
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 495.238
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 495.2591
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 495.2508
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.8812
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 495.2373
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 495.2074
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.7711
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.8027
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 495.2225
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 495.1908
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 495.1461
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.9968
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.9947
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.6116
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 495.0447
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.6044
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.5691
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.8555
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.5482
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.5016
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 494.4619
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 495.0314
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.5093
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.5236
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.4926
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 494.2439
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 494.1526
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 494.1526
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "ef92b6664215af01ac91",
+          "wallet_key": "robinhood:0xe7c9312ab0681f1653215b2be65a4356758653d1",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108071082_0x645b0a1d8e1d445f178044b2702c173642939d5830a3a3ee91b0a7869d1d6b12_2_1794018740",
+          "exit_observation": "robinhood_108127011_0x1b89122d7e55a2bc1c4223ba32b35d664f707a10dede15e8efd7d8ccf23cad70_27_1794024785",
+          "entry_time": "2026-11-07T02:37:37+00:00",
+          "exit_time": "2026-11-07T04:11:07Z",
+          "entry_time_et": "2026-11-06 09:37:37 PM ET",
+          "exit_time_et": "2026-11-06 11:11:07 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 94.152626,
+          "pnl_usd": -5.847374,
+          "return_pct": -5.8474,
+          "reason": "source_sell",
+          "fees_usd": 0.593323,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x1b89122d7e55a2bc1c4223ba32b35d664f707a10dede15e8efd7d8ccf23cad70",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x1b89122d7e55a2bc1c4223ba32b35d664f707a10dede15e8efd7d8ccf23cad70"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x64229407a8b8bb6ae4814ece31230f4de9d3e390": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 494.1413,
+      "equity_usd": 494.1413,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -5.858664,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -5.858664,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -5.858664,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 495.4498
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.7695
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 495.3097
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 495.2828
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 495.2498
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.8946
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 495.3059
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 495.2301
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 495.2302
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 495.238
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 495.2591
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 495.2508
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.8812
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 495.2373
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 495.2074
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.7711
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.8027
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 495.2225
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 495.1908
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 495.1461
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.9968
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.9947
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.6116
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 495.0447
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.6044
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.5691
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.8555
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.5482
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.5016
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 494.4619
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 495.0314
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.5093
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.5236
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.4926
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 494.2439
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 494.1413
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 494.1413
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "22b7c3260c99708a6005",
+          "wallet_key": "robinhood:0x64229407a8b8bb6ae4814ece31230f4de9d3e390",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108071082_0x27a90052fb1ead94541cda662d08b566b9e0be5f4501f1c3b07f937c738bb878_17_1794018741",
+          "exit_observation": "robinhood_108127011_0xfc58d77ab14a56fd099d094983c7be8b64c8892009af92f509368e7ef2ac888c_36_1794024785",
+          "entry_time": "2026-11-07T02:37:37+00:00",
+          "exit_time": "2026-11-07T04:11:07Z",
+          "entry_time_et": "2026-11-06 09:37:37 PM ET",
+          "exit_time_et": "2026-11-06 11:11:07 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 94.141336,
+          "pnl_usd": -5.858664,
+          "return_pct": -5.8587,
+          "reason": "source_sell",
+          "fees_usd": 0.593289,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0xfc58d77ab14a56fd099d094983c7be8b64c8892009af92f509368e7ef2ac888c",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0xfc58d77ab14a56fd099d094983c7be8b64c8892009af92f509368e7ef2ac888c"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x5c0836451b26edf2744061cbf2271257e1bcfdb1": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 494.0332,
+      "equity_usd": 494.0332,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -5.966816,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -5.966816,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -5.966816,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 495.4498
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.7695
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 495.3097
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 495.2828
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 495.2498
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.8946
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 495.3059
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 495.2301
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 495.2302
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 495.238
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 495.2591
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 495.2508
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.8812
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 495.2373
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 495.2074
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.7711
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.8027
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 495.2225
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 495.1908
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 495.1461
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.9968
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.9947
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.6116
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 495.0447
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.6044
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.5691
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.8555
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.5482
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.5016
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 494.4619
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 495.0314
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.5093
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.5236
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.4926
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 494.2439
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 494.0332
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 494.0332
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "47c8978ccd05c9fe0b0e",
+          "wallet_key": "robinhood:0x5c0836451b26edf2744061cbf2271257e1bcfdb1",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108071082_0x22d25df64d54ac80ce8c824eebebb6cda11de4ef032f6709e62b744b4cfb8c7c_5_1794018740",
+          "exit_observation": "robinhood_108127034_0xe13a6c41492f4525fab983a3ca6660d0ebee56042cc19326da2b8484722e414f_32_1794024785",
+          "entry_time": "2026-11-07T02:37:37+00:00",
+          "exit_time": "2026-11-07T04:11:09Z",
+          "entry_time_et": "2026-11-06 09:37:37 PM ET",
+          "exit_time_et": "2026-11-06 11:11:09 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 94.033184,
+          "pnl_usd": -5.966816,
+          "return_pct": -5.9668,
+          "reason": "source_sell",
+          "fees_usd": 0.592963,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0xe13a6c41492f4525fab983a3ca6660d0ebee56042cc19326da2b8484722e414f",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0xe13a6c41492f4525fab983a3ca6660d0ebee56042cc19326da2b8484722e414f"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    },
+    "robinhood:0x7407e0f50a19b026b8a75b3b9cbc7c1400f618be": {
+      "enabled": true,
+      "status": "replayed_sample_insufficient_for_forecast",
+      "starting_balance_usd": 500,
+      "balance_usd": 493.8997,
+      "equity_usd": 493.8997,
+      "trades": 1,
+      "closed_trades": 1,
+      "open_positions": 0,
+      "realized_pnl_usd": -6.100313,
+      "today_realized_pnl_usd": 0,
+      "daily_history": [
+        {
+          "date_et": "2026-11-06",
+          "pnl_usd": -6.100313,
+          "partial": true
+        }
+      ],
+      "monthly_history": [
+        {
+          "month": "2026-11",
+          "pnl_usd": -6.100313,
+          "partial": true
+        }
+      ],
+      "equity_history": [
+        {
+          "time": "2026-11-07T02:19:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:20:19Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:21:16Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:22:05Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:24:12Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:25:38Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:27:48Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:28:35Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:29:14Z",
+          "equity_usd": 500
+        },
+        {
+          "time": "2026-11-07T02:30:29Z",
+          "equity_usd": 495.4806
+        },
+        {
+          "time": "2026-11-07T02:32:07Z",
+          "equity_usd": 495.6143
+        },
+        {
+          "time": "2026-11-07T02:37:37Z",
+          "equity_usd": 495.005
+        },
+        {
+          "time": "2026-11-07T02:39:01Z",
+          "equity_usd": 494.9744
+        },
+        {
+          "time": "2026-11-07T02:40:34Z",
+          "equity_usd": 495.2926
+        },
+        {
+          "time": "2026-11-07T02:43:14Z",
+          "equity_usd": 494.8351
+        },
+        {
+          "time": "2026-11-07T02:45:36Z",
+          "equity_usd": 494.8083
+        },
+        {
+          "time": "2026-11-07T02:46:22Z",
+          "equity_usd": 494.7754
+        },
+        {
+          "time": "2026-11-07T02:50:09Z",
+          "equity_usd": 495.4171
+        },
+        {
+          "time": "2026-11-07T02:51:27Z",
+          "equity_usd": 494.8313
+        },
+        {
+          "time": "2026-11-07T02:54:49Z",
+          "equity_usd": 494.7558
+        },
+        {
+          "time": "2026-11-07T02:55:32Z",
+          "equity_usd": 494.756
+        },
+        {
+          "time": "2026-11-07T03:00:32Z",
+          "equity_usd": 494.7637
+        },
+        {
+          "time": "2026-11-07T03:01:18Z",
+          "equity_usd": 494.7847
+        },
+        {
+          "time": "2026-11-07T03:02:15Z",
+          "equity_usd": 494.7765
+        },
+        {
+          "time": "2026-11-07T03:08:10Z",
+          "equity_usd": 495.4037
+        },
+        {
+          "time": "2026-11-07T03:09:01Z",
+          "equity_usd": 494.763
+        },
+        {
+          "time": "2026-11-07T03:10:29Z",
+          "equity_usd": 494.7332
+        },
+        {
+          "time": "2026-11-07T03:11:15Z",
+          "equity_usd": 495.2941
+        },
+        {
+          "time": "2026-11-07T03:12:06Z",
+          "equity_usd": 495.3256
+        },
+        {
+          "time": "2026-11-07T03:13:00Z",
+          "equity_usd": 494.7483
+        },
+        {
+          "time": "2026-11-07T03:16:15Z",
+          "equity_usd": 494.7167
+        },
+        {
+          "time": "2026-11-07T03:17:30Z",
+          "equity_usd": 494.6723
+        },
+        {
+          "time": "2026-11-07T03:20:35Z",
+          "equity_usd": 494.5237
+        },
+        {
+          "time": "2026-11-07T03:21:02Z",
+          "equity_usd": 494.5216
+        },
+        {
+          "time": "2026-11-07T03:23:53Z",
+          "equity_usd": 495.1354
+        },
+        {
+          "time": "2026-11-07T03:24:07Z",
+          "equity_usd": 494.5713
+        },
+        {
+          "time": "2026-11-07T03:31:54Z",
+          "equity_usd": 495.1282
+        },
+        {
+          "time": "2026-11-07T03:34:09Z",
+          "equity_usd": 495.0932
+        },
+        {
+          "time": "2026-11-07T03:36:32Z",
+          "equity_usd": 494.3831
+        },
+        {
+          "time": "2026-11-07T03:38:19Z",
+          "equity_usd": 494.0773
+        },
+        {
+          "time": "2026-11-07T03:39:17Z",
+          "equity_usd": 494.031
+        },
+        {
+          "time": "2026-11-07T03:41:00Z",
+          "equity_usd": 493.9915
+        },
+        {
+          "time": "2026-11-07T03:56:08Z",
+          "equity_usd": 494.5582
+        },
+        {
+          "time": "2026-11-07T04:00:23Z",
+          "equity_usd": 494.0386
+        },
+        {
+          "time": "2026-11-07T04:07:12Z",
+          "equity_usd": 494.0529
+        },
+        {
+          "time": "2026-11-07T04:10:07Z",
+          "equity_usd": 494.022
+        },
+        {
+          "time": "2026-11-07T04:11:00Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:12:07Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:14:24Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:17:09Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:23:15Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:24:00Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:37:41Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:42:13Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:43:10Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:49:37Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:51:01Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:53:20Z",
+          "equity_usd": 493.8997
+        },
+        {
+          "time": "2026-11-07T04:54:01Z",
+          "equity_usd": 493.8997
+        }
+      ],
+      "expected_profit_per_day_usd": null,
+      "capital_needed_for_300_per_day_usd": null,
+      "sampled_profit_per_day_usd": null,
+      "goal_hit": false,
+      "standout": false,
+      "fills": [
+        {
+          "id": "3de291f7f672a1420e7f",
+          "wallet_key": "robinhood:0x7407e0f50a19b026b8a75b3b9cbc7c1400f618be",
+          "chain": "robinhood",
+          "token": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+          "source_buy": "robinhood_108069112_0x685a4feb8a26e156b99f11fedf2f26e25456fe42fc872b7a48847916b0ce193a_8_1794018541",
+          "exit_observation": "robinhood_108126703_0x3db002a8446c10ea35903affdc28ad49ebc76dccc50c9d8cddb21ea935f27c42_37_1794024708",
+          "entry_time": "2026-11-07T02:30:29+00:00",
+          "exit_time": "2026-11-07T04:10:34Z",
+          "entry_time_et": "2026-11-06 09:30:29 PM ET",
+          "exit_time_et": "2026-11-06 11:10:34 PM ET",
+          "cost_usd": 100,
+          "proceeds_usd": 93.899687,
+          "pnl_usd": -6.100313,
+          "return_pct": -6.1003,
+          "reason": "source_sell",
+          "fees_usd": 0.592562,
+          "slippage_pct_per_side": 2.006535,
+          "source_tx": "0x3db002a8446c10ea35903affdc28ad49ebc76dccc50c9d8cddb21ea935f27c42",
+          "source_explorer": "https://robinhoodchain.blockscout.com/tx/0x3db002a8446c10ea35903affdc28ad49ebc76dccc50c9d8cddb21ea935f27c42"
+        }
+      ],
+      "reason": "Retrospective wallet selection, sparse historical ticks, partial coverage. Expected daily profit and capital needed remain insufficient data, not a forecast. Modeled fees/slippage, not measured execution costs.",
+      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "sample_days": 0.1075,
+      "goal_stop_days": [],
+      "skipped": {},
+      "assumptions": {
+        "fee_bps_per_side": 30,
+        "network_fee_usd_per_side": 0.005,
+        "delay_seconds": 60,
+        "slippage_pct_per_side": 2,
+        "take_profit_pct": 35,
+        "cash_allocation_per_entry": 100,
+        "source_sell_exit": "Exit entire copied token position at first observed source sell. No stop-loss.",
+        "historical_liquidity": "Current pool liquidity used as proxy; no executable historical depth."
+      }
+    }
+  }
+}

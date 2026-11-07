@@ -1,106 +1,121 @@
-# Wallet Hunters / The Astral Vault
+# Wallet Hunters — The Astral District
 
-A separate, public, read-only Solana research observatory. **No trading, wallet connection, private keys, execution or external alert messages.** Independent of Trenchfloor and Tickworks. Six named **deterministic Python stages**, not six autonomous AI models.
+Read-only, public on-chain wallet research with **50 executable hunting jobs**, a Three.js city, and a fully 3D observatory. Separate from Trenchfloor and Tickworks. **No private keys, funded wallets, transactions, real trading, or external alert messages.**
 
-- Repository: https://github.com/joeypbrrr/wallet-hunters
-- Site: https://joeypbrrr.github.io/wallet-hunters/
-- Snapshot: `data/wallets.json` · source observations: `data/observations.json`
-- **Current owner-approved state: hourly scheduler ON; all feature flags ON.** Simulation execution/backtesting, agent learning, lessons board, daily-goal tracker and Standout badges are **in progress**, clearly labeled on the site. No simulated fills or profit forecasts are invented. The 3D scene animates; chain data is a timestamped static snapshot.
+- Repo: https://github.com/joeypbrrr/wallet-hunters
+- Pages: https://joeypbrrr.github.io/wallet-hunters/
+- Source snapshots: `data/wallets.json`, `data/observations.json`
+- All feature flags ON by owner approval. One local hourly publisher is ON. No Ethereum-mainnet ingestion.
 
-## Six agents
+## Fifty real hunters
 
-1. **Scout** — DexScreener market discovery plus GeckoTerminal trending Solana pool selection.
-2. **Entry Cartographer** — recent observed swaps and earliest *observed* buyers; samples transaction signers via public Solana RPC.
-3. **PnL Accountant** — conservative observed-lot FIFO matching, sell-sample win rates, partial monthly P&L, unknown starting inventory excluded.
-4. **Integrity Analyst** — auditable high-frequency / anomalous / ultra-short-hold heuristics; optional wallet grouping, not cluster exclusion.
-5. **Copyability Ranker** — baseline evidence ranking; optional delayed-entry capture and 3× move research score.
-6. **Observatory Publisher** — mobile Three.js celestial vault, ranked observation queue, GMGN/Solscan links and ET agent logs.
+`agents.json` contains 50 named profiles, each with an ID, chain, job, personality, quirk, specialization, neighborhood and **distinct executable slice configuration**. These are deterministic research workers, **not 50 LLM services**. The fictional personality does not manufacture evidence or place orders.
 
-## Actual data and limits
+- **30 Solana hunters** — five liquidity bands × six holding windows: 1–2h, 2–6h, 6–12h, 12–24h, 1–3d and 3–7d.
+- **15 BNB hunters** — five liquidity bands × three windows: 1–6h, 6–24h and 1–7d.
+- **5 Robinhood hunters** — five liquidity bands, 1h–7d holding window.
 
-All API requests use HTTPS port 443 and no API keys. Tested on this box:
+Liquidity bands: $25k–$100k, $100k–$500k, $500k–$2m, $2m–$10m, and $10m+. Allocations are a provisional 60/30/10 research weighting, not a measured market-share claim. Every cycle executes all 50 filters/scorers over real shared evidence; each contributes its candidate set into the master queue. An empty slice is logged as `completed_no_match`, not hidden or filled with fake wallets. `data/hunting-results.json` exposes the individual runs, best candidate, sample count and per-agent paper account.
 
-- `https://api.dexscreener.com/latest/dex/search?q=SOL`: **200**, Solana market scouting. Search is a sample, not every token or wallet. It does not expose wallet P&L.
-- GeckoTerminal `/api/v2/networks/solana/trending_pools` and `/pools/{address}/trades`: **200**, token selection, current liquidity and recent trade windows (up to ~300 records per selected pool in this test). Calls are spaced 2.1 seconds apart, no 429 bypass. This is not launch history or full-wallet history. Paid APIs are not used.
-- `https://api.mainnet-beta.solana.com`: **200** for `getSlot`, five `getTransaction` samples, and three `getSignaturesForAddress` probes. Signature probes each returned 1,000 records but reached back only minutes for these highly active wallets. Metadata alone does not reconstruct swaps or cost basis. Public RPC is rate-limited; unrestricted historical scanning is not implemented or claimed.
-- Solscan legacy public account endpoint: TLS EOF failure. **Not used for data**. Solscan account links work independently.
-- GMGN: **links only**, not scraped or used for data. No Cloudflare bypass.
+`research.FetchQueue` is the **only fetch queue** used by the pipeline. Requests are serial, identical requests are cached in-cycle, and provider-host spacing is currently **13 seconds for GeckoTerminal, 5.1 seconds for Solana RPC and 1.1 seconds for EVM RPC**, with a conservative two selected pools per chain. HTTP 429 suspends that host for the rest of the cycle; no bypass or same-cycle retry. Earlier tests reached GeckoTerminal rate limits, so source errors and cached/unavailable chain status are explicitly published. One chain failing never invents data for another.
 
-**First real cycle:** 16 DexScreener Solana pairs; 10 GeckoTerminal token/pool windows; 2,995 swap observations; 946 distinct provider-reported wallets; 581 FIFO matched sell samples; five RPC transaction samples checked; no bot/wash heuristic exclusions. Eighteen wallets meet the *observed average-hold window alone*. Zero meet the 20-sell / three-observed-positive-month evidence floor. All rankings are provisional. The entire observed pool sample spans roughly 23h53m, but individual pool/wallet coverage is much shorter and uneven. **Days/weeks of complete wallet history and monthly consistency have not been established.** Do not present these as proven insider or copy-trade wallets.
+## City + fully 3D interior
 
-Observed P&L is **not total-account P&L**: only matched quantities within sampled swaps, before network fees, protocol fees, token taxes, transfers, MEV, and unknown pre-existing inventory. Partial unmatched sells are excluded for the unknown quantity. A sell sample can be a partial exit, not an independent round-trip investment. Provider wallet attribution can be a router/program; only five transactions were independently sampled. Win rates are biased by sampling, survivorship and missing inventory.
+City districts: Solana / Signal Quarter, BNB / Jade Ledger, Robinhood Heights. The central landmark contains the preserved dark observatory. City/Observatory buttons smoothly move the perspective camera; `#city` opens the exterior directly.
 
-Monthly bins use America/New_York; all are explicitly partial. Missing months are unknown, never zero. “Qualified sample only” requires 20 matched sells, at least three observed months, all net positive; it **still does not establish complete histories**. It is not an endorsement. Monthly consistency does not affect basic scores while its flag is OFF; it does affect the optional copy score because it is essential to that research objective.
+All room furniture, 50 stations, desks, chairs, working figures, clock-in board and shared-lessons board are **Three.js meshes**. Boards and station screens carry canvas textures for real snapshot text. No flat room image or CSS mock substitutes for the space. Every station and commuting figure maps to one of the 50 real profile IDs. Tap a station/agent to inspect its actual slice, current best wallet, links and paper-account state. Commutes/clock-ins are cosmetic representations; real job execution is evidenced separately by timestamps and per-agent results. The phone renderer caps pixel ratio at 1 and aims at 30 rendered frames per second; actual performance depends on the phone/GPU. An accessible HTML table remains usable without WebGL/CDN access.
 
-## Scores and thresholds
+## Three supported chains, verified
 
-Basic score = `(65% observed win rate + 35% bounded signed-log observed profit component) × sample confidence`. Confidence = `min(1, matched sells/20) × min(1, observed months/3)`. Unknown metrics remain null, not fabricated zero returns. Qualified samples sort first, then descending score; rows with no matched sells remain an unscored observation queue.
+| Chain | Provider IDs | RPC | Explorer / links |
+|---|---|---|---|
+| Solana | DexScreener `solana`, GeckoTerminal `solana` | `https://api.mainnet-beta.solana.com` | Solscan + GMGN `/sol/address/` |
+| BNB mainnet, chain ID **56** | `bsc` / `bsc` | `https://bsc-rpc.publicnode.com` | BscScan + GMGN `/bsc/address/` |
+| Robinhood mainnet, chain ID **4663** (`0x1237`) | `robinhood` / `robinhood` | `https://rpc.mainnet.chain.robinhood.com` | Official `https://robinhoodchain.blockscout.com`; GMGN support unverified, so **no GMGN link** |
 
-The **optional** copy score weights are shown per wallet: 25% win rate, 20% 3× move hit rate, 20% ≥35% capture rate, 10% ≥50% capture rate, 15% observed monthly consistency, 5% follower hold length, 5% current liquidity; multiplied by sample confidence. Missing copy price paths result in an unknown score, not a recommended wallet.
+Robinhood is **live mainnet**, not the testnet (46630). Verified from the [official connecting guide](https://docs.robinhood.com/chain/connecting/), live `eth_chainId`, DexScreener results, GeckoTerminal network listing and live pool/trade feeds. Its native gas token being ETH does **not** mean this pipeline queries Ethereum mainnet. The official explorer API stats response was not JSON in this test, so that API is not a data dependency. No accounts or API keys were created.
 
-`config.json` holds:
+All reads use HTTPS port 443. DexScreener discovers pairs/current liquidity. GeckoTerminal supplies timestamped recent swap windows, usually up to about 300 trades/pool. These are **not full-chain, launch or full-wallet histories**. Public Solana RPC checks a small transaction/signer sample and SOL-transfer evidence.
 
-- `min_avg_hold_seconds: 3600` and `max_avg_hold_seconds: 604800`: **latest owner rule replaces earlier 10-second/day rules**. Copy mode excludes an unknown average or average outside one hour–one week. Basic mode keeps those rows and labels them. Hold averages derive from matched observed FIFO sells.
-- `big_move_multiple: 3`: **3× from entry = +200%**, not +300%. Counts only observed matched holding windows within the configured hold range, not price rises after the wallet exited. Weighted FIFO inferred entry time and first sampled entry price are approximations, not the true execution. Historical entry market cap and true peak are unknown.
-- `copy_delay_seconds: 60`, `copy_entry_max_gap_seconds: 300`: first observed follower price at least 60 seconds after inferred entry, no more than 300 additional seconds later. Missing price → unknown.
-- `copy_slippage_pct: 2` **each way**, plus conservative `copy_order_usd: 100 / current liquidity` impact each way (capped at 50%). `minimum_liquidity_usd: 25000` scales liquidity score. Current liquidity is a proxy, not historical executable depth.
-- `copy_capture_targets_pct: [35,50]`: rate of matched one-hour–one-week windows whose **best later sampled price**, before the observed wallet sell, could have crossed those net thresholds. This is an **optimistic retrospective opportunity metric**, not an executable strategy or expected return. No intrabar fills, complete fade path, gas, token tax or live execution guarantee.
-- `minimum_closed_samples: 20`, `minimum_observed_months: 3`.
+### Proper EVM parsing
 
-**Limitation:** this free first snapshot is not sufficient for a reliable days/weeks historical copy backtest. Do not claim these thresholds identify consistently profitable wallets yet. A historical, indexed swap/price dataset or prolonged accumulation is needed. No accounts or paid data subscriptions were created.
+`research.verify_evm` queries `eth_chainId`, `eth_blockNumber`, bounded `eth_getLogs` on a selected pair/pool, `token0()`, `token1()`, and token decimals through `eth_call`. It decodes standard V2 Swap unsigned amount words and V3 signed amount deltas using Ethereum Keccak topics. It reads transaction origin, successful receipts, native gas fees and block timestamps; it does **not** misidentify the event's router/recipient as the owner.
 
-## Optional features: initially OFF; now all ON by owner approval
+Only a bounded recent block window and three log transactions are independently checked per EVM chain. A quiet pool can have zero logs in that window. Unsupported pool ABIs fail explicitly. Raw logs with no historical USD price remain unpriced and are excluded from P&L/copy fills. Current DexScreener spot prices are **not** silently used as historical execution prices. Smart-account/bundler attribution and missing history remain limitations.
 
-Edit the relevant boolean under `features` in `config.json` to `true` (currently all enabled), or to `false` to disable it, then run one approved research snapshot and publish it. No site toggle silently changes backend configuration.
+## Ranking, filters and limits
 
-| Flag | When enabled |
-|---|---|
-| `wallet_pnl_tracker` | Per-wallet monthly observed P&L table; ledger observations persist across runs. |
-| `consistency_score` | Show profitable/loss month counts; blend consistency into basic score (80/20). Copy mode always includes consistency. |
-| `wallet_tiers` | `unverified` by default; `sharp`: sample floor + ≥65% win rate + ≥60s median hold + ≥$25k liquidity; `whale (observed profit)`: sample floor + ≥$10k observed profit; `early-entry`: sample floor + ≥50% 3× hit rate + ≥60s median hold. Never “proven insider.” |
-| `wallet_history_chart` | Per-wallet SVG monthly observed P&L chart. No synthetic past history. |
-| `new_buy_alert_feed` | Site-only newly observed buys for the top ten current rows; event-ID deduplication. First-ever baseline does not flood alerts. Hourly, sampled, not real-time or complete wallet monitoring. |
-| `copy_trade_ranking` | Apply the 1h–1week average-hold exclusion, delayed-entry 35/50% capture and 3× move score breakdown. |
-| `cluster_detection` | Shared observed funder (2–10 recipients), direct RPC-observed SOL-transfer links, or co-buys within 3s across ≥3 distinct sampled tokens. Group linked wallets; don't drop clusters. |
+- Copy mode requires observed average hold **1 hour–1 week** (`min_avg_hold_seconds=3600`, `max_avg_hold_seconds=604800`) and current sampled mean liquidity ≥$25k. Unknown hold or liquidity does not pass.
+- Bot/wash exclusions: >60 sampled swaps/minute, repeated sub-2-second matched holds, or majority provider-anomalous trades. These are incomplete heuristics, **not proof** of MEV or manipulation.
+- Qualification floor: ≥20 matched source sells and ≥3 observed positive monthly bins. All bins remain partial; reaching this floor still does not certify complete history. Current tests have **zero fully qualified wallets**.
+- Source P&L is FIFO-matched observed lots, **before fees**, excluding unknown starting inventory. A partial sell is a sample, not an independent complete investment. Missing months are unknown, never zero. Monthly boundaries use America/New_York.
+- Copy score weights: 25% observed win rate, 20% 3× move hit rate, 20% ≥35% best-price capture, 10% ≥50% capture, 15% observed monthly consistency, 5% hold length, 5% liquidity; multiplied by sample confidence. Minimum-history confidence strongly discounts thin samples.
+- **3× means +200%**, not +300%. Only observed matched holding windows are checked, with weighted-FIFO entry-time approximation. Historical entry market cap, true peak and complete fade path are unknown.
+- Best-price capture is a diagnostic, **not executable P&L**: first sampled entry ≥60s after the inferred buy, maximum 300s additional entry gap, modeled each-side slippage/fees, and best sampled later price before the source exit. Actual paper replay below does not use future peaks to choose its exit.
+- Consistency is essential to copy ranking. Its separate flag also controls the optional basic-score blend.
 
-Clusters have stable hash IDs, per-member GMGN and Solscan links, matched-sample weighted win rate/score and summed observed P&L, with evidence on the site and glowing gold constellation nodes. Shared funders can be exchanges; timing can be coincidence. Links **are not proof of shared control**. RPC transfer sampling is very small, so detection is incomplete. Summed member P&L may double-count internal economic exposure. Pure bot/wash suspicions are separately excluded by conservative, auditable heuristics, which also can misclassify; no definitive on-chain identity claims are made.
+## Completed $500 copy simulation
 
-## Run manually / approved hourly schedule
+Two clearly separated account types:
+
+1. **Per-wallet retrospective diagnostics** replay the available sampled market tape from a fresh $500. Wallet selection is retrospective and therefore biased; this is research, not a live-performance claim.
+2. **Fifty independent forward-observation hunter accounts** start at $500. When a hunter first finds a real slice candidate, its selection time and followed wallet are persisted in `data/agent-account-state.json`. Only source buys observed **after that selection time** can enter its account. Selection is not silently reset to the latest winner each hour. An agent with no candidate stays at $500 with zero fills. Replays deterministically reconstruct state from retained observations, preventing restart double-counting. Current best research candidate can differ from the locked paper-follow target; both are shown.
+
+Chronological replay rules:
+
+- $100 maximum per entry, ≤5 open positions, finite cash, minimum order $10, no leverage.
+- First observed price ≥60s after a source buy; skip if no price within 300 extra seconds.
+- 2% slippage each side plus $100/current-liquidity impact. This is a conservative model, **not measured historical depth**.
+- Modeled each-side fees: Solana 125 bps + $0.01 network; BNB 30 bps + $0.05; Robinhood 30 bps + $0.005. These are **configurable assumptions**, not claims about actual pool fees/gas/token taxes.
+- Exit at the first observed tick reaching **net +35%**, otherwise the first observed source sell (entire copied token position) or one-week timeout if a price tick is available. No invented price when a tape gap exists. No stop-loss is assumed.
+- The ≥50% best-price capture rate is shown separately; it is **not a second secretly executed strategy**.
+- Closed fills include entry/exit timestamps, modeled fees, P&L, exit reason and chain-explorer evidence. Open positions are marked from the last observed price, explicitly not realized profit.
+- On reaching +$300 realized profit in an **ET day**, that account stops new entries for that day; existing positions can still exit. The ET-day latch is reconstructed from deduplicated retained fills and survives restarts.
+
+### $300/day feasibility
+
+Expected net profit/day from $500: **insufficient data**. Capital needed for $300/day: **insufficient data**. No complete days/weeks/months execution dataset or out-of-sample validation exists. Neither observed source profits nor best-price opportunities justify a forecast.
+
+Arithmetic only: $300/$500 = **60% net per day**. A $100 position earning the simulator's +35% net target earns $35; **at least nine such winning fills** would be needed for $300 with no losing fills. A hypothetical +50% on $100 earns $50, requiring six, but +50% is not this simulator's executed target. An all-in $500 +35%/+50% move would earn $175/$250, still below $300. These are not predictions. Fifty separate $500 hunter accounts are **$25,000 hypothetical notional**, not one shared $500 wallet and not real funding.
+
+If a defensible expected net daily return `r` were ever established, arithmetic would be `$500 × r` and `$300 / r`; none has been established here, and there is no guaranteed capital amount that yields $300/day.
+
+## Learning, lessons, badges and charts
+
+- Every genuine **simulated closed loss** can generate an evidence-linked loss review, identifying the modeled delayed/slipped entry, fee drag and exit condition. It never claims to know the original source trader's intentions.
+- The shared lessons checklist is deduplicated, evidence-backed and **suggestion only**. It never changes flags, thresholds or strategy automatically.
+- Per-wallet source monthly P&L, copy monthly P&L and observed-price marked-equity charts show actual observations/replay points only. Missing data is labeled; no fabricated past curves.
+- `unverified` tier is default. `sharp`: evidence floor, ≥65% win rate, ≥60s median hold and ≥$25k mean liquidity; `whale (observed profit)`: evidence floor + ≥$10k observed source profit; `early-entry`: evidence floor + ≥50% 3× hit rate and ≥60s median hold. These labels do not prove insider status.
+- `Standout` requires the evidence floor **and ≥$300 net simulated closed profit today**, not unrealized or source-wallet profit. No badge is awarded merely for a thin 100% win-rate sample.
+- New-buy alerts are deduplicated, sampled, **site only**, with no messaging connector. Hourly observation is not a real-time complete-wallet feed.
+
+## Clusters
+
+Within each chain, group—not discard—wallets sharing RPC-observed funding (bounded recipients), direct SOL transfers, or co-buy timing within 3s across ≥3 distinct observed tokens. Cluster IDs, members, links and combined sampled stats are published. Funding/timing evidence is very incomplete; exchange funders and coincidence can falsely link wallets. Combined source P&L can double-count shared economic exposure. **No cross-chain group is asserted without proof**; this version asserts none.
+
+## Flags and operation
+
+All booleans under `features` in `config.json` are currently ON:
+
+`wallet_pnl_tracker`, `consistency_score`, `wallet_tiers`, `wallet_history_chart`, `new_buy_alert_feed`, `copy_trade_ranking`, `cluster_detection`, `copy_account_simulation`, `agent_learning`, `lessons_board`, `daily_goal_tracker`, `standout_badges`.
+
+Set any to `false` to disable that feature, then run/publish a research cycle. No UI control silently changes backend configuration. All features are implemented; **insufficient historical data is not disguised as a finished profitable strategy**.
 
 ```bash
 cd /workspace/wallet-hunters
-python3 -m pip install -r requirements.txt
-python3 -m unittest discover -s tests -v
-./scripts/run-once.sh             # public reads, local snapshot only
-./scripts/run-once.sh --push      # ONLY after explicit approval to publish
-# Only after Joey approves hourly publishing:
-./scripts/start.sh --approved
-# Stop only this project's runner:
+python3 -m venv --system-site-packages .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python -m unittest discover -s tests -v
+./scripts/run-once.sh           # public reads; local snapshot
+./scripts/run-once.sh --push    # approved timestamped GitHub publish
+./scripts/start.sh --approved --delay-first  # only if no runner is already active
 ./scripts/stop.sh
 ```
 
-The local loop runs immediately when explicitly started, then once per 3,600 seconds, with a cycle lock. It commits timestamped JSON/agent-chat changes and pushes `main` once each successful cycle; GitHub Pages publishes from `/` on main. It is not installed as cron/systemd/GitHub Actions. `.run/hourly.pid` and `.run/hourly.log` are ignored. The box must remain online; this is not independent 24/7 hosting. `start.sh` refuses without `--approved`. After the initial approved full scan, the scheduler was started with `--approved --delay-first`; the next scan is one hour after startup. Both scheduler and cycle have project-local flock locks.
+The existing runner reads the scripts and Python modules anew every cycle, so deployed code changes are picked up without starting a duplicate. It has a project-local scheduler flock and per-cycle flock. `.run/hourly.pid`, `.run/next-cycle-epoch` and `.run/hourly.log` record its state. It commits timestamped data and pushes once per successful hourly cycle; Pages serves main `/`. No cron, systemd or extra GitHub Actions schedule was installed. The box must stay online; GitHub Pages alone does not run scans. No Trenchfloor or Tickworks files/processes/configuration are accessed or changed.
 
-The mobile site uses Three.js 0.160.0 from jsDelivr and Google Fonts; if CDN/WebGL fails, the data table remains accessible. Six agents occupy a circular celestial vault with astrolabe rings and evidence nodes — no office/kitchen/treadmills. Desktop/mobile screenshots are stored outside the repo in `/workspace/wallet-shots/`.
+## Future ideas, not built
 
-## Future ideas (not built)
-
-1. Confidence intervals and out-of-sample validation to reduce small-sample leaderboard bias.
-2. A historical liquidity/capacity stress test for multiple follower order sizes.
-3. Wallet provenance evidence panels with exchange-funder exclusions and user-reviewed cluster links.
-
-## $500 dormant copy-account allocation (latest update)
-
-`copy_sim_starting_balance_usd: 500` is configured **per wallet and per research agent**, and `daily_profit_goal_usd: 300` is the comparison goal. Snapshot metadata initializes each dormant account at $500, zero trades. These are simulations only, not funded wallets; the six agents are research stages, not six independently validated trading strategies. The simulator feature flag is ON but the execution/backtesting engine is in progress; no simulated orders were executed.
-
-**Expected profit per day from $500: NOT ESTABLISHED. Capital needed for $300/day: UNKNOWN.** Neither a near-one-day uneven pool sample nor retrospectively capturable best prices justify an expected daily return. The site keeps both figures visible as unknown rather than inventing a projection. If a reliable net daily return `r` were established through a full historical and out-of-sample execution backtest, the arithmetic would be `$500 × r` per day and `$300 / r` capital; this is not a guarantee, and no such `r` has been established here. All optional feature flags and the hourly schedule were subsequently approved ON. The incomplete account simulator is visibly in progress.
-
-## Current unfinished features (enabled, visibly in progress)
-
-Flags `copy_account_simulation`, `agent_learning`, `lessons_board`, `daily_goal_tracker`, `standout_badges` are ON. The site displays initialized $500 allocations, $0 realized copy profit versus $300/day, no Standout badges, and no lessons; it explicitly states that execution simulation and learning are not completed. A Standout would require a validated net simulated $300/day, not source-wallet observed P&L. Suggestions will never auto-modify strategy. These flags do not create a fictional trading engine.
-
-Current live city scene extends the celestial vault with a floating skyline. All six stages remain deterministic research agents. The runtime is read-only with respect to Solana; GitHub publishing is the only external write. The local hourly runner is project-isolated and has no interactions with Trenchfloor or Tickworks.
-
-## City / interior checkpoint
-
-The visual city now contains 50 cosmetic agent actors, including six named research analysts who commute to the landmark observatory. Clocked-in analyst figures appear at the six interior stations; city residents are visual only, not 44 extra independent research models. Observatory / City buttons smoothly interpolate the camera on desktop and phone. `#city` opens the exterior directly. All Solana data remains read-only.
+1. Verified archive/indexer history and out-of-sample validation with confidence intervals.
+2. Historical order-book/depth and tax simulation for different follower sizes.
+3. Human-reviewed provenance panels and exchange-funder exclusions for cluster evidence.

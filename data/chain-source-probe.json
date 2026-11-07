@@ -1,0 +1,22 @@
+{
+  "checked_at_et": "2026-11-07 12:01 AM ET",
+  "robinhood": {
+    "official_docs": "https://docs.robinhood.com/chain/connecting/",
+    "mainnet_chain_id": 4663,
+    "rpc": "https://rpc.mainnet.chain.robinhood.com",
+    "rpc_eth_chainId": "0x1237",
+    "dexscreener_chain": "robinhood",
+    "geckoterminal_network": "robinhood",
+    "pool_and_trade_endpoints": "200 observed in tests",
+    "explorer": "https://robinhoodchain.blockscout.com",
+    "explorer_stats_api": "Not JSON; not used",
+    "gmgn": "Support not verified; no link"
+  },
+  "bsc": {
+    "chain_id": 56,
+    "rpc_eth_chainId": "0x38",
+    "dexscreener_chain": "bsc",
+    "geckoterminal_network": "bsc",
+    "pool_and_trade_endpoints": "200 observed in tests"
+  }
+}
