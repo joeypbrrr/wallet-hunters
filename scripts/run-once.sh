@@ -6,8 +6,10 @@ exec 9>.run/cycle.lock
 flock -n 9 || { echo 'Another cycle is already running'; exit 1; }
 PYTHON=python3
 [[ -x .venv/bin/python ]] && PYTHON=.venv/bin/python
-"$PYTHON" pipeline.py
-if [[ "${1:-}" == '--push' ]]; then
+args=()
+for arg in "$@"; do [[ "$arg" == "--push" ]] || args+=("$arg"); done
+"$PYTHON" pipeline.py "${args[@]}"
+if [[ " $* " == *" --push "* ]]; then
   git add data config.json
   if ! git diff --cached --quiet; then
     git commit -m "Research snapshot $(TZ=America/New_York date '+%Y-%m-%d %H:%M:%S %Z')"

@@ -4,7 +4,7 @@ import requests
 from zoneinfo import ZoneInfo
 ET=ZoneInfo('America/New_York')
 CHAINS={
- 'solana':{'name':'Solana','id':None,'rpc':'https://api.mainnet-beta.solana.com','explorer':'https://solscan.io/account/','tx_explorer':'https://solscan.io/tx/','gmgn':'https://gmgn.ai/sol/address/','pools':2},
+ 'solana':{'name':'Solana','id':None,'rpc':'https://solana-rpc.publicnode.com','explorer':'https://solscan.io/account/','tx_explorer':'https://solscan.io/tx/','gmgn':'https://gmgn.ai/sol/address/','pools':16},
  'bsc':{'name':'BNB Chain','id':56,'rpc':'https://bsc-rpc.publicnode.com','explorer':'https://bscscan.com/address/','tx_explorer':'https://bscscan.com/tx/','gmgn':'https://gmgn.ai/bsc/address/','pools':2},
  'robinhood':{'name':'Robinhood Chain','id':4663,'rpc':'https://rpc.mainnet.chain.robinhood.com','explorer':'https://robinhoodchain.blockscout.com/address/','tx_explorer':'https://robinhoodchain.blockscout.com/tx/','gmgn':None,'pools':2}
 }
@@ -15,13 +15,13 @@ def links(chain,w):
  c=CHAINS[chain];return {'explorer':c['explorer']+w,'explorer_name':'Solscan' if chain=='solana' else 'BscScan' if chain=='bsc' else 'Robinhood Explorer','gmgn':c['gmgn']+w if c['gmgn'] else None}
 class FetchQueue:
  """All hunters share this serial queue; cache identical requests, honor provider limits."""
- def __init__(self):self.cache={};self.last={};self.count=0;self.hits=0;self.failures=[];self.session=requests.Session();self.suspended=set()
+ def __init__(self):self.cache={};self.last={};self.count=0;self.hits=0;self.failures=[];self.session=requests.Session();self.suspended=set();self.rpc_routes={};self.rpc_failovers=[]
  def request(self,url,payload=None):
   key=url+json.dumps(payload,sort_keys=True)
   if key in self.cache:self.hits+=1;return self.cache[key]
   host=url.split('/')[2]
   if host in self.suspended:raise RuntimeError(host+' suspended after rate limit; no bypass/retry this cycle')
-  interval=13.0 if 'geckoterminal' in host else 5.1 if host=='api.mainnet-beta.solana.com' else 1.1 if payload else .3
+  interval=13.0 if 'geckoterminal' in host else 5.1 if host in ['api.mainnet-beta.solana.com','solana-rpc.publicnode.com','solana.drpc.org'] else 1.1 if payload else .3
   time.sleep(max(0,interval-(time.monotonic()-self.last.get(host,0))))
   self.last[host]=time.monotonic();self.count+=1
   try:
@@ -33,8 +33,21 @@ class FetchQueue:
   except Exception as e:
    self.failures.append({'host':host,'error':str(e)});print('SOURCE ERROR '+host+': '+str(e),flush=True);raise
  def get(self,url):return self.request(url)
- def rpc(self,chain,method,params=[]):return self.request(CHAINS[chain]['rpc'],{'jsonrpc':'2.0','id':1,'method':method,'params':params}).get('result')
- def summary(self):return {'requests':self.count,'cache_hits':self.hits,'failures':self.failures,'model':'One serial cached queue shared by all 50 hunters; GT 13s, Solana RPC 5.1s, EVM RPC 1.1s minimum spacing; stop host on HTTP 429.'}
+ def rpc(self,chain,method,params=[]):
+  payload={'jsonrpc':'2.0','id':1,'method':method,'params':params}
+  if chain!='solana':return self.request(CHAINS[chain]['rpc'],payload).get('result')
+  endpoints=list(dict.fromkeys([self.rpc_routes.get(chain),CHAINS[chain]['rpc'],'https://api.mainnet-beta.solana.com','https://solana.drpc.org']))
+  last=None
+  for endpoint in endpoints:
+   if not endpoint or endpoint.split('/')[2] in self.suspended:continue
+   try:
+    result=self.request(endpoint,payload).get('result');self.rpc_routes[chain]=endpoint;return result
+   except requests.HTTPError as e:
+    code=e.response.status_code if e.response is not None else 0
+    if code not in [429,500,502,503,504]:raise
+    self.suspended.add(endpoint.split('/')[2]);self.rpc_failovers.append({'endpoint':endpoint,'reason':str(e),'backoff':'host suspended for rest of this cycle'});last=e
+  raise RuntimeError('No healthy public Solana RPC verification endpoint: '+str(last))
+ def summary(self):return {'requests':self.count,'cache_hits':self.hits,'failures':self.failures,'rpc_routes':self.rpc_routes,'rpc_failovers':self.rpc_failovers,'model':'One serial cached queue shared by all 50 hunters; GT 13s, Solana RPC 5.1s, EVM RPC 1.1s minimum spacing; stop host on HTTP 429.'}
 
 def hash_topic(signature):
  from Crypto.Hash import keccak
@@ -99,9 +112,13 @@ def hunt(profiles,rows,all_trades,simulations,cfg,now):
   candidates.sort(key=lambda r:(specialized(r),r['score'] or -1),reverse=True)
   best=candidates[0] if candidates else None
   for r in candidates:contributed.add(r['key'])
+  observation_rows=[]
+  if profile['chain']=='solana':
+   chain_profiles=[p for p in profiles if p['chain']=='solana'];shard=next(i for i,p in enumerate(chain_profiles) if p['id']==profile['id']);observation_rows=[r for r in scanned if int(hashlib.sha256(r['wallet'].encode()).hexdigest(),16)%len(chain_profiles)==shard];observation_rows.sort(key=lambda r:(r['sampled_swaps'],r['matched_sell_samples']),reverse=True)
+  best_observation=({k:observation_rows[0][k] for k in ['key','wallet','chain','win_rate_pct','observed_realized_pnl_usd','gmgn','explorer','explorer_name']}|{'score':None,'score_label':'Not enough data'}) if observation_rows else None
   summary={k:best[k] for k in ['key','wallet','chain','score','win_rate_pct','observed_realized_pnl_usd','gmgn','explorer','explorer_name']} if best else None
   sim=simulations.get(best['key'],empty_account(cfg,now,'No replay account yet; insufficient observations.')) if best else empty_account(cfg,now,'No candidate in this agent’s real slice.')
-  output.append({**profile,'clocked_in':True,'last_run_et':now,'wallets_evaluated':len(scanned),'candidate_count':len(candidates),'candidate_keys':[r['key'] for r in candidates],'best_wallet':summary,'slice_score':round(specialized(best),4) if best else None,'status':'completed' if best else 'completed_no_match','copy_simulation':{**sim,'account_id':profile['id'],'copied_wallet':best['key'] if best else None},'role':profile['job']})
+  output.append({**profile,'clocked_in':True,'last_run_et':now,'wallets_evaluated':len(scanned),'candidate_count':len(candidates),'candidate_keys':[r['key'] for r in candidates],'best_wallet':summary,'observation_count':len(observation_rows),'best_observation':best_observation,'slice_score':round(specialized(best),4) if best else None,'status':'completed' if best else 'completed_no_match','copy_simulation':{**sim,'account_id':profile['id'],'copied_wallet':best['key'] if best else None},'role':profile['job']})
  return output,contributed
 
 def empty_account(cfg,now,reason='No eligible observations.'):

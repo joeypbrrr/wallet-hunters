@@ -8,3 +8,17 @@
 .scene-controls{position:absolute;top:47px;left:22px;display:flex;gap:6px}.scene-controls button{background:#090e19d9;border:1px solid #333d55;color:#8c95aa;padding:8px 10px;font-size:7px;letter-spacing:1px}.scene-controls button.active{color:#d6c1ff;border-color:#827294;background:#211e37dd}.scene-wrap.city-mode .scene-label strong{font-size:19px}.scene-wrap.city-mode .scene-label{max-width:42%}@media(max-width:680px){.scene-controls{top:38px;left:14px}.scene-controls button{padding:7px 9px;font-size:6px}.scene-wrap.city-mode .scene-label strong{font-size:16px}.scene-wrap.city-mode .scene-label{max-width:80%}}
 
 .agents{max-height:290px;overflow:auto}.agent{cursor:pointer}.agent:hover{background:#181a2c}.agent h3{min-height:0}.agent .job-state{font-size:8px;color:var(--mint);display:block;margin-top:9px}.chain-districts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}.chain-districts>div{border:1px solid var(--line);padding:20px;background:#0c1120}.chain-districts h3{font:500 18px 'Space Grotesk';color:var(--lav);margin:0 0 10px}.chain-districts p{font-size:10px;color:var(--muted);line-height:1.7}dialog{max-width:700px;width:calc(100% - 36px);max-height:88vh;overflow:auto;background:#111827;color:var(--text);border:1px solid #6a5c8b;padding:28px}dialog::backdrop{background:#04070bce;backdrop-filter:blur(6px)}dialog h2{font:500 26px 'Space Grotesk';color:var(--lav)}dialog p{font-size:12px;line-height:1.7;color:var(--muted);overflow-wrap:anywhere}dialog a{color:var(--gold);font-size:11px}dialog pre{color:var(--muted);font-size:10px}#close-hunter{float:right}.learning-review{border-left:2px solid #776484;padding:10px 16px;margin:14px 0;background:#0f1524;font-size:11px;color:var(--muted)}.learning-review b{color:var(--lav)}.learning-review a{color:var(--gold)}.history-svg{width:100%;height:180px;max-width:650px}.sim-fill{font-size:10px;color:var(--muted);padding:10px;border-bottom:1px solid var(--line)}@media(max-width:680px){.chain-districts{grid-template-columns:1fr}.agents{max-height:340px}.chain-districts>div{padding:18px}dialog{padding:20px}}
+
+/* OrbitControls owns gestures only inside the scene; informational overlays pass them through. */
+.scene-wrap{touch-action:none;-webkit-user-select:none;user-select:none}
+#scene{touch-action:none;-webkit-user-select:none;user-select:none;cursor:grab}
+#scene.is-dragging{cursor:grabbing}
+.scene-top,.scene-label,.orb-label,.scene-hint,#scene-fallback{pointer-events:none}
+.scene-controls{pointer-events:none;z-index:3;right:18px;flex-wrap:wrap}
+.scene-controls button{pointer-events:auto;min-height:44px;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.scene-label{bottom:48px}.orb-label{bottom:50px}
+.scene-hint{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);max-width:calc(100% - 24px);padding:7px 11px;background:#060a14d9;border:1px solid #5e547d;color:#d0c2ef;font-size:9px;line-height:1.5;white-space:nowrap;transition:opacity .6s ease;z-index:2}
+.scene-hint.gone{opacity:0}
+@media(max-width:680px){.scene-controls{right:12px;gap:5px}.scene-controls button{padding:7px 9px;min-height:44px;font-size:7px}.scene-hint{font-size:7px;padding:7px 8px}.scene-label{bottom:47px}}
+
+.wallet-chain-filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.wallet-chain-filters button{min-height:44px;touch-action:manipulation;font-size:9px}.wallet-chain-filters button.active{border-color:#8bceb7;color:#b1ecd6;background:#142921}.score{white-space:normal;max-width:150px}.score:has(+td){font-size:14px}

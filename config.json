@@ -1,6 +1,6 @@
 {
   "pool_limit": 10,
-  "rpc_transaction_limit": 5,
+  "rpc_transaction_limit": 2,
   "minimum_closed_samples": 20,
   "minimum_observed_months": 3,
   "minimum_liquidity_usd": 25000,
@@ -35,9 +35,9 @@
   "daily_profit_goal_usd": 300,
   "hourly_enabled": true,
   "chains": [
-    "robinhood",
+    "solana",
     "bsc",
-    "solana"
+    "robinhood"
   ],
   "hunter_allocation": {
     "solana": 30,
@@ -60,5 +60,6 @@
     },
     "minimum_forecast_days": 30,
     "minimum_forecast_closes": 20
-  }
+  },
+  "solana_priority_pools": 16
 }
