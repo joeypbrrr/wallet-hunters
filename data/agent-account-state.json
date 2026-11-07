@@ -1,27 +1,75 @@
 {
   "hunter-01": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
-    "selected_wallet": null
+    "selected_wallet": "solana:GkZbaqoFVbfZf3cSNPxHdtSfQWajnqvbXcVH98d1QD5G",
+    "selected_at": "2026-11-07T05:36:07.037362+00:00",
+    "wallet_metadata": {
+      "key": "solana:GkZbaqoFVbfZf3cSNPxHdtSfQWajnqvbXcVH98d1QD5G",
+      "wallet": "GkZbaqoFVbfZf3cSNPxHdtSfQWajnqvbXcVH98d1QD5G",
+      "chain": "solana",
+      "mean_liquidity_usd": 58951.28,
+      "qualified": false
+    }
   },
   "hunter-02": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
-    "selected_wallet": null
+    "selected_wallet": "solana:3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom",
+    "selected_at": "2026-11-07T05:36:07.037362+00:00",
+    "wallet_metadata": {
+      "key": "solana:3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom",
+      "wallet": "3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom",
+      "chain": "solana",
+      "mean_liquidity_usd": 328718.12,
+      "qualified": false
+    }
   },
   "hunter-03": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
-    "selected_wallet": null
+    "selected_wallet": "solana:DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
+    "selected_at": "2026-11-07T05:36:07.037362+00:00",
+    "wallet_metadata": {
+      "key": "solana:DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
+      "wallet": "DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
+      "chain": "solana",
+      "mean_liquidity_usd": 1275111.44,
+      "qualified": false
+    }
   },
   "hunter-04": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
-    "selected_wallet": null
+    "selected_wallet": "solana:FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+    "selected_at": "2026-11-07T05:36:07.037362+00:00",
+    "wallet_metadata": {
+      "key": "solana:FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "wallet": "FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "chain": "solana",
+      "mean_liquidity_usd": 3918146.81,
+      "qualified": false
+    }
   },
   "hunter-05": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
-    "selected_wallet": null
+    "selected_wallet": "solana:FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+    "selected_at": "2026-11-07T05:36:07.037362+00:00",
+    "wallet_metadata": {
+      "key": "solana:FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "wallet": "FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "chain": "solana",
+      "mean_liquidity_usd": 10260944.2,
+      "qualified": false
+    }
   },
   "hunter-06": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
-    "selected_wallet": null
+    "selected_wallet": "solana:EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH",
+    "selected_at": "2026-11-07T05:36:07.037362+00:00",
+    "wallet_metadata": {
+      "key": "solana:EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH",
+      "wallet": "EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH",
+      "chain": "solana",
+      "mean_liquidity_usd": 33461.94,
+      "qualified": false
+    }
   },
   "hunter-07": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
@@ -29,11 +77,27 @@
   },
   "hunter-08": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
-    "selected_wallet": null
+    "selected_wallet": "solana:Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
+    "selected_at": "2026-11-07T05:36:07.037362+00:00",
+    "wallet_metadata": {
+      "key": "solana:Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
+      "wallet": "Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
+      "chain": "solana",
+      "mean_liquidity_usd": 858050.39,
+      "qualified": false
+    }
   },
   "hunter-09": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
-    "selected_wallet": null
+    "selected_wallet": "solana:DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe",
+    "selected_at": "2026-11-07T05:36:07.037362+00:00",
+    "wallet_metadata": {
+      "key": "solana:DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe",
+      "wallet": "DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe",
+      "chain": "solana",
+      "mean_liquidity_usd": 2510357.62,
+      "qualified": false
+    }
   },
   "hunter-10": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
@@ -53,7 +117,15 @@
   },
   "hunter-14": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",
-    "selected_wallet": null
+    "selected_wallet": "solana:ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev",
+    "selected_at": "2026-11-07T05:36:07.037362+00:00",
+    "wallet_metadata": {
+      "key": "solana:ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev",
+      "wallet": "ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev",
+      "chain": "solana",
+      "mean_liquidity_usd": 2115936.55,
+      "qualified": false
+    }
   },
   "hunter-15": {
     "created_at": "2026-11-07T05:00:06.863714+00:00",

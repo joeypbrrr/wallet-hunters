@@ -19,7 +19,9 @@
         "monthly_consistency": 0.3,
         "big_move_3x_hit_rate": 0.15,
         "copy_capture_35_pct": 0.1
-      }
+      },
+      "observation_shard": 0,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -27,13 +29,40 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
-    "candidate_count": 0,
-    "candidate_keys": [],
-    "best_wallet": null,
-    "slice_score": null,
-    "status": "completed_no_match",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
+    "candidate_count": 3,
+    "candidate_keys": [
+      "solana:Aud2Dfp4x2Dxcbmb6vYiLhSGSrfUZMA4nky1XPtVZmNa",
+      "solana:3byvsa7YHf9iqN37iguJN4jWZMtpvBL1SL9XCJvGuVwT",
+      "solana:GkZbaqoFVbfZf3cSNPxHdtSfQWajnqvbXcVH98d1QD5G"
+    ],
+    "best_wallet": {
+      "key": "solana:Aud2Dfp4x2Dxcbmb6vYiLhSGSrfUZMA4nky1XPtVZmNa",
+      "wallet": "Aud2Dfp4x2Dxcbmb6vYiLhSGSrfUZMA4nky1XPtVZmNa",
+      "chain": "solana",
+      "score": null,
+      "win_rate_pct": 100.0,
+      "observed_realized_pnl_usd": 2.4638,
+      "gmgn": "https://gmgn.ai/sol/address/Aud2Dfp4x2Dxcbmb6vYiLhSGSrfUZMA4nky1XPtVZmNa",
+      "explorer": "https://solscan.io/account/Aud2Dfp4x2Dxcbmb6vYiLhSGSrfUZMA4nky1XPtVZmNa",
+      "explorer_name": "Solscan"
+    },
+    "observation_count": 93,
+    "best_observation": {
+      "key": "solana:Fhb11cgL17UUwJjsi3WwB8ExzAxRbJtq51dRtQcgbrgP",
+      "wallet": "Fhb11cgL17UUwJjsi3WwB8ExzAxRbJtq51dRtQcgbrgP",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -0.8439,
+      "gmgn": "https://gmgn.ai/sol/address/Fhb11cgL17UUwJjsi3WwB8ExzAxRbJtq51dRtQcgbrgP",
+      "explorer": "https://solscan.io/account/Fhb11cgL17UUwJjsi3WwB8ExzAxRbJtq51dRtQcgbrgP",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
+    "slice_score": 1.2525,
+    "status": "completed",
     "copy_simulation": {
       "enabled": true,
       "status": "insufficient_data",
@@ -54,13 +83,13 @@
       "goal_hit": false,
       "standout": false,
       "fills": [],
-      "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "reason": "No eligible observations.",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-01",
       "mode": "forward_observation_paper",
-      "copied_wallet": null,
+      "copied_wallet": "solana:GkZbaqoFVbfZf3cSNPxHdtSfQWajnqvbXcVH98d1QD5G",
       "created_at_et": "2026-11-07 12:00:06 AM ET",
-      "selected_at_et": null
+      "selected_at_et": "2026-11-07 12:36:07 AM ET"
     },
     "role": "Win-rate verification: 1\u20132h holds, liquidity $25000\u2013$100000"
   },
@@ -84,7 +113,9 @@
         "monthly_consistency": 0.3,
         "big_move_3x_hit_rate": 0.15,
         "copy_capture_35_pct": 0.1
-      }
+      },
+      "observation_shard": 1,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -92,13 +123,38 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
-    "candidate_count": 0,
-    "candidate_keys": [],
-    "best_wallet": null,
-    "slice_score": null,
-    "status": "completed_no_match",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
+    "candidate_count": 1,
+    "candidate_keys": [
+      "solana:3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom"
+    ],
+    "best_wallet": {
+      "key": "solana:3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom",
+      "wallet": "3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom",
+      "chain": "solana",
+      "score": null,
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -0.0574,
+      "gmgn": "https://gmgn.ai/sol/address/3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom",
+      "explorer": "https://solscan.io/account/3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom",
+      "explorer_name": "Solscan"
+    },
+    "observation_count": 93,
+    "best_observation": {
+      "key": "solana:CZ3Zn1SMf9XBLtJhZB71tswKStQPZoiDerUsoUXXJ7VH",
+      "wallet": "CZ3Zn1SMf9XBLtJhZB71tswKStQPZoiDerUsoUXXJ7VH",
+      "chain": "solana",
+      "win_rate_pct": 60.0,
+      "observed_realized_pnl_usd": 0.0538,
+      "gmgn": "https://gmgn.ai/sol/address/CZ3Zn1SMf9XBLtJhZB71tswKStQPZoiDerUsoUXXJ7VH",
+      "explorer": "https://solscan.io/account/CZ3Zn1SMf9XBLtJhZB71tswKStQPZoiDerUsoUXXJ7VH",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
+    "slice_score": 0.0,
+    "status": "completed",
     "copy_simulation": {
       "enabled": true,
       "status": "insufficient_data",
@@ -119,13 +175,13 @@
       "goal_hit": false,
       "standout": false,
       "fills": [],
-      "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "reason": "No eligible observations.",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-02",
       "mode": "forward_observation_paper",
-      "copied_wallet": null,
+      "copied_wallet": "solana:3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom",
       "created_at_et": "2026-11-07 12:00:06 AM ET",
-      "selected_at_et": null
+      "selected_at_et": "2026-11-07 12:36:07 AM ET"
     },
     "role": "Win-rate verification: 1\u20132h holds, liquidity $100000\u2013$500000"
   },
@@ -149,7 +205,9 @@
         "monthly_consistency": 0.3,
         "big_move_3x_hit_rate": 0.15,
         "copy_capture_35_pct": 0.1
-      }
+      },
+      "observation_shard": 2,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -157,13 +215,39 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
-    "candidate_count": 0,
-    "candidate_keys": [],
-    "best_wallet": null,
-    "slice_score": null,
-    "status": "completed_no_match",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
+    "candidate_count": 2,
+    "candidate_keys": [
+      "solana:DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
+      "solana:Etu245rkd5tLsWGraSa97jKZKZDTuUffCB4uYbkRHkF1"
+    ],
+    "best_wallet": {
+      "key": "solana:DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
+      "wallet": "DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
+      "chain": "solana",
+      "score": null,
+      "win_rate_pct": 100.0,
+      "observed_realized_pnl_usd": 0.0759,
+      "gmgn": "https://gmgn.ai/sol/address/DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
+      "explorer": "https://solscan.io/account/DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
+      "explorer_name": "Solscan"
+    },
+    "observation_count": 87,
+    "best_observation": {
+      "key": "solana:FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "wallet": "FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "chain": "solana",
+      "win_rate_pct": 41.67,
+      "observed_realized_pnl_usd": -21.5835,
+      "gmgn": "https://gmgn.ai/sol/address/FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "explorer": "https://solscan.io/account/FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
+    "slice_score": 1.2525,
+    "status": "completed",
     "copy_simulation": {
       "enabled": true,
       "status": "insufficient_data",
@@ -184,13 +268,13 @@
       "goal_hit": false,
       "standout": false,
       "fills": [],
-      "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "reason": "No eligible observations.",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-03",
       "mode": "forward_observation_paper",
-      "copied_wallet": null,
+      "copied_wallet": "solana:DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
       "created_at_et": "2026-11-07 12:00:06 AM ET",
-      "selected_at_et": null
+      "selected_at_et": "2026-11-07 12:36:07 AM ET"
     },
     "role": "Win-rate verification: 1\u20132h holds, liquidity $500000\u2013$2e+06"
   },
@@ -214,7 +298,9 @@
         "monthly_consistency": 0.3,
         "big_move_3x_hit_rate": 0.15,
         "copy_capture_35_pct": 0.1
-      }
+      },
+      "observation_shard": 3,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -222,13 +308,44 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
-    "candidate_count": 0,
-    "candidate_keys": [],
-    "best_wallet": null,
-    "slice_score": null,
-    "status": "completed_no_match",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
+    "candidate_count": 7,
+    "candidate_keys": [
+      "solana:FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "solana:GLiCiNEnku3pQsmkVkRvnDLbfUN9BWbsrPDWLdPaADng",
+      "solana:FUEL3Te8gvaohxwQMapfMTeJVHh2z1BL9fvTCcHZeYEh",
+      "solana:FUBVxWEmxHbm3H9TbLgEQQ6d8bvsdw4sgkNJysFeSLRG",
+      "solana:H4arxkST9m8UaASkLxEKrAT7RrfvayBBWV9oYpVkXZDb",
+      "solana:CZS7B5Y5MJvFiuQnVJyJuDkDokYpf6c3qhcDPQu8asV",
+      "solana:A1A1bDGXpu6ew8n3fgrzQfZW33cP4vVzAnhTeJJqe1uw"
+    ],
+    "best_wallet": {
+      "key": "solana:FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "wallet": "FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "chain": "solana",
+      "score": null,
+      "win_rate_pct": 41.67,
+      "observed_realized_pnl_usd": -21.5835,
+      "gmgn": "https://gmgn.ai/sol/address/FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "explorer": "https://solscan.io/account/FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "explorer_name": "Solscan"
+    },
+    "observation_count": 101,
+    "best_observation": {
+      "key": "solana:DUL7nVkssDdtkKbEMkyXjdDkuAdMgTVv9G97GtGgtT2L",
+      "wallet": "DUL7nVkssDdtkKbEMkyXjdDkuAdMgTVv9G97GtGgtT2L",
+      "chain": "solana",
+      "win_rate_pct": 37.5,
+      "observed_realized_pnl_usd": -0.1852,
+      "gmgn": "https://gmgn.ai/sol/address/DUL7nVkssDdtkKbEMkyXjdDkuAdMgTVv9G97GtGgtT2L",
+      "explorer": "https://solscan.io/account/DUL7nVkssDdtkKbEMkyXjdDkuAdMgTVv9G97GtGgtT2L",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
+    "slice_score": 6.2494,
+    "status": "completed",
     "copy_simulation": {
       "enabled": true,
       "status": "insufficient_data",
@@ -249,13 +366,13 @@
       "goal_hit": false,
       "standout": false,
       "fills": [],
-      "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "reason": "No eligible observations.",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-04",
       "mode": "forward_observation_paper",
-      "copied_wallet": null,
+      "copied_wallet": "solana:FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
       "created_at_et": "2026-11-07 12:00:06 AM ET",
-      "selected_at_et": null
+      "selected_at_et": "2026-11-07 12:36:07 AM ET"
     },
     "role": "Win-rate verification: 1\u20132h holds, liquidity $2e+06\u2013$1e+07"
   },
@@ -279,7 +396,9 @@
         "monthly_consistency": 0.3,
         "big_move_3x_hit_rate": 0.15,
         "copy_capture_35_pct": 0.1
-      }
+      },
+      "observation_shard": 4,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -287,13 +406,42 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
-    "candidate_count": 0,
-    "candidate_keys": [],
-    "best_wallet": null,
-    "slice_score": null,
-    "status": "completed_no_match",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
+    "candidate_count": 5,
+    "candidate_keys": [
+      "solana:FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "solana:GoGoGo6N99mpyB7rfzhw2R4fXmaFctURXHaHMoGCyoLD",
+      "solana:A8A9GoxfmcjY2QAQ8tYS98SqDBF6hUFDmxAKBsLw29sL",
+      "solana:Jd97uyw9wb6PxV2jawAjS7aU6XUMHbcfn4En8xRP7Mg",
+      "solana:GDpQztDTm5rFSvCnxXuYDCR4NRrLSLxKc4KmJ3rNktke"
+    ],
+    "best_wallet": {
+      "key": "solana:FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "wallet": "FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "chain": "solana",
+      "score": null,
+      "win_rate_pct": 25.0,
+      "observed_realized_pnl_usd": -28.3122,
+      "gmgn": "https://gmgn.ai/sol/address/FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "explorer": "https://solscan.io/account/FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "explorer_name": "Solscan"
+    },
+    "observation_count": 92,
+    "best_observation": {
+      "key": "solana:3U2tSmABCEnt9ePiRf2kyqgja3Bh58gtHjHvdWrZv7QF",
+      "wallet": "3U2tSmABCEnt9ePiRf2kyqgja3Bh58gtHjHvdWrZv7QF",
+      "chain": "solana",
+      "win_rate_pct": 96.43,
+      "observed_realized_pnl_usd": 6.1855,
+      "gmgn": "https://gmgn.ai/sol/address/3U2tSmABCEnt9ePiRf2kyqgja3Bh58gtHjHvdWrZv7QF",
+      "explorer": "https://solscan.io/account/3U2tSmABCEnt9ePiRf2kyqgja3Bh58gtHjHvdWrZv7QF",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
+    "slice_score": 0.7504,
+    "status": "completed",
     "copy_simulation": {
       "enabled": true,
       "status": "insufficient_data",
@@ -314,13 +462,13 @@
       "goal_hit": false,
       "standout": false,
       "fills": [],
-      "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "reason": "No eligible observations.",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-05",
       "mode": "forward_observation_paper",
-      "copied_wallet": null,
+      "copied_wallet": "solana:FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
       "created_at_et": "2026-11-07 12:00:06 AM ET",
-      "selected_at_et": null
+      "selected_at_et": "2026-11-07 12:36:07 AM ET"
     },
     "role": "Win-rate verification: 1\u20132h holds, liquidity $1e+07\u2013$1e+15"
   },
@@ -344,7 +492,9 @@
         "copy_capture_50_pct": 0.2,
         "win_rate": 0.25,
         "follower_hold_time": 0.15
-      }
+      },
+      "observation_shard": 5,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -352,13 +502,38 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
-    "candidate_count": 0,
-    "candidate_keys": [],
-    "best_wallet": null,
-    "slice_score": null,
-    "status": "completed_no_match",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
+    "candidate_count": 1,
+    "candidate_keys": [
+      "solana:EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH"
+    ],
+    "best_wallet": {
+      "key": "solana:EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH",
+      "wallet": "EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH",
+      "chain": "solana",
+      "score": null,
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -0.597,
+      "gmgn": "https://gmgn.ai/sol/address/EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH",
+      "explorer": "https://solscan.io/account/EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH",
+      "explorer_name": "Solscan"
+    },
+    "observation_count": 95,
+    "best_observation": {
+      "key": "solana:2gF2drQYrkXJGXCAgkubt4jD38QkfcC6q9MdoRfW6JYG",
+      "wallet": "2gF2drQYrkXJGXCAgkubt4jD38QkfcC6q9MdoRfW6JYG",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -0.0096,
+      "gmgn": "https://gmgn.ai/sol/address/2gF2drQYrkXJGXCAgkubt4jD38QkfcC6q9MdoRfW6JYG",
+      "explorer": "https://solscan.io/account/2gF2drQYrkXJGXCAgkubt4jD38QkfcC6q9MdoRfW6JYG",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
+    "slice_score": 0.0243,
+    "status": "completed",
     "copy_simulation": {
       "enabled": true,
       "status": "insufficient_data",
@@ -379,13 +554,13 @@
       "goal_hit": false,
       "standout": false,
       "fills": [],
-      "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "reason": "No eligible observations.",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-06",
       "mode": "forward_observation_paper",
-      "copied_wallet": null,
+      "copied_wallet": "solana:EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH",
       "created_at_et": "2026-11-07 12:00:06 AM ET",
-      "selected_at_et": null
+      "selected_at_et": "2026-11-07 12:36:07 AM ET"
     },
     "role": "Delayed-entry capture: 2\u20136h holds, liquidity $25000\u2013$100000"
   },
@@ -409,7 +584,9 @@
         "copy_capture_50_pct": 0.2,
         "win_rate": 0.25,
         "follower_hold_time": 0.15
-      }
+      },
+      "observation_shard": 6,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -417,11 +594,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 77,
+    "best_observation": {
+      "key": "solana:MfDuWeqSHEqTFVYZ7LoexgAK9dxk7cy4DFJWjWMGVWa",
+      "wallet": "MfDuWeqSHEqTFVYZ7LoexgAK9dxk7cy4DFJWjWMGVWa",
+      "chain": "solana",
+      "win_rate_pct": 36.0,
+      "observed_realized_pnl_usd": -49.4505,
+      "gmgn": "https://gmgn.ai/sol/address/MfDuWeqSHEqTFVYZ7LoexgAK9dxk7cy4DFJWjWMGVWa",
+      "explorer": "https://solscan.io/account/MfDuWeqSHEqTFVYZ7LoexgAK9dxk7cy4DFJWjWMGVWa",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -445,7 +635,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-07",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -474,7 +664,9 @@
         "copy_capture_50_pct": 0.2,
         "win_rate": 0.25,
         "follower_hold_time": 0.15
-      }
+      },
+      "observation_shard": 7,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -482,13 +674,38 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
-    "candidate_count": 0,
-    "candidate_keys": [],
-    "best_wallet": null,
-    "slice_score": null,
-    "status": "completed_no_match",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
+    "candidate_count": 1,
+    "candidate_keys": [
+      "solana:Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF"
+    ],
+    "best_wallet": {
+      "key": "solana:Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
+      "wallet": "Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
+      "chain": "solana",
+      "score": null,
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -0.0279,
+      "gmgn": "https://gmgn.ai/sol/address/Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
+      "explorer": "https://solscan.io/account/Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
+      "explorer_name": "Solscan"
+    },
+    "observation_count": 81,
+    "best_observation": {
+      "key": "solana:AD9wB1oFV5HCXXmZqMnu6EJTEcjU3m9jhF5HytqA8dvt",
+      "wallet": "AD9wB1oFV5HCXXmZqMnu6EJTEcjU3m9jhF5HytqA8dvt",
+      "chain": "solana",
+      "win_rate_pct": 46.36,
+      "observed_realized_pnl_usd": -0.4773,
+      "gmgn": "https://gmgn.ai/sol/address/AD9wB1oFV5HCXXmZqMnu6EJTEcjU3m9jhF5HytqA8dvt",
+      "explorer": "https://solscan.io/account/AD9wB1oFV5HCXXmZqMnu6EJTEcjU3m9jhF5HytqA8dvt",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
+    "slice_score": 0.0251,
+    "status": "completed",
     "copy_simulation": {
       "enabled": true,
       "status": "insufficient_data",
@@ -509,13 +726,13 @@
       "goal_hit": false,
       "standout": false,
       "fills": [],
-      "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "reason": "No eligible observations.",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-08",
       "mode": "forward_observation_paper",
-      "copied_wallet": null,
+      "copied_wallet": "solana:Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
       "created_at_et": "2026-11-07 12:00:06 AM ET",
-      "selected_at_et": null
+      "selected_at_et": "2026-11-07 12:36:07 AM ET"
     },
     "role": "Delayed-entry capture: 2\u20136h holds, liquidity $500000\u2013$2e+06"
   },
@@ -539,7 +756,9 @@
         "copy_capture_50_pct": 0.2,
         "win_rate": 0.25,
         "follower_hold_time": 0.15
-      }
+      },
+      "observation_shard": 8,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -547,13 +766,38 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
-    "candidate_count": 0,
-    "candidate_keys": [],
-    "best_wallet": null,
-    "slice_score": null,
-    "status": "completed_no_match",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
+    "candidate_count": 1,
+    "candidate_keys": [
+      "solana:DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe"
+    ],
+    "best_wallet": {
+      "key": "solana:DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe",
+      "wallet": "DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe",
+      "chain": "solana",
+      "score": null,
+      "win_rate_pct": 100.0,
+      "observed_realized_pnl_usd": 0.0245,
+      "gmgn": "https://gmgn.ai/sol/address/DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe",
+      "explorer": "https://solscan.io/account/DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe",
+      "explorer_name": "Solscan"
+    },
+    "observation_count": 99,
+    "best_observation": {
+      "key": "solana:DcQNaByvstRZCERvb9UJHgHiQe8YX2FMdPptM86psQyz",
+      "wallet": "DcQNaByvstRZCERvb9UJHgHiQe8YX2FMdPptM86psQyz",
+      "chain": "solana",
+      "win_rate_pct": 95.83,
+      "observed_realized_pnl_usd": 28.088,
+      "gmgn": "https://gmgn.ai/sol/address/DcQNaByvstRZCERvb9UJHgHiQe8YX2FMdPptM86psQyz",
+      "explorer": "https://solscan.io/account/DcQNaByvstRZCERvb9UJHgHiQe8YX2FMdPptM86psQyz",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
+    "slice_score": 0.4443,
+    "status": "completed",
     "copy_simulation": {
       "enabled": true,
       "status": "insufficient_data",
@@ -574,13 +818,13 @@
       "goal_hit": false,
       "standout": false,
       "fills": [],
-      "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "reason": "No eligible observations.",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-09",
       "mode": "forward_observation_paper",
-      "copied_wallet": null,
+      "copied_wallet": "solana:DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe",
       "created_at_et": "2026-11-07 12:00:06 AM ET",
-      "selected_at_et": null
+      "selected_at_et": "2026-11-07 12:36:07 AM ET"
     },
     "role": "Delayed-entry capture: 2\u20136h holds, liquidity $2e+06\u2013$1e+07"
   },
@@ -604,7 +848,9 @@
         "copy_capture_50_pct": 0.2,
         "win_rate": 0.25,
         "follower_hold_time": 0.15
-      }
+      },
+      "observation_shard": 9,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -612,11 +858,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 86,
+    "best_observation": {
+      "key": "solana:JjPqcXGevf1JbcogBBTayVAU8tbNk1Zi6WpojS1d8zX",
+      "wallet": "JjPqcXGevf1JbcogBBTayVAU8tbNk1Zi6WpojS1d8zX",
+      "chain": "solana",
+      "win_rate_pct": null,
+      "observed_realized_pnl_usd": null,
+      "gmgn": "https://gmgn.ai/sol/address/JjPqcXGevf1JbcogBBTayVAU8tbNk1Zi6WpojS1d8zX",
+      "explorer": "https://solscan.io/account/JjPqcXGevf1JbcogBBTayVAU8tbNk1Zi6WpojS1d8zX",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -640,7 +899,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-10",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -668,7 +927,9 @@
         "monthly_consistency": 0.45,
         "win_rate": 0.3,
         "liquidity": 0.25
-      }
+      },
+      "observation_shard": 10,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -676,11 +937,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 88,
+    "best_observation": {
+      "key": "solana:66M5V1beRvSzmy2HkTMCPAcw9evDo77pMngKXikJ4E38",
+      "wallet": "66M5V1beRvSzmy2HkTMCPAcw9evDo77pMngKXikJ4E38",
+      "chain": "solana",
+      "win_rate_pct": null,
+      "observed_realized_pnl_usd": null,
+      "gmgn": "https://gmgn.ai/sol/address/66M5V1beRvSzmy2HkTMCPAcw9evDo77pMngKXikJ4E38",
+      "explorer": "https://solscan.io/account/66M5V1beRvSzmy2HkTMCPAcw9evDo77pMngKXikJ4E38",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -704,7 +978,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-11",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -732,7 +1006,9 @@
         "monthly_consistency": 0.45,
         "win_rate": 0.3,
         "liquidity": 0.25
-      }
+      },
+      "observation_shard": 11,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -740,11 +1016,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 97,
+    "best_observation": {
+      "key": "solana:9HYDLgRKJRMF6pWMjnfbRxA2FGbnwdKFHG5f4YXASTVR",
+      "wallet": "9HYDLgRKJRMF6pWMjnfbRxA2FGbnwdKFHG5f4YXASTVR",
+      "chain": "solana",
+      "win_rate_pct": 100.0,
+      "observed_realized_pnl_usd": 7.0185,
+      "gmgn": "https://gmgn.ai/sol/address/9HYDLgRKJRMF6pWMjnfbRxA2FGbnwdKFHG5f4YXASTVR",
+      "explorer": "https://solscan.io/account/9HYDLgRKJRMF6pWMjnfbRxA2FGbnwdKFHG5f4YXASTVR",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -768,7 +1057,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-12",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -796,7 +1085,9 @@
         "monthly_consistency": 0.45,
         "win_rate": 0.3,
         "liquidity": 0.25
-      }
+      },
+      "observation_shard": 12,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -804,11 +1095,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 67,
+    "best_observation": {
+      "key": "solana:9nXDunV8eNvYSVys7JSBkm2hz9Q79Q3EYeko19srVeMC",
+      "wallet": "9nXDunV8eNvYSVys7JSBkm2hz9Q79Q3EYeko19srVeMC",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -3.7504,
+      "gmgn": "https://gmgn.ai/sol/address/9nXDunV8eNvYSVys7JSBkm2hz9Q79Q3EYeko19srVeMC",
+      "explorer": "https://solscan.io/account/9nXDunV8eNvYSVys7JSBkm2hz9Q79Q3EYeko19srVeMC",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -832,7 +1136,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-13",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -860,7 +1164,9 @@
         "monthly_consistency": 0.45,
         "win_rate": 0.3,
         "liquidity": 0.25
-      }
+      },
+      "observation_shard": 13,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -868,13 +1174,38 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
-    "candidate_count": 0,
-    "candidate_keys": [],
-    "best_wallet": null,
-    "slice_score": null,
-    "status": "completed_no_match",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
+    "candidate_count": 1,
+    "candidate_keys": [
+      "solana:ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev"
+    ],
+    "best_wallet": {
+      "key": "solana:ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev",
+      "wallet": "ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev",
+      "chain": "solana",
+      "score": null,
+      "win_rate_pct": 100.0,
+      "observed_realized_pnl_usd": 0.0156,
+      "gmgn": "https://gmgn.ai/sol/address/ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev",
+      "explorer": "https://solscan.io/account/ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev",
+      "explorer_name": "Solscan"
+    },
+    "observation_count": 76,
+    "best_observation": {
+      "key": "solana:Gpji3gCNBywt89bYr3z5GcQC32rs8qDBy7iiHzEEvrGC",
+      "wallet": "Gpji3gCNBywt89bYr3z5GcQC32rs8qDBy7iiHzEEvrGC",
+      "chain": "solana",
+      "win_rate_pct": null,
+      "observed_realized_pnl_usd": null,
+      "gmgn": "https://gmgn.ai/sol/address/Gpji3gCNBywt89bYr3z5GcQC32rs8qDBy7iiHzEEvrGC",
+      "explorer": "https://solscan.io/account/Gpji3gCNBywt89bYr3z5GcQC32rs8qDBy7iiHzEEvrGC",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
+    "slice_score": 1.67,
+    "status": "completed",
     "copy_simulation": {
       "enabled": true,
       "status": "insufficient_data",
@@ -895,13 +1226,13 @@
       "goal_hit": false,
       "standout": false,
       "fills": [],
-      "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "reason": "No eligible observations.",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-14",
       "mode": "forward_observation_paper",
-      "copied_wallet": null,
+      "copied_wallet": "solana:ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev",
       "created_at_et": "2026-11-07 12:00:06 AM ET",
-      "selected_at_et": null
+      "selected_at_et": "2026-11-07 12:36:07 AM ET"
     },
     "role": "Monthly consistency: 6\u201312h holds, liquidity $2e+06\u2013$1e+07"
   },
@@ -924,7 +1255,9 @@
         "monthly_consistency": 0.45,
         "win_rate": 0.3,
         "liquidity": 0.25
-      }
+      },
+      "observation_shard": 14,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -932,11 +1265,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 96,
+    "best_observation": {
+      "key": "solana:Au1wR289M5P5bFtVmiziw3khfFKpXsWoTE995HcxhgJd",
+      "wallet": "Au1wR289M5P5bFtVmiziw3khfFKpXsWoTE995HcxhgJd",
+      "chain": "solana",
+      "win_rate_pct": null,
+      "observed_realized_pnl_usd": null,
+      "gmgn": "https://gmgn.ai/sol/address/Au1wR289M5P5bFtVmiziw3khfFKpXsWoTE995HcxhgJd",
+      "explorer": "https://solscan.io/account/Au1wR289M5P5bFtVmiziw3khfFKpXsWoTE995HcxhgJd",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -960,7 +1306,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-15",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -988,7 +1334,9 @@
         "big_move_3x_hit_rate": 0.45,
         "copy_capture_35_pct": 0.3,
         "win_rate": 0.25
-      }
+      },
+      "observation_shard": 15,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -996,11 +1344,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 69,
+    "best_observation": {
+      "key": "solana:CXLDbSJeHeRqCJEexxsYgSdLh2RzUEk3hSvLKEUmBY78",
+      "wallet": "CXLDbSJeHeRqCJEexxsYgSdLh2RzUEk3hSvLKEUmBY78",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -1.4215,
+      "gmgn": "https://gmgn.ai/sol/address/CXLDbSJeHeRqCJEexxsYgSdLh2RzUEk3hSvLKEUmBY78",
+      "explorer": "https://solscan.io/account/CXLDbSJeHeRqCJEexxsYgSdLh2RzUEk3hSvLKEUmBY78",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1024,7 +1385,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-16",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1052,7 +1413,9 @@
         "big_move_3x_hit_rate": 0.45,
         "copy_capture_35_pct": 0.3,
         "win_rate": 0.25
-      }
+      },
+      "observation_shard": 16,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1060,11 +1423,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 81,
+    "best_observation": {
+      "key": "solana:FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "wallet": "FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "chain": "solana",
+      "win_rate_pct": 25.0,
+      "observed_realized_pnl_usd": -28.3122,
+      "gmgn": "https://gmgn.ai/sol/address/FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "explorer": "https://solscan.io/account/FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1088,7 +1464,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-17",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1116,7 +1492,9 @@
         "big_move_3x_hit_rate": 0.45,
         "copy_capture_35_pct": 0.3,
         "win_rate": 0.25
-      }
+      },
+      "observation_shard": 17,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1124,11 +1502,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 81,
+    "best_observation": {
+      "key": "solana:GoGoGo6N99mpyB7rfzhw2R4fXmaFctURXHaHMoGCyoLD",
+      "wallet": "GoGoGo6N99mpyB7rfzhw2R4fXmaFctURXHaHMoGCyoLD",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -4.5248,
+      "gmgn": "https://gmgn.ai/sol/address/GoGoGo6N99mpyB7rfzhw2R4fXmaFctURXHaHMoGCyoLD",
+      "explorer": "https://solscan.io/account/GoGoGo6N99mpyB7rfzhw2R4fXmaFctURXHaHMoGCyoLD",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1152,7 +1543,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-18",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1180,7 +1571,9 @@
         "big_move_3x_hit_rate": 0.45,
         "copy_capture_35_pct": 0.3,
         "win_rate": 0.25
-      }
+      },
+      "observation_shard": 18,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1188,11 +1581,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 93,
+    "best_observation": {
+      "key": "solana:HYe4vSaEGqQKnDrxWDrk3o5H2gznv7qtij5G6NNG8WHd",
+      "wallet": "HYe4vSaEGqQKnDrxWDrk3o5H2gznv7qtij5G6NNG8WHd",
+      "chain": "solana",
+      "win_rate_pct": 39.6,
+      "observed_realized_pnl_usd": -13.7734,
+      "gmgn": "https://gmgn.ai/sol/address/HYe4vSaEGqQKnDrxWDrk3o5H2gznv7qtij5G6NNG8WHd",
+      "explorer": "https://solscan.io/account/HYe4vSaEGqQKnDrxWDrk3o5H2gznv7qtij5G6NNG8WHd",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1216,7 +1622,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-19",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1244,7 +1650,9 @@
         "big_move_3x_hit_rate": 0.45,
         "copy_capture_35_pct": 0.3,
         "win_rate": 0.25
-      }
+      },
+      "observation_shard": 19,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1252,11 +1660,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 84,
+    "best_observation": {
+      "key": "solana:FUBVxWEmxHbm3H9TbLgEQQ6d8bvsdw4sgkNJysFeSLRG",
+      "wallet": "FUBVxWEmxHbm3H9TbLgEQQ6d8bvsdw4sgkNJysFeSLRG",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -5.206,
+      "gmgn": "https://gmgn.ai/sol/address/FUBVxWEmxHbm3H9TbLgEQQ6d8bvsdw4sgkNJysFeSLRG",
+      "explorer": "https://solscan.io/account/FUBVxWEmxHbm3H9TbLgEQQ6d8bvsdw4sgkNJysFeSLRG",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1280,7 +1701,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-20",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1308,7 +1729,9 @@
         "liquidity": 0.35,
         "win_rate": 0.35,
         "monthly_consistency": 0.3
-      }
+      },
+      "observation_shard": 20,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1316,11 +1739,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 88,
+    "best_observation": {
+      "key": "solana:GLRtrHn8VE1e9EoG5WQHEFicdvjTfPqKYSsUBvfXensN",
+      "wallet": "GLRtrHn8VE1e9EoG5WQHEFicdvjTfPqKYSsUBvfXensN",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -0.1374,
+      "gmgn": "https://gmgn.ai/sol/address/GLRtrHn8VE1e9EoG5WQHEFicdvjTfPqKYSsUBvfXensN",
+      "explorer": "https://solscan.io/account/GLRtrHn8VE1e9EoG5WQHEFicdvjTfPqKYSsUBvfXensN",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1344,7 +1780,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-21",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1372,7 +1808,9 @@
         "liquidity": 0.35,
         "win_rate": 0.35,
         "monthly_consistency": 0.3
-      }
+      },
+      "observation_shard": 21,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1380,11 +1818,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 88,
+    "best_observation": {
+      "key": "solana:E4pdfe4j5XdRJv1aV4ucuGzpesFGHpB6dYWeiNusgMuA",
+      "wallet": "E4pdfe4j5XdRJv1aV4ucuGzpesFGHpB6dYWeiNusgMuA",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -0.0075,
+      "gmgn": "https://gmgn.ai/sol/address/E4pdfe4j5XdRJv1aV4ucuGzpesFGHpB6dYWeiNusgMuA",
+      "explorer": "https://solscan.io/account/E4pdfe4j5XdRJv1aV4ucuGzpesFGHpB6dYWeiNusgMuA",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1408,7 +1859,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-22",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1436,7 +1887,9 @@
         "liquidity": 0.35,
         "win_rate": 0.35,
         "monthly_consistency": 0.3
-      }
+      },
+      "observation_shard": 22,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1444,11 +1897,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 81,
+    "best_observation": {
+      "key": "solana:Bf5i5AaLejNRSJ5L6KAnq47uiWT1VSKDxaYdJYP6DRK",
+      "wallet": "Bf5i5AaLejNRSJ5L6KAnq47uiWT1VSKDxaYdJYP6DRK",
+      "chain": "solana",
+      "win_rate_pct": null,
+      "observed_realized_pnl_usd": null,
+      "gmgn": "https://gmgn.ai/sol/address/Bf5i5AaLejNRSJ5L6KAnq47uiWT1VSKDxaYdJYP6DRK",
+      "explorer": "https://solscan.io/account/Bf5i5AaLejNRSJ5L6KAnq47uiWT1VSKDxaYdJYP6DRK",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1472,7 +1938,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-23",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1500,7 +1966,9 @@
         "liquidity": 0.35,
         "win_rate": 0.35,
         "monthly_consistency": 0.3
-      }
+      },
+      "observation_shard": 23,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1508,11 +1976,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 92,
+    "best_observation": {
+      "key": "solana:BjFnVmpurxeV8gbXhNDvum725iqEfmGFqB6wpA8ZUDzt",
+      "wallet": "BjFnVmpurxeV8gbXhNDvum725iqEfmGFqB6wpA8ZUDzt",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -1.5444,
+      "gmgn": "https://gmgn.ai/sol/address/BjFnVmpurxeV8gbXhNDvum725iqEfmGFqB6wpA8ZUDzt",
+      "explorer": "https://solscan.io/account/BjFnVmpurxeV8gbXhNDvum725iqEfmGFqB6wpA8ZUDzt",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1536,7 +2017,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-24",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1564,7 +2045,9 @@
         "liquidity": 0.35,
         "win_rate": 0.35,
         "monthly_consistency": 0.3
-      }
+      },
+      "observation_shard": 24,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1572,11 +2055,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 88,
+    "best_observation": {
+      "key": "solana:AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51",
+      "wallet": "AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51",
+      "chain": "solana",
+      "win_rate_pct": 18.18,
+      "observed_realized_pnl_usd": -3.1726,
+      "gmgn": "https://gmgn.ai/sol/address/AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51",
+      "explorer": "https://solscan.io/account/AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1600,7 +2096,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-25",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1628,7 +2124,9 @@
         "follower_hold_time": 0.35,
         "monthly_consistency": 0.35,
         "win_rate": 0.3
-      }
+      },
+      "observation_shard": 25,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1636,11 +2134,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 101,
+    "best_observation": {
+      "key": "solana:BxtRiyK2mpsZDRnfMNofJoBbPXR8KQW8PYgnaAy1RBbJ",
+      "wallet": "BxtRiyK2mpsZDRnfMNofJoBbPXR8KQW8PYgnaAy1RBbJ",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -1.634,
+      "gmgn": "https://gmgn.ai/sol/address/BxtRiyK2mpsZDRnfMNofJoBbPXR8KQW8PYgnaAy1RBbJ",
+      "explorer": "https://solscan.io/account/BxtRiyK2mpsZDRnfMNofJoBbPXR8KQW8PYgnaAy1RBbJ",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1664,7 +2175,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-26",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1692,7 +2203,9 @@
         "follower_hold_time": 0.35,
         "monthly_consistency": 0.35,
         "win_rate": 0.3
-      }
+      },
+      "observation_shard": 26,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1700,11 +2213,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 95,
+    "best_observation": {
+      "key": "solana:2ZajPpFkpRrrmDb878HfZJLqLNB5gsyocB8vagSz5sbq",
+      "wallet": "2ZajPpFkpRrrmDb878HfZJLqLNB5gsyocB8vagSz5sbq",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -1.5491,
+      "gmgn": "https://gmgn.ai/sol/address/2ZajPpFkpRrrmDb878HfZJLqLNB5gsyocB8vagSz5sbq",
+      "explorer": "https://solscan.io/account/2ZajPpFkpRrrmDb878HfZJLqLNB5gsyocB8vagSz5sbq",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1728,7 +2254,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-27",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1756,7 +2282,9 @@
         "follower_hold_time": 0.35,
         "monthly_consistency": 0.35,
         "win_rate": 0.3
-      }
+      },
+      "observation_shard": 27,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1764,11 +2292,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 72,
+    "best_observation": {
+      "key": "solana:CYobT8HLMnVTwCNNtG4qymUX15wFx7dxCBvN3R8pdMyw",
+      "wallet": "CYobT8HLMnVTwCNNtG4qymUX15wFx7dxCBvN3R8pdMyw",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -0.0151,
+      "gmgn": "https://gmgn.ai/sol/address/CYobT8HLMnVTwCNNtG4qymUX15wFx7dxCBvN3R8pdMyw",
+      "explorer": "https://solscan.io/account/CYobT8HLMnVTwCNNtG4qymUX15wFx7dxCBvN3R8pdMyw",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1792,7 +2333,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-28",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1820,7 +2361,9 @@
         "follower_hold_time": 0.35,
         "monthly_consistency": 0.35,
         "win_rate": 0.3
-      }
+      },
+      "observation_shard": 28,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1828,11 +2371,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 84,
+    "best_observation": {
+      "key": "solana:8qTGYBrS67hmjJ9rmK9kfjx63bjuhEAYyk8iuWPN9mcb",
+      "wallet": "8qTGYBrS67hmjJ9rmK9kfjx63bjuhEAYyk8iuWPN9mcb",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -0.0076,
+      "gmgn": "https://gmgn.ai/sol/address/8qTGYBrS67hmjJ9rmK9kfjx63bjuhEAYyk8iuWPN9mcb",
+      "explorer": "https://solscan.io/account/8qTGYBrS67hmjJ9rmK9kfjx63bjuhEAYyk8iuWPN9mcb",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1856,7 +2412,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-29",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1884,7 +2440,9 @@
         "follower_hold_time": 0.35,
         "monthly_consistency": 0.35,
         "win_rate": 0.3
-      }
+      },
+      "observation_shard": 29,
+      "observation_shards": 30
     },
     "discovery": {
       "source": "shared GeckoTerminal/DexScreener queue",
@@ -1892,11 +2450,24 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
-    "wallets_evaluated": 1374,
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
+    "wallets_evaluated": 2618,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 93,
+    "best_observation": {
+      "key": "solana:BuayACyo1NUBi3BZLoP2yUfWfvUGy1PmF8UGWpxNQfN9",
+      "wallet": "BuayACyo1NUBi3BZLoP2yUfWfvUGy1PmF8UGWpxNQfN9",
+      "chain": "solana",
+      "win_rate_pct": 0.0,
+      "observed_realized_pnl_usd": -1.3204,
+      "gmgn": "https://gmgn.ai/sol/address/BuayACyo1NUBi3BZLoP2yUfWfvUGy1PmF8UGWpxNQfN9",
+      "explorer": "https://solscan.io/account/BuayACyo1NUBi3BZLoP2yUfWfvUGy1PmF8UGWpxNQfN9",
+      "explorer_name": "Solscan",
+      "score": null,
+      "score_label": "Not enough data"
+    },
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1920,7 +2491,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-30",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -1957,11 +2528,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -1985,7 +2558,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-31",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2022,11 +2595,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2050,7 +2625,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-32",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2087,11 +2662,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2115,7 +2692,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-33",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2152,11 +2729,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2180,7 +2759,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-34",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2217,11 +2796,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2245,7 +2826,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-35",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2282,11 +2863,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2310,7 +2893,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-36",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2347,11 +2930,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2375,7 +2960,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-37",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2412,11 +2997,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2440,7 +3027,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-38",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2477,11 +3064,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2505,7 +3094,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-39",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2542,11 +3131,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2570,7 +3161,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-40",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2606,11 +3197,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2634,7 +3227,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-41",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2670,11 +3263,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2698,7 +3293,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-42",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2734,11 +3329,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2762,7 +3359,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-43",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2798,11 +3395,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2826,7 +3425,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-44",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2862,11 +3461,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 233,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2890,7 +3491,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-45",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2927,11 +3528,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 345,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -2955,7 +3558,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-46",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -2992,11 +3595,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 345,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -3020,7 +3625,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-47",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -3057,7 +3662,7 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 345,
     "candidate_count": 20,
     "candidate_keys": [
@@ -3093,6 +3698,8 @@
       "explorer": "https://robinhoodchain.blockscout.com/address/0xe429478fccbb68e9d1640c061ebfc6afdf01226c",
       "explorer_name": "Robinhood Explorer"
     },
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": 0.0,
     "status": "completed",
     "copy_simulation": {
@@ -3116,7 +3723,7 @@
       "standout": false,
       "fills": [],
       "reason": "No eligible observations.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-48",
       "mode": "forward_observation_paper",
       "copied_wallet": "robinhood:0xe429478fccbb68e9d1640c061ebfc6afdf01226c",
@@ -3153,11 +3760,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 345,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -3181,7 +3790,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-49",
       "mode": "forward_observation_paper",
       "copied_wallet": null,
@@ -3218,11 +3827,13 @@
       "ethereum_mainnet": false
     },
     "clocked_in": true,
-    "last_run_et": "2026-11-07 12:02:26 AM ET",
+    "last_run_et": "2026-11-07 12:36:06 AM ET",
     "wallets_evaluated": 345,
     "candidate_count": 0,
     "candidate_keys": [],
     "best_wallet": null,
+    "observation_count": 0,
+    "best_observation": null,
     "slice_score": null,
     "status": "completed_no_match",
     "copy_simulation": {
@@ -3246,7 +3857,7 @@
       "standout": false,
       "fills": [],
       "reason": "Waiting for this hunter\u2019s first real slice match; no fabricated fills.",
-      "as_of_et": "2026-11-07 12:02:26 AM ET",
+      "as_of_et": "2026-11-07 12:36:06 AM ET",
       "account_id": "hunter-50",
       "mode": "forward_observation_paper",
       "copied_wallet": null,

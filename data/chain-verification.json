@@ -87,18 +87,21 @@
   },
   "solana": {
     "chain": "solana",
-    "errors": [
-      "429 Client Error: Too Many Requests for url: https://api.mainnet-beta.solana.com/"
-    ],
+    "errors": [],
     "attribution_checks": [
       {
-        "tx": "435GQAGZdfZvNygQpsKuguwvZFCgoVJtT2yUkWEAvrBB21DUkQbmqro2YYvUqGknE4EdEKepG946bRhBqEUAkjCs",
+        "tx": "52Jbwg8yivx8eWPZYGBVihQzCzUYiX1qzVikQ8j7CdaaiaApgj9rdjCwHyX5tv6s7b7M8Qd5LbH43YL3DB8MZNNu",
         "signers": [
-          "gasTzr94Pmp4Gf8vknQnqxeYxdgwFjbgdJa4msYRpnB",
-          "6sMZASrgT1KGzyHw4Nq7yifkEdW5Er5gYqKXXoTCpnZc"
+          "2ZajPpFkpRrrmDb878HfZJLqLNB5gsyocB8vagSz5sbq"
+        ]
+      },
+      {
+        "tx": "2Vg4hiCwLig7s7BKr42RLGfetRch3ahaTDNkhW1j1L1Vr4a5rhUt8cDsmXygTpb8mKWHAEYG2ZEzZAFdjZNLHemL",
+        "signers": [
+          "BjFnVmpurxeV8gbXhNDvum725iqEfmGFqB6wpA8ZUDzt"
         ]
       }
     ],
-    "slot": 466387464
+    "slot": 466396865
   }
 }

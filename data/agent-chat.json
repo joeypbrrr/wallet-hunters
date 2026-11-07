@@ -1,332 +1,322 @@
 [
   {
     "agent": "Publisher",
-    "time_et": "2026-11-07 12:00:36 AM ET",
+    "time_et": "2026-11-07 12:32:27 AM ET",
     "text": "Starting 50 real deterministic hunting jobs across Solana, BNB and Robinhood; no Ethereum mainnet and no transactions sent."
   },
   {
-    "agent": "Robinhood Chain",
-    "time_et": "2026-11-07 12:01:09 AM ET",
-    "text": "8 tokens, 600 recent swaps; 0 bounded RPC checks; 0 RPC errors."
-  },
-  {
-    "agent": "BNB Chain",
-    "time_et": "2026-11-07 12:01:58 AM ET",
-    "text": "3 tokens, 600 recent swaps; 3 bounded RPC checks; 0 RPC errors."
-  },
-  {
     "agent": "Solana",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "18 tokens, 600 recent swaps; 1 bounded RPC checks; 1 RPC errors."
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "32 tokens, 4775 recent swaps; 2 bounded RPC checks; 0 RPC errors."
   },
   {
     "agent": "Lyra",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 3 match; best=GkZbaqoFVbfZf3cSNPxHdtSfQWajnqvbXcVH98d1QD5G"
   },
   {
     "agent": "Orion",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 1 match; best=3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom"
   },
   {
     "agent": "Vega",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 2 match; best=DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz"
   },
   {
     "agent": "Atlas",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 7 match; best=FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT"
   },
   {
     "agent": "Nova",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 5 match; best=FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp"
   },
   {
     "agent": "Cassio",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 1 match; best=EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH"
   },
   {
     "agent": "Rigel",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Mira",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 1 match; best=Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF"
   },
   {
     "agent": "Sirius",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 1 match; best=DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe"
   },
   {
     "agent": "Elara",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Arden",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Kepler",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Astra",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Nash",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 1 match; best=ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev"
   },
   {
     "agent": "Echo",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Juno",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Lumen",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Kestrel",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Sol",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Nyx",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Rune",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Cleo",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Aster",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Vale",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Sable",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Iris",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Cobalt",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Fable",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Piper",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Zenith",
-    "time_et": "2026-11-07 12:02:26 AM ET",
-    "text": "solana slice completed: 1374 wallets evaluated, 0 match; best=insufficient data"
+    "time_et": "2026-11-07 12:36:06 AM ET",
+    "text": "solana slice completed: 2618 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Bao",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Lotus",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Jade",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Crane",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Onyx",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Mica",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Flint",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Sora",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Indigo",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Tao",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Mako",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Reed",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Koa",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Nori",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Silk",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "bsc slice completed: 233 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Robin",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "robinhood slice completed: 345 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Wren",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "robinhood slice completed: 345 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Finch",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "robinhood slice completed: 345 wallets evaluated, 20 match; best=0xe429478fccbb68e9d1640c061ebfc6afdf01226c"
   },
   {
     "agent": "Swift",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "robinhood slice completed: 345 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Lark",
-    "time_et": "2026-11-07 12:02:26 AM ET",
+    "time_et": "2026-11-07 12:36:06 AM ET",
     "text": "robinhood slice completed: 345 wallets evaluated, 0 match; best=insufficient data"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 11:11:07 PM ET",
-    "text": "Modeled copy loss $6.3047; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0x5a8f1cd5d69a53b91ad09fe381f0e6cca53b19afe5798a16ba7befb04160fe70"
+    "time_et": "2026-11-06 11:17:01 PM ET",
+    "text": "Modeled copy loss $7.1424; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/2YY9TSN6E63txFtibv1Dk7h3xTk53Qj4JyVgrsrVrPC8AWMx81cczFnYhTtytAjZ69g6dhH5eEFSpYzk2GfJCDjH"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 11:10:33 PM ET",
-    "text": "Modeled copy loss $6.1492; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0x52f2fbc3715beaa8ae34fb1bc4c253c3d19b001e61ce394e7ee176770fa50d1d"
+    "time_et": "2026-11-06 11:17:01 PM ET",
+    "text": "Modeled copy loss $7.1424; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/2YY9TSN6E63txFtibv1Dk7h3xTk53Qj4JyVgrsrVrPC8AWMx81cczFnYhTtytAjZ69g6dhH5eEFSpYzk2GfJCDjH"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 10:38:19 PM ET",
-    "text": "Modeled copy loss $4.7821; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0x3d714e690fc07d86a51ac571108183c0129919663c147fbbe90f82a4d7712478"
+    "time_et": "2026-11-06 11:17:01 PM ET",
+    "text": "Modeled copy loss $7.1424; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/2YY9TSN6E63txFtibv1Dk7h3xTk53Qj4JyVgrsrVrPC8AWMx81cczFnYhTtytAjZ69g6dhH5eEFSpYzk2GfJCDjH"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 10:38:19 PM ET",
-    "text": "Modeled copy loss $5.2423; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0x3d714e690fc07d86a51ac571108183c0129919663c147fbbe90f82a4d7712478"
+    "time_et": "2026-11-06 11:47:01 PM ET",
+    "text": "Modeled copy loss $6.7998; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/3d9cH6YiQuwkvB1RKQgXKXCWybjJSt24JzsChpZKNBwaJJia5kquU87AYpE5zumLBPfZ61XyCAUpaX9hhCts692n"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 11:11:10 PM ET",
-    "text": "Modeled copy loss $6.5156; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0x86e54c70b5ed81f8665015e4a8c0c4baa1ce3498843b7b51045b13095326df53"
+    "time_et": "2026-11-06 11:47:01 PM ET",
+    "text": "Modeled copy loss $6.2255; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/3d9cH6YiQuwkvB1RKQgXKXCWybjJSt24JzsChpZKNBwaJJia5kquU87AYpE5zumLBPfZ61XyCAUpaX9hhCts692n"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 11:11:09 PM ET",
-    "text": "Modeled copy loss $6.3824; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0x8b9add6e3f3d19cf270f7774f426c1c03cb69bb1c8ad65cdc26bf86703537505"
+    "time_et": "2026-11-06 11:47:01 PM ET",
+    "text": "Modeled copy loss $6.4437; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/3d9cH6YiQuwkvB1RKQgXKXCWybjJSt24JzsChpZKNBwaJJia5kquU87AYpE5zumLBPfZ61XyCAUpaX9hhCts692n"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 11:11:07 PM ET",
-    "text": "Modeled copy loss $5.8474; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0x1b89122d7e55a2bc1c4223ba32b35d664f707a10dede15e8efd7d8ccf23cad70"
+    "time_et": "2026-11-06 11:51:55 PM ET",
+    "text": "Modeled copy loss $6.7843; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/3Msed7LwoCYimxYk2sDKhD92NhFW5QWUMKjCSovZ17FZUysUS1f8jL27npygbgigUxag2p4dD96grDVwU2Ngkzgn"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 11:11:07 PM ET",
-    "text": "Modeled copy loss $5.8587; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0xfc58d77ab14a56fd099d094983c7be8b64c8892009af92f509368e7ef2ac888c"
+    "time_et": "2026-11-07 12:34:32 AM ET",
+    "text": "Modeled copy loss $8.5011; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/3RxRk8MC6tsTJxYX4zSYdJHpCZv1bq8PvQTRXRDVPii3Y5oSf4a82X1egdmkL8UKt5rPGgYVAhmUtjVpVAFUuF6P"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 11:11:09 PM ET",
-    "text": "Modeled copy loss $5.9668; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0xe13a6c41492f4525fab983a3ca6660d0ebee56042cc19326da2b8484722e414f"
+    "time_et": "2026-11-07 12:01:17 AM ET",
+    "text": "Modeled copy loss $6.5109; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/gWnPXnpMwCr6owJgQvZ2RBttQZJgekUzzBsejhJoxnJCw8V6utDGJKyaURibrwJt62bu2JyAkxfac2HijAr8ysE"
   },
   {
     "agent": "Loss Review Council",
-    "time_et": "2026-11-06 11:10:34 PM ET",
-    "text": "Modeled copy loss $6.1003; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
-    "evidence": "https://robinhoodchain.blockscout.com/tx/0x3db002a8446c10ea35903affdc28ad49ebc76dccc50c9d8cddb21ea935f27c42"
+    "time_et": "2026-11-06 10:11:14 PM ET",
+    "text": "Modeled copy loss $12.2173; exit=source_sell. The delayed, slipped entry plus modeled fees did not recover before this observed exit. This is a simulation result, not a proven reason for the source trader\u2019s decision.",
+    "evidence": "https://solscan.io/tx/3AqHWEH3bBRi79BGpnf3S2Luxf2i3ZMhQus4Qv7f64opgbcnRUC23gbxpqNWhRDEnyytXrggx1W8trxCKANK1693"
   }
 ]

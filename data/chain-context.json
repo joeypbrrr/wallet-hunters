@@ -52,8 +52,8 @@
   },
   "solana": {
     "liquidity": {
-      "3zPjPxhp7tGFCmSq4x14ZTwttWUeoJevXESC7Xvrpump": 84149.81,
-      "9PFMuqNSLFmwAhgJdSLCvgkNAoAsfWaAzyFHtJQwpump": 60366.13,
+      "3zPjPxhp7tGFCmSq4x14ZTwttWUeoJevXESC7Xvrpump": 83596.45,
+      "9PFMuqNSLFmwAhgJdSLCvgkNAoAsfWaAzyFHtJQwpump": 59088.39,
       "4CX9pg8hTJCqAnpY3Xqkvt6i7aQ6UtNPPifE64vMM8r1": 9029604.07,
       "AyiQP43hqPXRfJNH1kcRVS7jq1AjbCqXK2E4jxmWVP5u": 2191052624.65,
       "5vhw96LZoKA4K8kbBkTJXBYvJSN1RWJzJgJbYEorBChv": 1597167475.25,
@@ -61,56 +61,136 @@
       "5Sqq3NWD98JkcirdDBKRxZFsoZ8f1qqpFp6DSZkoTsHd": 2314312038.54,
       "Ec7QYcw4RtXBvGkAsTZnq11uMbKhoyoLkCHbkLJV8V2E": 2511354238.75,
       "Cqnm4mkL5tAfBmKqqSwvg4zT2SQWBUuT3DGxhgg21FmM": 2487853483.05,
-      "EPPiSnGoWRcAV8XhPEokxCw4y6CH2LV6nzSo1YsGSEnj": 2563319154.55,
-      "6xKicXmEgJEZ8YeWUBKyh8iSU1kJ9fMEUbZJjQfF7dd9": 2516856971.08,
-      "CkH8iAKJhdAvLj9EijKdYwpbhrq6wjmFRZLSu5Rgsjrp": 2159225072.84,
-      "FbLaAw9wKLVcvGpfE7eDL1DHmANyNUdn59dfkD4u31zC": 2178464723.85,
       "AvU2iYyDk3mwHkqaAqTahRXPniXvuJc5DmpBYRK97688": 2510075140.98,
+      "6xKicXmEgJEZ8YeWUBKyh8iSU1kJ9fMEUbZJjQfF7dd9": 2516856971.08,
+      "EPPiSnGoWRcAV8XhPEokxCw4y6CH2LV6nzSo1YsGSEnj": 2563319154.55,
+      "FbLaAw9wKLVcvGpfE7eDL1DHmANyNUdn59dfkD4u31zC": 2178464723.85,
+      "CkH8iAKJhdAvLj9EijKdYwpbhrq6wjmFRZLSu5Rgsjrp": 2159225072.84,
       "FwtKA62k47DYe3jHmPNjspjVdc7PhipbqZjxTMfp81m6": 2542177622.44,
       "97owM7j5K2ciCKjh1Efi8ix8Et9Tp7sjgnmLM2CHMamN": 2272336434.65,
-      "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump": 58584.7761,
-      "5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump": 64973.0222
+      "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump": 57905.3108,
+      "5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump": 65135.7963,
+      "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump": 1275111.4433,
+      "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump": 342149.7043,
+      "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv": 3525.2591,
+      "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1700452.5587,
+      "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn": 22231958.31,
+      "EW1b9rcLAJe634mgxb5r4bVYxDoGU37o7YazBzjTpump": 9292.8714,
+      "oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump": 108504.805,
+      "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN": 6270606.1588,
+      "APgbBfggjo79T7PdVqTQcEbVdQWBCif1kLTwjRwrxc8Z": 13253.6813,
+      "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 2026211.5827,
+      "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS": 4263424.341,
+      "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": 364746.4411,
+      "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp": 3587976.2087,
+      "HZbiEpF2oM658EpjNRRqxharz5L9Ddm8akpSH2R5pump": 81800.0805
     },
     "pools": [
       {
         "address": "12jc1DzJpzbCDaKuM4brAKh9jcFry2TLG1FfGsL4ftCG",
         "token": "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump",
         "name": "SI276 / SOL",
-        "volume_24h_usd": "112278.589214363"
+        "volume_24h_usd": "113171.660932988"
       },
       {
         "address": "GhFSaPdvu75KCpsUVk7CZ8A1tdjYeo6YvZx1QiBgwfSJ",
         "token": "5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump",
         "name": "Diamond / PUMP",
-        "volume_24h_usd": "3294799.13587443"
+        "volume_24h_usd": "3238171.64836995"
+      },
+      {
+        "address": "FnzKY6x7entQ1eR3D225dQyT7ybfka4PskBMQhb8L3CC",
+        "token": "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+        "name": "ANSEM / SOL",
+        "volume_24h_usd": "1669145.47922651"
+      },
+      {
+        "address": "8GjMy6ipYsXfMWwRPu9C7ATssorjg6AL88d9xtTZsLqe",
+        "token": "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump",
+        "name": "COGE / SOL",
+        "volume_24h_usd": "2231248.35154526"
+      },
+      {
+        "address": "4DRwovSL7X4gWN94CrZQrDvgY2ytdMveWDHQU6LEGWg3",
+        "token": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+        "name": "PENGU / SOL",
+        "volume_24h_usd": "597.9424937263"
+      },
+      {
+        "address": "GUWFT7bbLphGrcpAPnnEnBbe1uErv9e6LLC2qPx2wZy1",
+        "token": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+        "name": "BIRB / USDC",
+        "volume_24h_usd": "9064949.20317326"
+      },
+      {
+        "address": "2uF4Xh61rDwxnG9woyxsVQP7zuA6kLFpb3NvnRQeoiSd",
+        "token": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+        "name": "PUMP / USDC",
+        "volume_24h_usd": "3324531.89321708"
+      },
+      {
+        "address": "639HxYRwtpmBKv6qJeYFd7WGckGQ3KsRKZixB9hjcRbv",
+        "token": "EW1b9rcLAJe634mgxb5r4bVYxDoGU37o7YazBzjTpump",
+        "name": "RM / SOL",
+        "volume_24h_usd": "2011239.94248552"
+      },
+      {
+        "address": "6ZV8dyRdxH56Au2EbhpZZBMKpRP5ixBKPRJ7hB2pJ3rr",
+        "token": "oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump",
+        "name": "AMD / SOL",
+        "volume_24h_usd": "3626286.32845222"
+      },
+      {
+        "address": "3C5YE97HADPDxZehYq9Cis8AXr9aNyrUsczKzE1nDbW9",
+        "token": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+        "name": "TRUMP / USDC",
+        "volume_24h_usd": "2960786.41640569"
+      },
+      {
+        "address": "AAGJchFovT6tQbh2rsysmzs9xNoehz3bxejEDstUvDU4",
+        "token": "APgbBfggjo79T7PdVqTQcEbVdQWBCif1kLTwjRwrxc8Z",
+        "name": "APPLEPAID / AAPLx",
+        "volume_24h_usd": "1615196.4930505"
+      },
+      {
+        "address": "zxTpi4BtaWX3mgdAPoezkMD1hxx8CdeCfrqXMWvSCLX",
+        "token": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+        "name": "STONK / SOL",
+        "volume_24h_usd": "2822270.68026095"
+      },
+      {
+        "address": "GTHKH8s82ZR8GTSFZ1dUu6wfdxhy59wpMShxzG5zjiPm",
+        "token": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
+        "name": "ZEC / USDC",
+        "volume_24h_usd": "14761943.1220297"
+      },
+      {
+        "address": "5E3dXLXGwmTDCokA51WYYaKttjFZBwqCoyUHBUi5gt2m",
+        "token": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+        "name": "GATO / SOL",
+        "volume_24h_usd": "1531927.98569503"
+      },
+      {
+        "address": "HnhpJPJgBG2KwniMTNW8cVBHvk1hFog3RC3kjnyc23tD",
+        "token": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+        "name": "CARDS / USDC",
+        "volume_24h_usd": "5887868.70301218"
+      },
+      {
+        "address": "3jW1ykKqUTNgNUDGbrwXpvZKtMFf4pWytoTP3TeXhKBQ",
+        "token": "HZbiEpF2oM658EpjNRRqxharz5L9Ddm8akpSH2R5pump",
+        "name": "Rocco / TTWO",
+        "volume_24h_usd": "1058481.18924842"
       }
     ],
     "transfers": [
       {
-        "from": "6sMZASrgT1KGzyHw4Nq7yifkEdW5Er5gYqKXXoTCpnZc",
-        "to": "Hq5Voz9qoR6VcBRDYtc3HbSLkVqNMMpcnwxGKo5eKXkR",
-        "lamports": 30000000,
-        "tx": "435GQAGZdfZvNygQpsKuguwvZFCgoVJtT2yUkWEAvrBB21DUkQbmqro2YYvUqGknE4EdEKepG946bRhBqEUAkjCs"
-      },
-      {
-        "from": "6sMZASrgT1KGzyHw4Nq7yifkEdW5Er5gYqKXXoTCpnZc",
-        "to": "gasTzr94Pmp4Gf8vknQnqxeYxdgwFjbgdJa4msYRpnB",
-        "lamports": 1488440,
-        "tx": "435GQAGZdfZvNygQpsKuguwvZFCgoVJtT2yUkWEAvrBB21DUkQbmqro2YYvUqGknE4EdEKepG946bRhBqEUAkjCs"
-      },
-      {
-        "from": "gasTzr94Pmp4Gf8vknQnqxeYxdgwFjbgdJa4msYRpnB",
-        "to": "4J5QTaUUkGdQUyxRLmqXrrxFZFWDdskhB7j8YB6Aezgb",
-        "lamports": 1346200,
-        "tx": "435GQAGZdfZvNygQpsKuguwvZFCgoVJtT2yUkWEAvrBB21DUkQbmqro2YYvUqGknE4EdEKepG946bRhBqEUAkjCs"
-      },
-      {
-        "from": "6sMZASrgT1KGzyHw4Nq7yifkEdW5Er5gYqKXXoTCpnZc",
-        "to": "gasTzr94Pmp4Gf8vknQnqxeYxdgwFjbgdJa4msYRpnB",
-        "lamports": 1346200,
-        "tx": "435GQAGZdfZvNygQpsKuguwvZFCgoVJtT2yUkWEAvrBB21DUkQbmqro2YYvUqGknE4EdEKepG946bRhBqEUAkjCs"
+        "from": "BjFnVmpurxeV8gbXhNDvum725iqEfmGFqB6wpA8ZUDzt",
+        "to": "552bAP24AxHWZCcNsUJhvGAv8XmeJmRHueZURSfSvNjJ",
+        "lamports": 9175151,
+        "tx": "2Vg4hiCwLig7s7BKr42RLGfetRch3ahaTDNkhW1j1L1Vr4a5rhUt8cDsmXygTpb8mKWHAEYG2ZEzZAFdjZNLHemL"
       }
     ],
-    "updated_at_et": "2026-11-07 12:02:26 AM ET"
+    "updated_at_et": "2026-11-07 12:36:06 AM ET"
   }
 }

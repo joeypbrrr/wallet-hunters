@@ -6,6 +6,108 @@
   "required_daily_return_pct": 60.0,
   "accounts": [
     {
+      "wallet_key": "solana:FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+      "realized_today_usd": -26.589684,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:GLiCiNEnku3pQsmkVkRvnDLbfUN9BWbsrPDWLdPaADng",
+      "realized_today_usd": -16.640256,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:ATxToSApFMKUWDdaCPoVi18SRwfLaStnrAdwGT1ap2ev",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:GoGoGo6N99mpyB7rfzhw2R4fXmaFctURXHaHMoGCyoLD",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:FkaLnX17cXZGyeu3kZGdHCNdFMJJzBrPPYVvd18B3MZp",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:GkZbaqoFVbfZf3cSNPxHdtSfQWajnqvbXcVH98d1QD5G",
+      "realized_today_usd": 6.059573,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:DrjniB6U7Ugi1rZZ1b5Xs9pffJ1EfhGijhC6Ms8ujgLe",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:DxMTxSnvpuhxH6oBMMCbCQNcw7eygEqeDLL9F9z8peXz",
+      "realized_today_usd": -3.859188,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:Etu245rkd5tLsWGraSa97jKZKZDTuUffCB4uYbkRHkF1",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:Aud2Dfp4x2Dxcbmb6vYiLhSGSrfUZMA4nky1XPtVZmNa",
+      "realized_today_usd": 5.966781,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:3byvsa7YHf9iqN37iguJN4jWZMtpvBL1SL9XCJvGuVwT",
+      "realized_today_usd": 5.887541,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:FUBVxWEmxHbm3H9TbLgEQQ6d8bvsdw4sgkNJysFeSLRG",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:FUEL3Te8gvaohxwQMapfMTeJVHh2z1BL9fvTCcHZeYEh",
+      "realized_today_usd": -6.903466,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:A8A9GoxfmcjY2QAQ8tYS98SqDBF6hUFDmxAKBsLw29sL",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:A1A1bDGXpu6ew8n3fgrzQfZW33cP4vVzAnhTeJJqe1uw",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:H4arxkST9m8UaASkLxEKrAT7RrfvayBBWV9oYpVkXZDb",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:CZS7B5Y5MJvFiuQnVJyJuDkDokYpf6c3qhcDPQu8asV",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
       "wallet_key": "robinhood:0xe429478fccbb68e9d1640c061ebfc6afdf01226c",
       "realized_today_usd": 0,
       "goal_hit": false,
@@ -14,6 +116,30 @@
     {
       "wallet_key": "robinhood:0xb3421e7f399316d45b49563072c07246081e7d08",
       "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:Jd97uyw9wb6PxV2jawAjS7aU6XUMHbcfn4En8xRP7Mg",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:3AoQmpHaVTV3tcZqWAFrYgtCPqkMkdgxib9MjtvDRsom",
+      "realized_today_usd": -8.501094,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:GDpQztDTm5rFSvCnxXuYDCR4NRrLSLxKc4KmJ3rNktke",
+      "realized_today_usd": -6.510898,
       "goal_hit": false,
       "standout": false
     },
@@ -121,6 +247,12 @@
     },
     {
       "wallet_key": "robinhood:0x7407e0f50a19b026b8a75b3b9cbc7c1400f618be",
+      "realized_today_usd": 0,
+      "goal_hit": false,
+      "standout": false
+    },
+    {
+      "wallet_key": "solana:EUdFWWNP4BT8BUfVhrAdqhGXAHNPVt2BkAsfUvP8P3hH",
       "realized_today_usd": 0,
       "goal_hit": false,
       "standout": false
