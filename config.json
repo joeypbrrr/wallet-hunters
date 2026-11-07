@@ -5,13 +5,18 @@
   "minimum_observed_months": 3,
   "minimum_liquidity_usd": 25000,
   "features": {
-    "wallet_pnl_tracker": false,
-    "consistency_score": false,
-    "wallet_tiers": false,
-    "wallet_history_chart": false,
-    "new_buy_alert_feed": false,
-    "copy_trade_ranking": false,
-    "cluster_detection": false
+    "wallet_pnl_tracker": true,
+    "consistency_score": true,
+    "wallet_tiers": true,
+    "wallet_history_chart": true,
+    "new_buy_alert_feed": true,
+    "copy_trade_ranking": true,
+    "cluster_detection": true,
+    "copy_account_simulation": true,
+    "agent_learning": true,
+    "lessons_board": true,
+    "daily_goal_tracker": true,
+    "standout_badges": true
   },
   "min_avg_hold_seconds": 3600,
   "max_avg_hold_seconds": 604800,
@@ -27,5 +32,6 @@
   "history_probe_wallets": 3,
   "history_signature_limit": 1000,
   "copy_sim_starting_balance_usd": 500,
-  "daily_profit_goal_usd": 300
+  "daily_profit_goal_usd": 300,
+  "hourly_enabled": true
 }

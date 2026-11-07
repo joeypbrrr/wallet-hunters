@@ -1,52 +1,42 @@
 [
   {
     "agent": "Scout",
-    "time_et": "2026-11-06 11:36:54 PM ET",
+    "time_et": "2026-11-06 11:46:04 PM ET",
     "text": "Starting one keyless, read-only research cycle; no trades or external alerts."
   },
   {
     "agent": "Scout",
-    "time_et": "2026-11-06 11:37:18 PM ET",
+    "time_et": "2026-11-06 11:46:30 PM ET",
     "text": "Found 16 DexScreener pairs and 10 GeckoTerminal tokens; fetched 10 pool trade windows."
   },
   {
     "agent": "Entry Cartographer",
-    "time_et": "2026-11-06 11:37:18 PM ET",
-    "text": "Collected 2995 recent provider-reported swaps. Earliest observed is NOT earliest launch buyer."
+    "time_et": "2026-11-06 11:46:30 PM ET",
+    "text": "Collected 2991 recent provider-reported swaps. Earliest observed is NOT earliest launch buyer."
   },
   {
     "agent": "Entry Cartographer",
-    "time_et": "2026-11-06 11:37:25 PM ET",
-    "text": "RPC inspected 5 transactions; captured 2 SOL-transfer edges. Unchecked attribution remains provider reported."
+    "time_et": "2026-11-06 11:46:36 PM ET",
+    "text": "RPC inspected 5 transactions; captured 3 SOL-transfer edges. Unchecked attribution remains provider reported."
   },
   {
     "agent": "PnL Accountant",
-    "time_et": "2026-11-06 11:37:25 PM ET",
-    "text": "Observed 946 wallets; FIFO matched 581 sell samples. Unknown starting inventory excluded, fees not known."
+    "time_et": "2026-11-06 11:46:37 PM ET",
+    "text": "Observed 1189 wallets; FIFO matched 62 sell samples. Unknown starting inventory excluded, fees not known."
   },
   {
     "agent": "Integrity Analyst",
-    "time_et": "2026-11-06 11:37:25 PM ET",
-    "text": "Excluded 0 heuristic bot/wash candidates; clusters OFF. No insider claim is made."
+    "time_et": "2026-11-06 11:46:37 PM ET",
+    "text": "Excluded 1181 heuristic bot/wash candidates; clusters enabled: 0 groups."
   },
   {
     "agent": "Copyability Ranker",
-    "time_et": "2026-11-06 11:37:25 PM ET",
-    "text": "0 wallets meet minimum evidence (20 matched sells, 3 observed positive months); all others are a provisional observation queue. Basic ranking; copy score OFF."
+    "time_et": "2026-11-06 11:46:37 PM ET",
+    "text": "0 wallets meet minimum evidence (20 matched sells, 3 observed positive months); all others are a provisional observation queue. Copy score ON."
   },
   {
     "agent": "Observatory Publisher",
-    "time_et": "2026-11-06 11:37:25 PM ET",
-    "text": "Publishing research snapshots and ET timestamps. Hourly scheduler OFF unless separately started; static site is not a real-time chain feed."
-  },
-  {
-    "agent": "Copyability Ranker",
-    "time_et": "2026-11-06 11:40:06 PM ET",
-    "text": "Latest owner rule configured: 1h\u20131week average hold. 18 sampled wallets pass that window alone; zero proven copy candidates. Copy mode remains OFF. Historical 1,000-signature probes cover minutes, not weeks."
-  },
-  {
-    "agent": "Observatory Publisher",
-    "time_et": "2026-11-06 11:44:59 PM ET",
-    "text": "Latest configuration: dormant copy simulation starts with $500 per wallet and $500 per research agent. Expected daily profit and capital needed for $300/day are unknown; no validated daily-return backtest exists. All features and scheduling remain OFF."
+    "time_et": "2026-11-06 11:46:37 PM ET",
+    "text": "Publishing research snapshots and ET timestamps. Hourly publishing configured ON; chain feed is a timestamped static snapshot. Simulator/learning/goal-board features are visibly in progress; no invented fills or forecasts."
   }
 ]

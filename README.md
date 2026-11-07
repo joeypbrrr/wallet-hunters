@@ -5,7 +5,7 @@ A separate, public, read-only Solana research observatory. **No trading, wallet 
 - Repository: https://github.com/joeypbrrr/wallet-hunters
 - Site: https://joeypbrrr.github.io/wallet-hunters/
 - Snapshot: `data/wallets.json` · source observations: `data/observations.json`
-- **Hourly scheduler OFF. All seven optional features OFF.** The 3D scene animates; chain data is a timestamped static snapshot.
+- **Current owner-approved state: hourly scheduler ON; all feature flags ON.** Simulation execution/backtesting, agent learning, lessons board, daily-goal tracker and Standout badges are **in progress**, clearly labeled on the site. No simulated fills or profit forecasts are invented. The 3D scene animates; chain data is a timestamped static snapshot.
 
 ## Six agents
 
@@ -49,9 +49,9 @@ The **optional** copy score weights are shown per wallet: 25% win rate, 20% 3× 
 
 **Limitation:** this free first snapshot is not sufficient for a reliable days/weeks historical copy backtest. Do not claim these thresholds identify consistently profitable wallets yet. A historical, indexed swap/price dataset or prolonged accumulation is needed. No accounts or paid data subscriptions were created.
 
-## Optional features: all default OFF
+## Optional features: initially OFF; now all ON by owner approval
 
-Edit the relevant boolean under `features` in `config.json` from `false` to `true`, then run one approved research snapshot and publish it. No site toggle silently changes backend configuration.
+Edit the relevant boolean under `features` in `config.json` to `true` (currently all enabled), or to `false` to disable it, then run one approved research snapshot and publish it. No site toggle silently changes backend configuration.
 
 | Flag | When enabled |
 |---|---|
@@ -65,7 +65,7 @@ Edit the relevant boolean under `features` in `config.json` from `false` to `tru
 
 Clusters have stable hash IDs, per-member GMGN and Solscan links, matched-sample weighted win rate/score and summed observed P&L, with evidence on the site and glowing gold constellation nodes. Shared funders can be exchanges; timing can be coincidence. Links **are not proof of shared control**. RPC transfer sampling is very small, so detection is incomplete. Summed member P&L may double-count internal economic exposure. Pure bot/wash suspicions are separately excluded by conservative, auditable heuristics, which also can misclassify; no definitive on-chain identity claims are made.
 
-## Run manually / schedule (OFF)
+## Run manually / approved hourly schedule
 
 ```bash
 cd /workspace/wallet-hunters
@@ -79,7 +79,7 @@ python3 -m unittest discover -s tests -v
 ./scripts/stop.sh
 ```
 
-The local loop runs immediately when explicitly started, then once per 3,600 seconds, with a cycle lock. It commits timestamped JSON/agent-chat changes and pushes `main` once each successful cycle; GitHub Pages publishes from `/` on main. It is not installed as cron/systemd/GitHub Actions. `.run/hourly.pid` and `.run/hourly.log` are ignored. The box must remain online; this is not independent 24/7 hosting. `start.sh` refuses without `--approved`. No scheduler was started during this task.
+The local loop runs immediately when explicitly started, then once per 3,600 seconds, with a cycle lock. It commits timestamped JSON/agent-chat changes and pushes `main` once each successful cycle; GitHub Pages publishes from `/` on main. It is not installed as cron/systemd/GitHub Actions. `.run/hourly.pid` and `.run/hourly.log` are ignored. The box must remain online; this is not independent 24/7 hosting. `start.sh` refuses without `--approved`. After the initial approved full scan, the scheduler was started with `--approved --delay-first`; the next scan is one hour after startup. Both scheduler and cycle have project-local flock locks.
 
 The mobile site uses Three.js 0.160.0 from jsDelivr and Google Fonts; if CDN/WebGL fails, the data table remains accessible. Six agents occupy a circular celestial vault with astrolabe rings and evidence nodes — no office/kitchen/treadmills. Desktop/mobile screenshots are stored outside the repo in `/workspace/wallet-shots/`.
 
@@ -91,6 +91,12 @@ The mobile site uses Three.js 0.160.0 from jsDelivr and Google Fonts; if CDN/Web
 
 ## $500 dormant copy-account allocation (latest update)
 
-`copy_sim_starting_balance_usd: 500` is configured **per wallet and per research agent**, and `daily_profit_goal_usd: 300` is the comparison goal. Snapshot metadata initializes each dormant account at $500, zero trades. These are simulations only, not funded wallets; the six agents are research stages, not six independently validated trading strategies. The simulator is not running and no simulated orders were executed.
+`copy_sim_starting_balance_usd: 500` is configured **per wallet and per research agent**, and `daily_profit_goal_usd: 300` is the comparison goal. Snapshot metadata initializes each dormant account at $500, zero trades. These are simulations only, not funded wallets; the six agents are research stages, not six independently validated trading strategies. The simulator feature flag is ON but the execution/backtesting engine is in progress; no simulated orders were executed.
 
-**Expected profit per day from $500: NOT ESTABLISHED. Capital needed for $300/day: UNKNOWN.** Neither a near-one-day uneven pool sample nor retrospectively capturable best prices justify an expected daily return. The site keeps both figures visible as unknown rather than inventing a projection. If a reliable net daily return `r` were established through a full historical and out-of-sample execution backtest, the arithmetic would be `$500 × r` per day and `$300 / r` capital; this is not a guarantee, and no such `r` has been established here. All optional feature flags and the hourly schedule remain OFF.
+**Expected profit per day from $500: NOT ESTABLISHED. Capital needed for $300/day: UNKNOWN.** Neither a near-one-day uneven pool sample nor retrospectively capturable best prices justify an expected daily return. The site keeps both figures visible as unknown rather than inventing a projection. If a reliable net daily return `r` were established through a full historical and out-of-sample execution backtest, the arithmetic would be `$500 × r` per day and `$300 / r` capital; this is not a guarantee, and no such `r` has been established here. All optional feature flags and the hourly schedule were subsequently approved ON. The incomplete account simulator is visibly in progress.
+
+## Current unfinished features (enabled, visibly in progress)
+
+Flags `copy_account_simulation`, `agent_learning`, `lessons_board`, `daily_goal_tracker`, `standout_badges` are ON. The site displays initialized $500 allocations, $0 realized copy profit versus $300/day, no Standout badges, and no lessons; it explicitly states that execution simulation and learning are not completed. A Standout would require a validated net simulated $300/day, not source-wallet observed P&L. Suggestions will never auto-modify strategy. These flags do not create a fictional trading engine.
+
+Current live city scene extends the celestial vault with a floating skyline. All six stages remain deterministic research agents. The runtime is read-only with respect to Solana; GitHub publishing is the only external write. The local hourly runner is project-isolated and has no interactions with Trenchfloor or Tickworks.

@@ -3,6 +3,8 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from pipeline import account,clusters
 CFG=json.loads((Path(__file__).resolve().parents[1]/'config.json').read_text())
+LIVE_CFG=copy.deepcopy(CFG)
+CFG['features']['copy_trade_ranking']=False
 A='11111111111111111111111111111111';B='22222222222222222222222222222222'
 def trade(i,kind,qty,usd,seconds,w=A,token='TOK'):
  return {'id':str(i),'kind':kind,'quantity':qty,'usd':usd,'time':(dt.datetime(2026,11,1,tzinfo=dt.timezone.utc)+dt.timedelta(seconds=seconds)).isoformat(),'wallet':w,'token':token,'tx':str(i),'anomalous':False}
@@ -26,7 +28,7 @@ class PipelineTest(unittest.TestCase):
   r,e=account([trade(1,'buy',10,100,0),trade(2,'sell',10,300,7200)],{'TOK':100000},cfg);self.assertIsNone(r[0]['score_breakdown']['copy_capture_35_pct']);self.assertIsNone(r[0]['score'])
  def test_direct_cluster_keeps_members(self):
   r,e=account([trade(1,'buy',1,10,0,A),trade(2,'buy',1,10,2,B)],{'TOK':100000},CFG);c=clusters(r,[],[{'from':A,'to':B}]);self.assertEqual(len(c),1);self.assertEqual(len(c[0]['members']),2);self.assertEqual(len(r),2)
- def test_all_optional_flags_off(self):self.assertFalse(any(CFG['features'].values()))
+ def test_all_optional_flags_on_owner_approved(self):self.assertTrue(all(LIVE_CFG['features'].values()))
  def test_tier_never_claims_insider(self):
   cfg=copy.deepcopy(CFG);cfg['features']['wallet_tiers']=True
   r,e=account([trade(1,'buy',10,100,0),trade(2,'sell',10,300,7200)],{'TOK':100000},cfg);self.assertEqual(r[0]['tier'],'unverified')

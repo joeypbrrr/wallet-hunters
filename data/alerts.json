@@ -1,0 +1,42 @@
+[
+  {
+    "id": "solana_466381251_5pWK1dLNf3TxGgjs5hvy6LoMLzJ3FCXyEuGNiQ86yDBpS7uZziNzxvymYKwxT1qsWXbd913HxE2QjXUyJTfT5WTC_38_1794026424",
+    "wallet": "Em8J3gBWapfVBGVhVipwQnLrqCvnWBnLajw6XFsFECPF",
+    "token": "5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump",
+    "observed_at_et": "2026-11-06 11:46:37 PM ET",
+    "block_time": "2026-11-07T04:40:17Z",
+    "usd": 19.426621754258647,
+    "solscan": "https://solscan.io/tx/5pWK1dLNf3TxGgjs5hvy6LoMLzJ3FCXyEuGNiQ86yDBpS7uZziNzxvymYKwxT1qsWXbd913HxE2QjXUyJTfT5WTC",
+    "text": "Newly observed buy in sampled feed; not a real-time or complete-wallet alert."
+  },
+  {
+    "id": "solana_466382705_MHeqiDfzdZbCQTbr4dSPLVvfr33848EMmJjcPby1eGGR4TSLeW3tUMmgmuwHzm4rwf77gDd1DqBEA7SEmJokYJT_49_1794026737",
+    "wallet": "FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+    "token": "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+    "observed_at_et": "2026-11-06 11:46:37 PM ET",
+    "block_time": "2026-11-07T04:45:29Z",
+    "usd": 99.44029084176323,
+    "solscan": "https://solscan.io/tx/MHeqiDfzdZbCQTbr4dSPLVvfr33848EMmJjcPby1eGGR4TSLeW3tUMmgmuwHzm4rwf77gDd1DqBEA7SEmJokYJT",
+    "text": "Newly observed buy in sampled feed; not a real-time or complete-wallet alert."
+  },
+  {
+    "id": "solana_466380636_36qsA6UdD2E6xYeUhEupnHZqDgq6ov8MuFpszTEHPrs4UTMDzJM5KciPwyGrJHgxah4cMBbS1kHLdoAhw3sXECNF_45_1794026359",
+    "wallet": "FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+    "token": "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump",
+    "observed_at_et": "2026-11-06 11:46:37 PM ET",
+    "block_time": "2026-11-07T04:38:04Z",
+    "usd": 1.9884650476660857,
+    "solscan": "https://solscan.io/tx/36qsA6UdD2E6xYeUhEupnHZqDgq6ov8MuFpszTEHPrs4UTMDzJM5KciPwyGrJHgxah4cMBbS1kHLdoAhw3sXECNF",
+    "text": "Newly observed buy in sampled feed; not a real-time or complete-wallet alert."
+  },
+  {
+    "id": "solana_466380425_2Sct67RJhZYHEaFjTeZMRgd7QMnrCsdyHp7qSdkkX2TTy7eoxprn6j1vzvdq81SHZTJo5NXSzqP7tYCBzCGeJoNp_30_1794026242",
+    "wallet": "A8A9GoxfmcjY2QAQ8tYS98SqDBF6hUFDmxAKBsLw29sL",
+    "token": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+    "observed_at_et": "2026-11-06 11:46:37 PM ET",
+    "block_time": "2026-11-07T04:37:19Z",
+    "usd": 19.003930577654334,
+    "solscan": "https://solscan.io/tx/2Sct67RJhZYHEaFjTeZMRgd7QMnrCsdyHp7qSdkkX2TTy7eoxprn6j1vzvdq81SHZTJo5NXSzqP7tYCBzCGeJoNp",
+    "text": "Newly observed buy in sampled feed; not a real-time or complete-wallet alert."
+  }
+]
