@@ -100,3 +100,7 @@ The mobile site uses Three.js 0.160.0 from jsDelivr and Google Fonts; if CDN/Web
 Flags `copy_account_simulation`, `agent_learning`, `lessons_board`, `daily_goal_tracker`, `standout_badges` are ON. The site displays initialized $500 allocations, $0 realized copy profit versus $300/day, no Standout badges, and no lessons; it explicitly states that execution simulation and learning are not completed. A Standout would require a validated net simulated $300/day, not source-wallet observed P&L. Suggestions will never auto-modify strategy. These flags do not create a fictional trading engine.
 
 Current live city scene extends the celestial vault with a floating skyline. All six stages remain deterministic research agents. The runtime is read-only with respect to Solana; GitHub publishing is the only external write. The local hourly runner is project-isolated and has no interactions with Trenchfloor or Tickworks.
+
+## City / interior checkpoint
+
+The visual city now contains 50 cosmetic agent actors, including six named research analysts who commute to the landmark observatory. Clocked-in analyst figures appear at the six interior stations; city residents are visual only, not 44 extra independent research models. Observatory / City buttons smoothly interpolate the camera on desktop and phone. `#city` opens the exterior directly. All Solana data remains read-only.
