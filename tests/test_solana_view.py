@@ -16,3 +16,5 @@ class SolanaViewTest(unittest.TestCase):
    for h in result['agents']:self.assertEqual(h['copy_simulation']['sentinel'],'preserve')
    self.assertEqual(sum(h['observation_count'] for h in result['agents']),1)
    self.assertEqual(json.loads((root/'data/hunting-results.json').read_text()),result['agents'])
+   # Re-annotating retained data does not invent a forecast or reset the durable account.
+   again=attach(result,root);self.assertIsNone(again['solana_observation_queue'][0]['score']);self.assertEqual(again['agents'][0]['copy_simulation']['sentinel'],'preserve')

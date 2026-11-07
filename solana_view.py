@@ -8,8 +8,14 @@ def attach(out,root):
  root=Path(root);cfg=json.loads((root/'config.json').read_text());trades=[t for t in json.loads((root/'data/observations.json').read_text()) if t.get('chain','solana')=='solana'];context=json.loads((root/'data/chain-context.json').read_text()).get('solana',{});base=copy.deepcopy(cfg);base['features']['copy_trade_ranking']=False
  rows,excluded=account(trades,context.get('liquidity',{}),base,'solana');existing={w['key']:w for w in out['wallets']}
  for r in rows:
-  r['experimental_score']=r['score'];r['qualified']=bool(r['qualified'] and r['hold_window_pass'] and r['mean_liquidity_usd']>=cfg['minimum_liquidity_usd'] and r['score_breakdown']['copy_capture_samples']>=cfg['minimum_closed_samples']);r['score']=existing.get(r['key'],{}).get('score') if r['qualified'] else None;r['score_mode']='copy_trade' if cfg['features']['copy_trade_ranking'] else 'basic';r['score_label']=str(r['score']) if r['qualified'] else 'Not enough data';r['disposition']='observation_only' if not r['qualified'] else 'qualified_sample_only';r['copy_simulation']=existing.get(r['key'],{}).get('copy_simulation',empty_account(cfg,out['updated_at_et'],'Observation only: not enough history to qualify for copying.'));r['standout']=False
- rows.sort(key=lambda r:(r['qualified'],r['sampled_swaps'],r['matched_sell_samples']),reverse=True)
+  r['experimental_score']=existing.get(r['key'],{}).get('experimental_score',existing.get(r['key'],{}).get('score',r['score']));r['qualified']=bool(r['qualified'] and r['hold_window_pass'] and r['mean_liquidity_usd']>=cfg['minimum_liquidity_usd'] and r['score_breakdown']['copy_capture_samples']>=cfg['minimum_closed_samples']);r['score']=existing.get(r['key'],{}).get('score') if r['qualified'] else None;r['score_mode']='copy_trade' if cfg['features']['copy_trade_ranking'] else 'basic';r['score_label']=str(r['score']) if r['qualified'] else 'Not enough data';r['disposition']='observation_only' if not r['qualified'] else 'qualified_sample_only';r['copy_simulation']=existing.get(r['key'],{}).get('copy_simulation',empty_account(cfg,out['updated_at_et'],'Observation only: not enough history to qualify for copying.'));r['standout']=False
+ rows.sort(key=lambda r:(r['qualified'],r['hold_window_pass'] and r['mean_liquidity_usd']>=cfg['minimum_liquidity_usd'],r['matched_sell_samples'],r['sampled_swaps']),reverse=True)
+ by_key={r['key']:r for r in rows}
+ for published in out['wallets']:
+  if published['chain']=='solana' and published['key'] in by_key:
+   r=by_key[published['key']];published.update({k:r[k] for k in ['score','score_label','experimental_score','qualified']})
+ for cluster in out.get('clusters',[]):
+  if cluster['chain']=='solana' and not any(by_key.get(member.get('key'),{}).get('qualified') for member in cluster['members']):cluster['experimental_score']=cluster.get('score');cluster['score']=None
  profiles=json.loads((root/'agents.json').read_text());sol_profiles=[p for p in profiles if p['chain']=='solana'];from research import hunt
  hunters,_=hunt(sol_profiles,rows,trades,{},cfg,out['updated_at_et']);prior={h['id']:h for h in out['agents']}
  for h in hunters:
