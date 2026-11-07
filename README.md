@@ -17,11 +17,19 @@ Read-only, public on-chain wallet research with **50 executable hunting jobs**, 
 
 Liquidity bands: $25k–$100k, $100k–$500k, $500k–$2m, $2m–$10m, and $10m+. Allocations are a provisional 60/30/10 research weighting, not a measured market-share claim. Every cycle executes all 50 filters/scorers over real shared evidence; each contributes its candidate set into the master queue. An empty slice is logged as `completed_no_match`, not hidden or filled with fake wallets. `data/hunting-results.json` exposes the individual runs, best candidate, sample count and per-agent paper account.
 
-`research.FetchQueue` is the **only fetch queue** used by the pipeline. Requests are serial, identical requests are cached in-cycle, and provider-host spacing is currently **13 seconds for GeckoTerminal, 5.1 seconds for Solana RPC and 1.1 seconds for EVM RPC**, with a conservative two selected pools per chain. HTTP 429 suspends that host for the rest of the cycle; no bypass or same-cycle retry. Earlier tests reached GeckoTerminal rate limits, so source errors and cached/unavailable chain status are explicitly published. One chain failing never invents data for another.
+`research.FetchQueue` is the **only fetch queue** used by the pipeline. Requests are serial, identical requests are cached in-cycle, and provider-host spacing is currently **13 seconds for GeckoTerminal, 5.1 seconds for Solana RPC and 1.1 seconds for EVM RPC**, with **16 Solana pools first**, then two each on BNB/Robinhood. Solana uses the primary share of the request budget. HTTP 429 suspends that host for the rest of the cycle; no same-host retry. Solana verification can fail over to a different public provider after quota/5xx errors; auth/permission failures are not bypassed. Earlier tests reached GeckoTerminal rate limits, so source errors and cached/unavailable chain status are explicitly published. One chain failing never invents data for another.
+
+## Solana-first observation queue
+
+Solana is the default chain filter. `data/wallets.json` includes a separate `solana_observation_queue` of real sampled wallets, even when no wallet qualifies. Unqualified scores are **null / Not enough data**, not zero or an apparent validated performance score. Links are rebuilt from the authoritative chain/address: Solscan and GMGN `/sol/address/`. BNB and Robinhood have independent filters and retain their own explorers. Every Solana hunter also evaluates a distinct deterministic observation shard (`observation_shard`, `observation_shards=30`); its best observation is explicitly **not a copy recommendation**. This observation work does not replace or reset its durable forward paper account.
+
+`./scripts/run-once.sh --push --solana-priority` fetches sixteen Solana pool windows immediately and preserves BNB/Robinhood feeds as explicitly timestamped cached snapshots. It uses the same cycle lock as scheduled scans; do not create a second scheduler. Ordinary hourly cycles now fetch Solana first.
 
 ## City + fully 3D interior
 
-City districts: Solana / Signal Quarter, BNB / Jade Ledger, Robinhood Heights. The central landmark contains the preserved dark observatory. City/Observatory buttons smoothly move the perspective camera; `#city` opens the exterior directly.
+City districts: Solana / Signal Quarter, BNB / Jade Ledger, Robinhood Heights. The central landmark contains the preserved dark observatory. OrbitControls owns the camera in **both** views: desktop drag/orbit, wheel/zoom, right-drag/pan; phone one-finger rotate, pinch zoom, two-finger pan. Damping factor .085, touch-action none, noninteractive labels, gesture-vs-agent-tap gating, a Reset View button and Drag to look around hint. Only explicit view/reset transitions animate the camera (750ms, canceled by user input), never a perpetual camera overwrite. `tests/browser_camera.cjs` asserts numeric camera/target changes with isolated headless mouse/CDP touch events.
+
+City/Observatory buttons smoothly move the perspective camera; `#city` opens the exterior directly.
 
 All room furniture, 50 stations, desks, chairs, working figures, clock-in board and shared-lessons board are **Three.js meshes**. Boards and station screens carry canvas textures for real snapshot text. No flat room image or CSS mock substitutes for the space. Every station and commuting figure maps to one of the 50 real profile IDs. Tap a station/agent to inspect its actual slice, current best wallet, links and paper-account state. Commutes/clock-ins are cosmetic representations; real job execution is evidenced separately by timestamps and per-agent results. The phone renderer caps pixel ratio at 1 and aims at 30 rendered frames per second; actual performance depends on the phone/GPU. An accessible HTML table remains usable without WebGL/CDN access.
 
@@ -29,13 +37,13 @@ All room furniture, 50 stations, desks, chairs, working figures, clock-in board 
 
 | Chain | Provider IDs | RPC | Explorer / links |
 |---|---|---|---|
-| Solana | DexScreener `solana`, GeckoTerminal `solana` | `https://api.mainnet-beta.solana.com` | Solscan + GMGN `/sol/address/` |
+| Solana | DexScreener `solana`, GeckoTerminal `solana` | `https://solana-rpc.publicnode.com` (quota/5xx fallback: mainnet-beta, solana.drpc.org) | Solscan + GMGN `/sol/address/` |
 | BNB mainnet, chain ID **56** | `bsc` / `bsc` | `https://bsc-rpc.publicnode.com` | BscScan + GMGN `/bsc/address/` |
 | Robinhood mainnet, chain ID **4663** (`0x1237`) | `robinhood` / `robinhood` | `https://rpc.mainnet.chain.robinhood.com` | Official `https://robinhoodchain.blockscout.com`; GMGN support unverified, so **no GMGN link** |
 
 Robinhood is **live mainnet**, not the testnet (46630). Verified from the [official connecting guide](https://docs.robinhood.com/chain/connecting/), live `eth_chainId`, DexScreener results, GeckoTerminal network listing and live pool/trade feeds. Its native gas token being ETH does **not** mean this pipeline queries Ethereum mainnet. The official explorer API stats response was not JSON in this test, so that API is not a data dependency. No accounts or API keys were created.
 
-All reads use HTTPS port 443. DexScreener discovers pairs/current liquidity. GeckoTerminal supplies timestamped recent swap windows, usually up to about 300 trades/pool. These are **not full-chain, launch or full-wallet histories**. Public Solana RPC checks a small transaction/signer sample and SOL-transfer evidence.
+All reads use HTTPS port 443. DexScreener discovers pairs/current liquidity. GeckoTerminal supplies timestamped recent swap windows, usually up to about 300 trades/pool. These are **not full-chain, launch or full-wallet histories**. Public Solana RPC is **verification only**, at most two transaction/signer checks per cycle plus SOL-transfer evidence. DexScreener has no public per-wallet trade tape here; it supplies discovery/liquidity, never invented wallet trades.
 
 ### Proper EVM parsing
 
@@ -112,7 +120,7 @@ python3 -m venv --system-site-packages .venv
 ./scripts/stop.sh
 ```
 
-The existing runner reads the scripts and Python modules anew every cycle, so deployed code changes are picked up without starting a duplicate. It has a project-local scheduler flock and per-cycle flock. `.run/hourly.pid`, `.run/next-cycle-epoch` and `.run/hourly.log` record its state. It commits timestamped data and pushes once per successful hourly cycle; Pages serves main `/`. No cron, systemd or extra GitHub Actions schedule was installed. The box must stay online; GitHub Pages alone does not run scans. No Trenchfloor or Tickworks files/processes/configuration are accessed or changed.
+The existing runner reads the scripts and Python modules anew every cycle, so deployed code changes are picked up without starting a duplicate. It has a project-local scheduler flock and per-cycle flock. `.run/hourly.pid`, `.run/next-cycle-epoch` and `.run/hourly.log` record its state. It commits timestamped data and pushes once per successful hourly cycle; Pages serves main `/`. No cron, systemd or extra GitHub Actions schedule was installed. The box must stay online; GitHub Pages alone does not run scans. No Trenchfloor or Tickworks files/processes/configuration are changed. Trenchfloor was read-only referenced for the owner-requested camera-controls comparison; its SHA256 was unchanged.
 
 ## Future ideas, not built
 
