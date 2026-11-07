@@ -88,3 +88,9 @@ The mobile site uses Three.js 0.160.0 from jsDelivr and Google Fonts; if CDN/Web
 1. Confidence intervals and out-of-sample validation to reduce small-sample leaderboard bias.
 2. A historical liquidity/capacity stress test for multiple follower order sizes.
 3. Wallet provenance evidence panels with exchange-funder exclusions and user-reviewed cluster links.
+
+## $500 dormant copy-account allocation (latest update)
+
+`copy_sim_starting_balance_usd: 500` is configured **per wallet and per research agent**, and `daily_profit_goal_usd: 300` is the comparison goal. Snapshot metadata initializes each dormant account at $500, zero trades. These are simulations only, not funded wallets; the six agents are research stages, not six independently validated trading strategies. The simulator is not running and no simulated orders were executed.
+
+**Expected profit per day from $500: NOT ESTABLISHED. Capital needed for $300/day: UNKNOWN.** Neither a near-one-day uneven pool sample nor retrospectively capturable best prices justify an expected daily return. The site keeps both figures visible as unknown rather than inventing a projection. If a reliable net daily return `r` were established through a full historical and out-of-sample execution backtest, the arithmetic would be `$500 × r` per day and `$300 / r` capital; this is not a guarantee, and no such `r` has been established here. All optional feature flags and the hourly schedule remain OFF.

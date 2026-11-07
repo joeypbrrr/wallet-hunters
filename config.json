@@ -25,5 +25,7 @@
     50
   ],
   "history_probe_wallets": 3,
-  "history_signature_limit": 1000
+  "history_signature_limit": 1000,
+  "copy_sim_starting_balance_usd": 500,
+  "daily_profit_goal_usd": 300
 }

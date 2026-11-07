@@ -43,5 +43,10 @@
     "agent": "Copyability Ranker",
     "time_et": "2026-11-06 11:40:06 PM ET",
     "text": "Latest owner rule configured: 1h\u20131week average hold. 18 sampled wallets pass that window alone; zero proven copy candidates. Copy mode remains OFF. Historical 1,000-signature probes cover minutes, not weeks."
+  },
+  {
+    "agent": "Observatory Publisher",
+    "time_et": "2026-11-06 11:44:59 PM ET",
+    "text": "Latest configuration: dormant copy simulation starts with $500 per wallet and $500 per research agent. Expected daily profit and capital needed for $300/day are unknown; no validated daily-return backtest exists. All features and scheduling remain OFF."
   }
 ]
