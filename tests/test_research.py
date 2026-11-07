@@ -51,3 +51,17 @@ class StateAndEvidenceTest(unittest.TestCase):
    out={'wallets':[a,b],'agents':[{'id':'test-agent','best_wallet':{'key':a['key']}}],'updated_at_et':'now','daily_goal':{},'stats':{}}
    attach(out,root);first=json.loads((root/'data/agent-account-state.json').read_text());out['agents'][0]['best_wallet']={'key':b['key']};attach(out,root);second=json.loads((root/'data/agent-account-state.json').read_text())
    self.assertEqual(first['test-agent']['selected_at'],second['test-agent']['selected_at']);self.assertEqual(second['test-agent']['selected_wallet'],a['key']);self.assertEqual(out['agents'][0]['copy_simulation']['closed_trades'],0);self.assertEqual(out['agents'][0]['copy_simulation']['balance_usd'],500)
+
+class QueueTest(unittest.TestCase):
+ def test_fifty_hunters_share_one_cached_fetch(self):
+  from research import FetchQueue
+  class Response:
+   status_code=200
+   def raise_for_status(self):pass
+   def json(self):return {'data':['public sample']}
+  class Session:
+   calls=0
+   def get(self,*args,**kwargs):self.calls+=1;return Response()
+  q=FetchQueue();q.session=Session()
+  for _ in range(50):self.assertEqual(q.get('https://example.test/public'),{'data':['public sample']})
+  self.assertEqual(q.session.calls,1);self.assertEqual(q.hits,49)
