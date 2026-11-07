@@ -22,3 +22,20 @@
 @media(max-width:680px){.scene-controls{right:12px;gap:5px}.scene-controls button{padding:7px 9px;min-height:44px;font-size:7px}.scene-hint{font-size:7px;padding:7px 8px}.scene-label{bottom:47px}}
 
 .wallet-chain-filters{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.wallet-chain-filters button{min-height:44px;touch-action:manipulation;font-size:9px}.wallet-chain-filters button.active{border-color:#8bceb7;color:#b1ecd6;background:#142921}.score{white-space:normal;max-width:150px}.score:has(+td){font-size:14px}
+
+/* Keep the document in its viewport. Wide data scrolls inside its own panel, not the page. */
+html,body{width:100%;max-width:100%;min-width:0;overflow-x:hidden;overscroll-behavior-x:none}
+@supports(overflow:clip){html,body{overflow-x:clip}}
+header,main{width:100%;min-width:0}
+.room-grid>*,.intro>*,.section-line>*,.copy-capital>*,.chain-districts>*,.bottom-grid>*,.agents>*,.metrics>*,.detail-metrics>*{min-width:0;max-width:100%}
+.bottom-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.chain-districts{grid-template-columns:repeat(3,minmax(0,1fr))}
+.detail-metrics{grid-template-columns:repeat(4,minmax(0,1fr))}
+.cluster,#wallet-detail,#hunter-profile,.sim-fill,.agent{overflow-wrap:anywhere}
+.cluster p,.cluster h3,.cluster pre,#wallet-detail pre,#hunter-profile pre{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.cluster a{display:inline-block;max-width:100%;overflow-wrap:anywhere}
+.table-wrap{min-width:0;max-width:100%;overscroll-behavior-x:contain;touch-action:pan-x pan-y pinch-zoom;-webkit-overflow-scrolling:touch}
+.noise{width:100%;max-width:100%}
+#scene{max-width:100%;touch-action:none}
+.history-svg{max-width:100%}
+@media(max-width:680px){.chain-districts{grid-template-columns:minmax(0,1fr)}.detail-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
