@@ -1,0 +1,26 @@
+[
+  {
+    "wallet": "3U2tSmABCEnt9ePiRf2kyqgja3Bh58gtHjHvdWrZv7QF",
+    "status": 200,
+    "signatures": 1000,
+    "oldest_et": "2026-11-06 23:27:12 ET",
+    "error": null,
+    "note": "Signature metadata only. Historical swaps are not reconstructed from this endpoint."
+  },
+  {
+    "wallet": "FHpcNSe6tb2n15bAdq4BkeYWGyZKFD7yLYrH92ng7wCT",
+    "status": 200,
+    "signatures": 1000,
+    "oldest_et": "2026-11-06 23:33:55 ET",
+    "error": null,
+    "note": "Signature metadata only. Historical swaps are not reconstructed from this endpoint."
+  },
+  {
+    "wallet": "AD9wB1oFV5HCXXmZqMnu6EJTEcjU3m9jhF5HytqA8dvt",
+    "status": 200,
+    "signatures": 1000,
+    "oldest_et": "2026-11-06 23:04:22 ET",
+    "error": null,
+    "note": "Signature metadata only. Historical swaps are not reconstructed from this endpoint."
+  }
+]

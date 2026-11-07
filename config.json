@@ -1,0 +1,29 @@
+{
+  "pool_limit": 10,
+  "rpc_transaction_limit": 5,
+  "minimum_closed_samples": 20,
+  "minimum_observed_months": 3,
+  "minimum_liquidity_usd": 25000,
+  "features": {
+    "wallet_pnl_tracker": false,
+    "consistency_score": false,
+    "wallet_tiers": false,
+    "wallet_history_chart": false,
+    "new_buy_alert_feed": false,
+    "copy_trade_ranking": false,
+    "cluster_detection": false
+  },
+  "min_avg_hold_seconds": 3600,
+  "max_avg_hold_seconds": 604800,
+  "big_move_multiple": 3,
+  "copy_delay_seconds": 60,
+  "copy_entry_max_gap_seconds": 300,
+  "copy_slippage_pct": 2,
+  "copy_order_usd": 100,
+  "copy_capture_targets_pct": [
+    35,
+    50
+  ],
+  "history_probe_wallets": 3,
+  "history_signature_limit": 1000
+}

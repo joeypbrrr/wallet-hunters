@@ -1,0 +1,41 @@
+{
+  "liquidity": {
+    "HMYd9tosnUXuNHmq7pXmoePRVBLBBjA3JBfydq6upump": 58554.8859,
+    "5VCEFq1aATjga39QtDunYjJqYBx67w8V8TXwHrqopump": 65980.044,
+    "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump": 334851.9848,
+    "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump": 1269684.1584,
+    "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv": 30971.7492,
+    "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG": 1703844.1825,
+    "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn": 22202598.2515,
+    "oCZHH8HnEBCPipEGdEcP3f45pQAaM7nh7P6EkRPpump": 115295.149,
+    "EW1b9rcLAJe634mgxb5r4bVYxDoGU37o7YazBzjTpump": 9008.1282,
+    "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN": 6286327.6565,
+    "APgbBfggjo79T7PdVqTQcEbVdQWBCif1kLTwjRwrxc8Z": 13446.8463,
+    "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx": 1898880.2223,
+    "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS": 4273674.354,
+    "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": 361344.981,
+    "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R": 2050882.9114,
+    "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": 478052.3954,
+    "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp": 3587915.4112,
+    "HZbiEpF2oM658EpjNRRqxharz5L9Ddm8akpSH2R5pump": 79526.8231,
+    "6RDff7NwDJFX9zLg53RJNPsWpdfRs1xxDxivhL3Ypump": 7366.6416
+  },
+  "transfers": [],
+  "sources": [
+    {
+      "name": "DexScreener",
+      "status": "ok",
+      "pairs": 16
+    },
+    {
+      "name": "GeckoTerminal trending pools",
+      "status": "ok",
+      "pools": 10
+    },
+    {
+      "name": "Solana public RPC",
+      "status": "ok",
+      "slot": 466380419
+    }
+  ]
+}
