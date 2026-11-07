@@ -181,7 +181,7 @@ def run():
    for pair in dex:
     if pair.get('liquidity',{}).get('usd'):liq[pair['baseToken']['address']]=num(pair['liquidity']['usd'])
   except Exception as e:errors.append(chain+' Dex discovery: '+str(e))
-  try:pools=q.get(f'https://api.geckoterminal.com/api/v2/networks/{chain}/trending_pools?include=base_token,quote_token').get('data',[])[:c['pools']]
+  try:pools=q.get(f'https://api.geckoterminal.com/api/v2/networks/{chain}/trending_pools?include=base_token,quote_token').get('data',[])[:cfg.get('solana_priority_pools',c['pools']) if chain=='solana' else c['pools']]
   except Exception as e:errors.append(chain+' Gecko discovery: '+str(e))
   for pool in pools:
    a=pool['attributes'];token=pool['relationships']['base_token']['data']['id'].removeprefix(chain+'_');liq[token]=num(a.get('reserve_in_usd'))
